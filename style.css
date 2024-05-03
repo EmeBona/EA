@@ -1,0 +1,8 @@
+@import url(https://db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+
+:root{
+    font-family: "Electronic Arts Text";
+}
+#ea-home-updates-tab {
+    display: flex;
+}
