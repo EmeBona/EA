@@ -3,6 +3,7 @@
 :root{
     font-family: "Electronic Arts Text";
 }
+<<<<<<< HEAD
 body{
     margin: 0;
 }
@@ -61,4 +62,8 @@ nav{
 }
 .banner-buynow{
     position: relative;
+=======
+#ea-home-updates-tab {
+    display: flex;
+>>>>>>> ea-home-cards
 }
