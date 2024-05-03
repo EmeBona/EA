@@ -65,3 +65,7 @@ nav{
 #ea-home-updates-tab {
     display: flex;
 }
+.ea-home-cards-main {
+    position: absolute;
+    top: 670px;
+}
