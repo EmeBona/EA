@@ -1,0 +1,64 @@
+@import url(https://db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+
+:root{
+    font-family: "Electronic Arts Text";
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 3px solid white;
+    padding: 0 10px;
+    background-color: #232529;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.navbar-menu{
+    list-style: none;
+    display: flex;
+}
+.header-menu{
+    padding-top: 10px;
+}
+.hamburguer-menu{
+    padding-right: 10px;
+}
+.hamburguer-icon{
+    display: flex;
+}
+.header-menu{
+    display: flex;
+    justify-content: flex-start;
+}
+.header-games{
+    padding: 10px;
+}
+.header-experiences{
+    padding: 10px;
+}
+.header-about{
+    padding: 10px;
+}
+.header-commitments{
+    padding: 10px;
+}
+.header-resources{
+    padding: 10px;
+}
+.banner-bg{
+    position:absolute
+
+}
+.banner-title{
+    position: relative;
+}
+.banner-description{
+    position: relative;
+    color: white;
+}
+.banner-moreinfo{
+    position: relative;
+}
+.banner-buynow{
+    position: relative;
+}
