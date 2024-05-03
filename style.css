@@ -3,6 +3,9 @@
 :root{
     font-family: "Electronic Arts Text";
 }
+body{
+    margin: 0;
+}
 nav{
     display: flex;
     justify-content: flex-end;
@@ -16,9 +19,6 @@ nav{
 .navbar-menu{
     list-style: none;
     display: flex;
-}
-.header-menu{
-    padding-top: 10px;
 }
 .hamburguer-menu{
     padding-right: 10px;
