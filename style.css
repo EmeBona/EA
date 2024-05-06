@@ -1,4 +1,13 @@
 @import url(https://db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+@font-face {
+    font-family: "Electronic Arts Text";
+    src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+    src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")format("svg");
+}
 
 :root{
     font-family: "Electronic Arts Text";
@@ -69,7 +78,165 @@ nav{
     position: absolute;
     top: 670px;
 }
+
+/* Footer */
 footer {
     position: absolute;
     top:900px
+}
+
+.footer-ea-play-promo-bg{
+    background-image: url(/assets/footer/grid-with-background.png);
+    height: 471px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.footer-ea-play-promo{
+    margin-left: 250px;
+    border-top: 50px;
+    width: 550px;
+    line-height: 27px;
+}
+.footer-ea-play-promo p{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-ea-play-promo button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 40px;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.footer-herramientas-banner{
+    background-color: rgb(104, 177, 202);
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.footer-herramientas-banner h2{
+    margin-top: 0;
+    width: 535px;
+    margin-left: 250px;
+}
+.footer-herramientas-banner button{
+    background-color: transparent;
+    height: 59px;
+    width: 181px;
+    margin-right: 250px;
+    border-radius: 2px;
+    font-size: 18px;
+}
+.footer-greyspace{
+    padding: 50px 250px 50px 250px;
+    background-color: rgb(219, 219, 219);
+}
+
+.footer-condition p{
+    margin: 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+}
+.footer-condition a{
+    color:#ff4747;
+}
+.footer-top{
+    display: flex;
+    padding: 40px 0 40px 0;
+    justify-content: space-between;
+}
+.footer-top-left-links a{
+    padding-right: 40px;
+    text-decoration: none;
+}
+.footer-top-right-links h3{
+    font-size: 14px;
+    text-align: right;
+    font-stretch: expanded;
+}
+.footer-media-links{
+    font-size: 22px;
+    text-align: right;
+    display: flex;
+    gap: 25px;
+}
+.footer-media-links a{
+    color: black;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 236, 236);
+    padding: 50px 250px 50px 250px;
+    gap: 25px;
+}
+.footer-bottom-nav{
+    display: flex;
+    gap: 25px;
+}
+.footer-bottom-nav img{
+    height: 64px;
+}
+.footer-bottom-nav-links{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    gap: 25px;
+}
+.footer-bottom-nav-links div{
+    display: flex;
+    gap: 45px;
+}
+
+.footer-bottom-nav-links a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-bottom-nav-btns button{
+    background-color: transparent;
+    border: 3px solid lightgray;
+    border-radius: 2px;
+    font-family: "Electronic Arts Text";
+    font-size: 15px;
+    padding: 15px;
+    width: 190px;
+    height: 61px;
+}
+.footer-bottom-info{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom-copyright{
+    margin-left: 90px;
+}
+.footer-bottom-privacy{
+    width: 630px;
+    display: flex;
+    gap: 5px 30px;
+    flex-wrap: wrap;
+}
+.footer-bottom-privacy a{
+    text-decoration: none;
+}
+.idioma-hidden{
+    display: none;
+    position: relative;
+    bottom: 65px;
+    border: 1px solid black;
+    width: 80px;
+    left: 129px;
+    background-color: white;
+}
+
+.idioma-show{
+    display: block;
 }
