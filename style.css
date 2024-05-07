@@ -86,7 +86,7 @@ nav {
 /* Footer */
 footer {
   position: absolute;
-  top: 900px;
+  top: 3000px;
   width: 100vw;
 }
 
@@ -96,28 +96,29 @@ footer {
   width: 100%;
   display: flex;
   align-items: center;
-}
-.footer-ea-play-promo {
-  margin-left: 250px;
-  border-top: 50px;
-  width: 550px;
-  line-height: 27px;
-}
-.footer-ea-play-promo p {
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
+  & .footer-ea-play-promo {
+    margin-left: 250px;
+    border-top: 50px;
+    width: 550px;
+    line-height: 27px;
+    & p {
+      color: white;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    & button {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      padding: 15px 40px;
+      border-radius: 2px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
 }
 
-.footer-ea-play-promo button {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  padding: 15px 40px;
-  border-radius: 2px;
-  font-size: 18px;
-  font-weight: 400;
-}
 .footer-herramientas-banner {
   background-color: rgb(104, 177, 202);
   height: 112px;
@@ -249,11 +250,25 @@ footer {
 }
 
 .language-visible {
-  display: block;
-  position: relative;
-  bottom: 70px;
+  display: flex;
+  position: absolute;
+  bottom: 300px;
   border: 3px solid lightgray;
-  width: 80px;
-  left: -230px;
+  width: 540px;
+  height: 453px;
+  left: 621px;
   background-color: rgb(238, 236, 236);
+  & div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    & a{
+      text-decoration: none;
+      height: 47px;
+      width: 150px;
+    }
+  }
+  & .footer-third-language{
+    height: 423px;
+  }
 }
