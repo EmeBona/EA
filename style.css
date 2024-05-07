@@ -1,242 +1,259 @@
 @import url(https://db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
 @font-face {
-    font-family: "Electronic Arts Text";
-    src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
-    src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")format("svg");
+  font-family: "Electronic Arts Text";
+  src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+  src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
+      format("svg");
 }
 
-:root{
-    font-family: "Electronic Arts Text";
+:root {
+  font-family: "Electronic Arts Text";
 }
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    border-bottom: 3px solid white;
-    padding: 0 10px;
-    background-color: #232529;
-    color: white;
-    font-family: Arial, sans-serif;
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 3px solid white;
+  padding: 0 10px;
+  background-color: #232529;
+  color: white;
+  font-family: Arial, sans-serif;
 }
-.navbar-menu{
-    list-style: none;
-    display: flex;
+.navbar-menu {
+  list-style: none;
+  display: flex;
 }
-.hamburguer-menu{
-    padding-right: 10px;
+.hamburguer-menu {
+  padding-right: 10px;
 }
-.hamburguer-icon{
-    display: flex;
+.hamburguer-icon {
+  display: flex;
 }
-.header-menu{
-    display: flex;
-    justify-content: flex-start;
+.header-menu {
+  display: flex;
+  justify-content: flex-start;
 }
-.header-games{
-    padding: 10px;
+.header-games {
+  padding: 10px;
 }
-.header-experiences{
-    padding: 10px;
+.header-experiences {
+  padding: 10px;
 }
-.header-about{
-    padding: 10px;
+.header-about {
+  padding: 10px;
 }
-.header-commitments{
-    padding: 10px;
+.header-commitments {
+  padding: 10px;
 }
-.header-resources{
-    padding: 10px;
+.header-resources {
+  padding: 10px;
 }
-.banner-bg{
-    position:absolute
-
+.banner-bg {
+  position: absolute;
 }
-.banner-title{
-    position: relative;
+.banner-title {
+  position: relative;
 }
-.banner-description{
-    position: relative;
-    color: white;
+.banner-description {
+  position: relative;
+  color: white;
 }
-.banner-moreinfo{
-    position: relative;
+.banner-moreinfo {
+  position: relative;
 }
-.banner-buynow{
-    position: relative;
+.banner-buynow {
+  position: relative;
 }
 #ea-home-updates-tab {
-    display: flex;
+  display: flex;
 }
 .ea-home-cards-main {
-    position: absolute;
-    top: 670px;
+  position: absolute;
+  top: 670px;
 }
 
 /* Footer */
 footer {
-    position: absolute;
-    top:900px
+  position: absolute;
+  top: 900px;
+  width: 100vw;
 }
 
-.footer-ea-play-promo-bg{
-    background-image: url(/assets/footer/grid-with-background.png);
-    height: 471px;
-    width: 100vw;
-    display: flex;
-    align-items: center;
+.footer-ea-play-promo-bg {
+  background-image: url(/assets/footer/grid-with-background.png);
+  height: 471px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
-.footer-ea-play-promo{
-    margin-left: 250px;
-    border-top: 50px;
-    width: 550px;
-    line-height: 27px;
+.footer-ea-play-promo {
+  margin-left: 250px;
+  border-top: 50px;
+  width: 550px;
+  line-height: 27px;
 }
-.footer-ea-play-promo p{
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.footer-ea-play-promo button{
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    padding: 15px 40px;
-    border-radius: 2px;
-    font-size: 18px;
-    font-weight: 400;
-}
-.footer-herramientas-banner{
-    background-color: rgb(104, 177, 202);
-    height: 112px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.footer-herramientas-banner h2{
-    margin-top: 0;
-    width: 535px;
-    margin-left: 250px;
-}
-.footer-herramientas-banner button{
-    background-color: transparent;
-    height: 59px;
-    width: 181px;
-    margin-right: 250px;
-    border-radius: 2px;
-    font-size: 18px;
-}
-.footer-greyspace{
-    padding: 50px 250px 50px 250px;
-    background-color: rgb(219, 219, 219);
+.footer-ea-play-promo p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.footer-condition p{
-    margin: 0;
-    padding-bottom: 16px;
-    border-bottom: 1px solid black;
-    font-size: 14px;
+.footer-ea-play-promo button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 15px 40px;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 400;
 }
-.footer-condition a{
-    color:#ff4747;
+.footer-herramientas-banner {
+  background-color: rgb(104, 177, 202);
+  height: 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.footer-top{
-    display: flex;
-    padding: 40px 0 40px 0;
-    justify-content: space-between;
+.footer-herramientas-banner h2 {
+  margin-top: 0;
+  width: 535px;
+  margin-left: 250px;
 }
-.footer-top-left-links a{
-    padding-right: 40px;
-    text-decoration: none;
+.footer-herramientas-banner button {
+  background-color: transparent;
+  height: 59px;
+  width: 181px;
+  margin-right: 250px;
+  border-radius: 2px;
+  font-size: 18px;
 }
-.footer-top-right-links h3{
-    font-size: 14px;
-    text-align: right;
-    font-stretch: expanded;
-}
-.footer-media-links{
-    font-size: 22px;
-    text-align: right;
-    display: flex;
-    gap: 25px;
-}
-.footer-media-links a{
-    color: black;
-}
-.footer-bottom{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(238, 236, 236);
-    padding: 50px 250px 50px 250px;
-    gap: 25px;
-}
-.footer-bottom-nav{
-    display: flex;
-    gap: 25px;
-}
-.footer-bottom-nav img{
-    height: 64px;
-}
-.footer-bottom-nav-links{
-    display: flex;
-    flex-direction: column;
-    width: 550px;
-    gap: 25px;
-}
-.footer-bottom-nav-links div{
-    display: flex;
-    gap: 45px;
+.footer-greyspace {
+  padding: 50px 250px 50px 250px;
+  background-color: rgb(219, 219, 219);
 }
 
-.footer-bottom-nav-links a{
-    text-decoration: none;
-    font-size: 18px;
+.footer-condition p {
+  margin: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+}
+.footer-condition a {
+  color: #ff4747;
+}
+.footer-top {
+  display: flex;
+  padding: 40px 0 40px 0;
+  justify-content: space-between;
+}
+.footer-top-left-links a {
+  padding-right: 40px;
+  text-decoration: none;
+}
+.footer-top-right-links h3 {
+  font-size: 14px;
+  text-align: right;
+  font-stretch: expanded;
+}
+.footer-media-links {
+  font-size: 22px;
+  text-align: right;
+  display: flex;
+  gap: 25px;
+}
+.footer-media-links a {
+  color: black;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 236, 236);
+  padding: 50px 250px 50px 250px;
+  gap: 25px;
+}
+.footer-bottom-nav {
+  display: flex;
+  gap: 25px;
+}
+.footer-bottom-nav img {
+  height: 64px;
+}
+.footer-bottom-nav-links {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  gap: 25px;
+}
+.footer-bottom-nav-links div {
+  display: flex;
+  gap: 45px;
 }
 
-.footer-bottom-nav-btns button{
-    background-color: transparent;
-    border: 3px solid lightgray;
-    border-radius: 2px;
-    font-family: "Electronic Arts Text";
-    font-size: 15px;
-    padding: 15px;
-    width: 190px;
-    height: 61px;
+.footer-bottom-nav-links a {
+  text-decoration: none;
+  font-size: 18px;
 }
-.footer-bottom-info{
-    display: flex;
-    justify-content: space-between;
-}
-.footer-bottom-copyright{
-    margin-left: 90px;
-}
-.footer-bottom-privacy{
-    width: 630px;
-    display: flex;
-    gap: 5px 30px;
-    flex-wrap: wrap;
-}
-.footer-bottom-privacy a{
-    text-decoration: none;
-}
-.idioma-hidden{
-    display: none;
-    position: relative;
-    bottom: 65px;
-    border: 1px solid black;
-    width: 80px;
-    left: 129px;
-    background-color: white;
+.footer-bottom-nav-btns {
+  display: flex;
+  gap: 40px;
 }
 
-.idioma-show{
-    display: block;
+.footer-bottom-nav-btns button {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: 3px solid lightgray;
+  border-radius: 2px;
+  font-family: "Electronic Arts Text";
+  font-size: 15px;
+  padding: 15px;
+  width: 190px;
+  height: 61px;
+  text-align: left;
+}
+.footer-bottom-info {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom-copyright {
+  margin-left: 90px;
+}
+.footer-bottom-privacy {
+  width: 630px;
+  display: flex;
+  gap: 5px 30px;
+  flex-wrap: wrap;
+}
+.footer-bottom-privacy a {
+  text-decoration: none;
+}
+.language-hidden {
+  display: none;
+  position: relative;
+  bottom: 65px;
+  border: 3px solid lightgray;
+  width: 80px;
+  left: 129px;
+  background-color: white;
+}
+
+.language-visible {
+  display: block;
+  position: relative;
+  bottom: 70px;
+  border: 3px solid lightgray;
+  width: 80px;
+  left: -230px;
+  background-color: rgb(238, 236, 236);
 }
