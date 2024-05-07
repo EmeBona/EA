@@ -86,7 +86,7 @@ nav {
 /* Footer */
 footer {
   position: absolute;
-  top: 3000px;
+  /* top: 3000px; */
   width: 100vw;
 }
 
@@ -101,6 +101,7 @@ footer {
     border-top: 50px;
     width: 550px;
     line-height: 27px;
+    padding: 150px;
     & p {
       color: white;
       font-size: 18px;
@@ -120,155 +121,208 @@ footer {
 }
 
 .footer-herramientas-banner {
-  background-color: rgb(104, 177, 202);
+  background-color: #6FB0D6;
   height: 112px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.footer-herramientas-banner h2 {
-  margin-top: 0;
-  width: 535px;
-  margin-left: 250px;
-}
-.footer-herramientas-banner button {
-  background-color: transparent;
-  height: 59px;
-  width: 181px;
-  margin-right: 250px;
-  border-radius: 2px;
-  font-size: 18px;
-}
-.footer-greyspace {
-  padding: 50px 250px 50px 250px;
-  background-color: rgb(219, 219, 219);
+  & h2 {
+    width: 520px;
+    margin-left: 400px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+  & button {
+    background-color: transparent;
+    height: 59px;
+    width: 181px;
+    margin-right: 400px;
+    border-radius: 3px;
+    font-size: 18px;
+
+  }
 }
 
-.footer-condition p {
-  margin: 0;
-  padding-bottom: 16px;
-  border-bottom: 1px solid black;
-  font-size: 14px;
+.footer-greyspace {
+  padding: 50px 400px;
+  background-color: #EAEAEA;
+  & .footer-condition {
+    & p {
+      margin: 0;
+      padding-bottom: 16px;
+      border-bottom: 1px solid black;
+      font-size: 14px;
+    }
+    & a {
+      color: #ff4747;
+      text-decoration: none;
+    }
+  }
+  & .footer-top {
+    display: flex;
+    padding: 40px 0 40px 0;
+    justify-content: space-between;
+    & .footer-top-left-links {
+      & a {
+        padding-right: 40px;
+        text-decoration: none;
+      }
+    }
+    & .footer-top-right-links {
+      & h3 {
+        font-size: 14px;
+        text-align: right;
+        font-stretch: expanded;
+      }
+      & .footer-media-links {
+        font-size: 22px;
+        text-align: right;
+        display: flex;
+        gap: 25px;
+        & a {
+          color: black;
+        }
+      }
+    }
+  }
 }
-.footer-condition a {
-  color: #ff4747;
-}
-.footer-top {
-  display: flex;
-  padding: 40px 0 40px 0;
-  justify-content: space-between;
-}
-.footer-top-left-links a {
-  padding-right: 40px;
-  text-decoration: none;
-}
-.footer-top-right-links h3 {
-  font-size: 14px;
-  text-align: right;
-  font-stretch: expanded;
-}
-.footer-media-links {
-  font-size: 22px;
-  text-align: right;
-  display: flex;
-  gap: 25px;
-}
-.footer-media-links a {
-  color: black;
-}
+
 .footer-bottom {
   display: flex;
   flex-direction: column;
-  background-color: rgb(238, 236, 236);
-  padding: 50px 250px 50px 250px;
+  background-color: #F3F3F3;
+  padding: 50px 400px;
   gap: 25px;
-}
-.footer-bottom-nav {
-  display: flex;
-  gap: 25px;
-}
-.footer-bottom-nav img {
-  height: 64px;
-}
-.footer-bottom-nav-links {
-  display: flex;
-  flex-direction: column;
-  width: 550px;
-  gap: 25px;
-}
-.footer-bottom-nav-links div {
-  display: flex;
-  gap: 45px;
+  & .footer-bottom-nav {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    & img {
+      height: 64px;
+    }
+    & .footer-bottom-nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 550px;
+      gap: 25px;
+      & div {
+        display: flex;
+        gap: 45px;
+      }
+      & a {
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
+    & .footer-bottom-nav-btns {
+      display: flex;
+      gap: 40px;
+      & button {
+        display: inline-flex;
+        align-items: center;
+        background-color: transparent;
+        border: 3px solid lightgray;
+        border-radius: 2px;
+        font-family: "Electronic Arts Text";
+        font-size: 15px;
+        padding: 15px;
+        width: 190px;
+        height: 61px;
+        text-align: left;
+      }
+    }
+  }
 }
 
-.footer-bottom-nav-links a {
-  text-decoration: none;
-  font-size: 18px;
-}
-.footer-bottom-nav-btns {
-  display: flex;
-  gap: 40px;
-}
-
-.footer-bottom-nav-btns button {
-  display: inline-flex;
-  align-items: center;
-  background-color: transparent;
-  border: 3px solid lightgray;
-  border-radius: 2px;
-  font-family: "Electronic Arts Text";
-  font-size: 15px;
-  padding: 15px;
-  width: 190px;
-  height: 61px;
-  text-align: left;
-}
 .footer-bottom-info {
   display: flex;
   justify-content: space-between;
+  & .footer-bottom-copyright {
+    margin-left: 90px;
+    & .footer-bottom-privacy {
+      width: 630px;
+      display: flex;
+      gap: 5px 30px;
+      flex-wrap: wrap;
+      & a {
+        text-decoration: none;
+      }
+    }
+  }
 }
-.footer-bottom-copyright {
-  margin-left: 90px;
+
+.region-hidden{
+  display: none;
 }
-.footer-bottom-privacy {
-  width: 630px;
+.region-visible{
   display: flex;
-  gap: 5px 30px;
-  flex-wrap: wrap;
+  position: absolute;
+  bottom: 270px;
+  border: 3px solid lightgray;
+  width: 645px;
+  height: 452px;
+  background-color: #F3F3F3;
+  padding: 10px;
+  & div{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    & a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      height: 47px;
+      width: 130px;
+      border-top: 2px solid #EAEAEA;
+    }
+  }
+  & .footer-fourth-column a{
+    width: 105px;
+  }
 }
-.footer-bottom-privacy a {
-  text-decoration: none;
-}
+
 .language-hidden {
   display: none;
-  position: relative;
-  bottom: 65px;
-  border: 3px solid lightgray;
-  width: 80px;
-  left: 129px;
-  background-color: white;
 }
 
 .language-visible {
   display: flex;
   position: absolute;
-  bottom: 300px;
+  bottom: 270px;
   border: 3px solid lightgray;
   width: 540px;
   height: 453px;
-  left: 621px;
-  background-color: rgb(238, 236, 236);
-  & div{
+  background-color: #F3F3F3;
+  & div {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    & a{
+    & a {
+      display: flex;
+      align-items: center;
       text-decoration: none;
       height: 47px;
       width: 150px;
+      border-top: 2px solid #EAEAEA;
+      & i{
+        padding: 5px;
+      }
     }
   }
-  & .footer-third-language{
+  & .footer-third-language {
     height: 423px;
+    & a{
+      width: 120px;
+    }
   }
+}
+#language i {
+  padding: 5px;
+}
+#footer-no-border{
+  border: none;
+}
+
+.region-visible div a:hover, .language-visible div a:hover{
+  text-indent: 10px;
 }
