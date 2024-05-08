@@ -86,7 +86,7 @@ nav {
 /* Footer */
 footer {
   position: absolute;
-  /* top: 3000px; */
+  top: 3000px;
   width: 100vw;
 }
 
@@ -121,7 +121,7 @@ footer {
 }
 
 .footer-herramientas-banner {
-  background-color: #6FB0D6;
+  background-color: #6fb0d6;
   height: 112px;
   display: flex;
   justify-content: space-between;
@@ -139,13 +139,12 @@ footer {
     margin-right: 400px;
     border-radius: 3px;
     font-size: 18px;
-
   }
 }
 
 .footer-greyspace {
   padding: 50px 400px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   & .footer-condition {
     & p {
       margin: 0;
@@ -190,7 +189,7 @@ footer {
 .footer-bottom {
   display: flex;
   flex-direction: column;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   padding: 50px 400px;
   gap: 25px;
   & .footer-bottom-nav {
@@ -251,19 +250,19 @@ footer {
   }
 }
 
-.region-hidden{
+.region-hidden {
   display: none;
 }
-.region-visible{
+.region-visible {
   display: flex;
   position: absolute;
   bottom: 270px;
   border: 3px solid lightgray;
   width: 645px;
   height: 452px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   padding: 10px;
-  & div{
+  & div {
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -273,10 +272,10 @@ footer {
       text-decoration: none;
       height: 47px;
       width: 130px;
-      border-top: 2px solid #EAEAEA;
+      border-top: 2px solid #eaeaea;
     }
   }
-  & .footer-fourth-column a{
+  & .footer-fourth-column a {
     width: 105px;
   }
 }
@@ -292,7 +291,7 @@ footer {
   border: 3px solid lightgray;
   width: 540px;
   height: 453px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   & div {
     display: flex;
     flex-direction: column;
@@ -303,15 +302,15 @@ footer {
       text-decoration: none;
       height: 47px;
       width: 150px;
-      border-top: 2px solid #EAEAEA;
-      & i{
+      border-top: 2px solid #eaeaea;
+      & i {
         padding: 5px;
       }
     }
   }
   & .footer-third-language {
     height: 423px;
-    & a{
+    & a {
       width: 120px;
     }
   }
@@ -319,10 +318,19 @@ footer {
 #language i {
   padding: 5px;
 }
-#footer-no-border{
+#footer-no-border {
   border: none;
 }
 
-.region-visible div a:hover, .language-visible div a:hover{
+.region-visible div a:hover,
+.language-visible div a:hover {
   text-indent: 10px;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
 }
