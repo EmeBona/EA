@@ -166,7 +166,10 @@
             recompensas exclusivas, contenido para los miembros y una biblioteca
             de los mejores títulos.
           </p>
-          <button class="grow">Únete ya</button>
+          <span class="expand-border">
+            <button>Únete ya</button>
+          </span>
+            
         </div>
       </div>
       <div class="footer-herramientas-banner">
@@ -203,7 +206,7 @@
               <a href="https://www.instagram.com/ea"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
-              <a href="https://www.twitch.tv/ea"
+              <a href="https://www.twitch.tv/ea" class="footer-twitch-icon"
                 ><i class="fa-brands fa-twitch"></i
               ></a>
             </div>
@@ -227,7 +230,9 @@
             </div>
           </div>
           <div class="footer-bottom-nav-btns">
-            <button id="region" onclick="showRegionClass()">Precios regionales Spain</button>
+            <button id="region">
+              Precios regionales Spain <i class="fa-solid fa-chevron-down" id="chevron-region"></i>
+            </button>
             <div class="region-hidden" id="region-menu">
               <div>
                 <a href="#" id="footer-no-border">Austria</a>
@@ -269,10 +274,14 @@
                 <a href="#">Switzerland</a>
               </div>
             </div>
-            <button id="language" onclick="showLanguageClass()"><i class="fa-regular fa-flag"></i> Idioma</button>
+            <button id="language" >
+              <span><i class="fa-regular fa-flag"></i> Idioma</span> <i class="fa-solid fa-chevron-down" id="chevron-language"></i>
+            </button>
             <div class="language-hidden" id="language-menu">
               <div>
-                <a href="#" id="footer-no-border"><i class="fa-regular fa-flag"></i>United States</a>
+                <a href="#" id="footer-no-border"
+                  ><i class="fa-regular fa-flag"></i>United States</a
+                >
                 <a href="#"><i class="fa-regular fa-flag"></i>United Kingdom</a>
                 <a href="#"><i class="fa-regular fa-flag"></i>Australia</a>
                 <a href="#"><i class="fa-regular fa-flag"></i>France</a>
@@ -283,9 +292,13 @@
                 <a href="#"><i class="fa-regular fa-flag"></i>Brasil</a>
               </div>
               <div>
-                <a href="#" id="footer-no-border"><i class="fa-regular fa-flag"></i>Россия</a>
+                <a href="#" id="footer-no-border"
+                  ><i class="fa-regular fa-flag"></i>Россия</a
+                >
                 <a href="#"><i class="fa-regular fa-flag"></i>España</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>Česká republika</a>
+                <a href="#"
+                  ><i class="fa-regular fa-flag"></i>Česká republika</a
+                >
                 <a href="#"><i class="fa-regular fa-flag"></i>Canada (En)</a>
                 <a href="#"><i class="fa-regular fa-flag"></i>Canada (Fr)</a>
                 <a href="#"><i class="fa-regular fa-flag"></i>Danmark</a>
@@ -294,7 +307,9 @@
                 <a href="#"><i class="fa-regular fa-flag"></i>Nederland</a>
               </div>
               <div class="footer-third-language">
-                <a href="#" id="footer-no-border"><i class="fa-regular fa-flag"></i>Norge</a>
+                <a href="#" id="footer-no-border"
+                  ><i class="fa-regular fa-flag"></i>Norge</a
+                >
                 <a href="#"><i class="fa-regular fa-flag"></i>Sverige</a>
                 <a href="#"><i class="fa-regular fa-flag"></i>中国</a>
                 <a href="#"><i class="fa-regular fa-flag"></i>대한민국</a>
