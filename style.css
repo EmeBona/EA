@@ -208,7 +208,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #F3F3F3;
-  padding: 50px 400px;
+  padding: 30px 400px;
   gap: 25px;
   & .footer-bottom-nav {
     display: flex;
@@ -238,7 +238,7 @@ footer {
         display: inline-flex;
         align-items: center;
         background-color: transparent;
-        border: 3px solid lightgray;
+        border: 2px solid #C2C2C2;
         border-radius: 2px;
         font-family: "Electronic Arts Text";
         font-size: 15px;
@@ -256,7 +256,7 @@ footer {
   display: flex;
   justify-content: space-between;
   & .footer-bottom-copyright {
-    margin-left: 90px;
+    margin-left: 107px;
     & .footer-bottom-privacy {
       width: 630px;
       display: flex;
