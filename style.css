@@ -160,18 +160,28 @@ footer {
 }
 #star-wars-card {
     width: 371px;
-    height: 491px;
+    height: 420px;
     border: 1px solid rgb(218, 218, 218);
 }
 .star-wars-cards-menu {
     height: auto;
     width: 100vw;
-    display: flex;
+    display: none;
     justify-content: center;
+}
+.star-wars-cards-grid {
+    display: grid;
+    grid-template-columns:auto repeat(2,1fr);
+    gap: 30px;
 }
 .h5-cards {
     color:rgb(248, 73, 9);
     margin-left: 30px;
+}
+.h4-cards {
+    margin: 0;
+    font-size: small;
+    margin-bottom: 10px;
 }
 .h3-cards {
     color:rgb(248, 73, 9);
@@ -194,6 +204,11 @@ footer {
 .cards-top-position {
     display: flex;
     gap: 20px;
+}
+.cards-top-position-starwars {
+    display: flex;
+    gap: 20px;
+    height: 40px;
 }
 .cards-image-top {
     width: 363px;
