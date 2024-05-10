@@ -85,19 +85,19 @@ function changeResourcesChevron(){
     
 }
 
-hamburguerButton.addEventListener("mousemove", showHamburguerClass);
+hamburguerButton.addEventListener("click", showHamburguerClass);
 
-gamesButton.addEventListener("mouseover", showGamesClass);
-gamesButton.addEventListener("mouseover", changeGamesChevron);
+gamesButton.addEventListener("click", showGamesClass);
+gamesButton.addEventListener("click", changeGamesChevron);
 
-experiencesButton.addEventListener("mouseover", showExperiencesClass);
-experiencesButton.addEventListener("mouseover", changeExperiencesChevron);
+experiencesButton.addEventListener("click", showExperiencesClass);
+experiencesButton.addEventListener("click", changeExperiencesChevron);
 
-aboutButton.addEventListener("mouseover", showAboutClass);
-aboutButton.addEventListener("mouseover", changeAboutChevron);
+aboutButton.addEventListener("click", showAboutClass);
+aboutButton.addEventListener("click", changeAboutChevron);
 
-commitmentsButton.addEventListener("mouseover", showCommitmentsClass);
-commitmentsButton.addEventListener("mouseover", changeCommitmentsChevron);
+commitmentsButton.addEventListener("click", showCommitmentsClass);
+commitmentsButton.addEventListener("click", changeCommitmentsChevron);
 
-resourcesButton.addEventListener("mouseover", showResourcesClass);
-resourcesButton.addEventListener("mouseover", changeResourcesChevron);
+resourcesButton.addEventListener("click", showResourcesClass);
+resourcesButton.addEventListener("click", changeResourcesChevron);
