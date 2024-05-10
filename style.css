@@ -7,60 +7,587 @@ body{
     margin: 0;
 }
 nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    border-bottom: 3px solid white;
-    padding: 0 10px;
-    background-color: #232529;
-    color: white;
-    font-family: Arial, sans-serif;
+
+    & .navbar-menu{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        background-color: #232529;
+        color: white;
+        height: 2vw;
+        margin:0;
+        padding: 0 32px 0 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    &.navbar-login-button{
+        height: 2vw;
+        width: 2vw;
+    }
+
+    & .navbar-login-btn{
+        background-color: transparent;
+        border: none;
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+      
+    }
+
+    & .navbar-help-btn{
+        height: 2vw;
+        width: 2vw;
+        margin-inline-start: 30px;
+    }
+
+    & .navbar-help-btn{
+        background-color: transparent;
+        border: none;
+        width: 27px;
+        height: 27px;
+        margin-top: 5px;
+    }
+
+    & .navbar-ea-button{
+        height: 2vw;
+        width: 2vw;
+        margin-inline-start: 30px;
+    }
+
+    & .navbar-ea-btn{
+        background-color: transparent;
+        border: none;
+    }
 }
-.navbar-menu{
-    list-style: none;
-    display: flex;
-}
-.hamburguer-menu{
-    padding-right: 10px;
-}
-.hamburguer-icon{
-    display: flex;
-}
+
 .header-menu{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    max-height: 3vw;
+    height: 3vw;
 }
+
+.hamburguer-menu{
+    margin-inline-start: 10px;
+    margin-inline-end: 20px;
+
+    & .hamburguer-icon{
+        display: flex;
+        background: transparent;
+        border: none;
+    }
+
+    & .hamburguer-icon:hover{
+        color: #ff4747;
+    }
+
+    & .close-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    & .hb-allgames{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    & .hamburguer-dpd-hidden{
+        display: none;
+    }
+
+    & .hamburguer-visible{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 96px;
+        left: 0px;
+        z-index: 1;
+        padding-top: 1vw;
+        padding-left: 1vw;
+        padding-right: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    & .hb-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 1vw;
+        gap: 2vw;
+    }
+
+    & .hamburguer-games{
+        text-decoration: none;
+        color: gray;
+    }
+
+    & .header-title{
+        margin-inline-end: 50px;
+    }
+
+    & .hb-ea-animation{
+        position: relative;
+        width: 344px;
+        height: 344px;
+    }
+    
+    & .hb-eaplay-bg{
+        position: absolute;
+        width: 344px;
+        height: 344px;
+    }
+
+    & .hb-ea-logo{
+        position: absolute;
+        width: 80px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) translateZ(0);
+        transition: transform 0.3s ease;
+    }
+
+    & .hb-ea-logo:hover{
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+
+    & .hb-fifa-animation{
+        position: relative;
+        width: 151.5px;
+        height: 151.5px;
+    }
+    
+    & .hb-fifa-bg{
+        position: absolute;
+        width: 151.5px;
+        height: 151.5px;
+    }
+
+    & .hb-fifa-logo{
+        position: absolute;
+        width: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) translateZ(0);
+        transition: transform 0.3s ease;
+    }
+
+    & .hb-fifa-logo:hover{
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+
+    & .hb-f1-animation{
+        position: relative;
+        width: 151.5px;
+        height: 151.5px;
+    }
+    
+    & .hb-f1-bg{
+        position: absolute;
+        width: 151.5px;
+        height: 151.5px;
+    }
+
+    & .hb-f1-logo{
+        position: absolute;
+        width: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) translateZ(0);
+        transition: transform 0.3s ease;
+    }
+
+    & .hb-f1-logo:hover{
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+
+    & .hb-madden-animation{
+        position: relative;
+        width: 151.5px;
+        height: 151.5px;
+    }
+    
+    & .hb-madden-bg{
+        position: absolute;
+        width: 151.5px;
+        height: 151.5px;
+    }
+
+    & .hb-madden-logo{
+        position: absolute;
+        width: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) translateZ(0);
+        transition: transform 0.3s ease;
+    }
+
+    & .hb-madden-logo:hover{
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+
+    & .hb-appex-animation{
+        position: relative;
+        width: 151.5px;
+        height: 151.5px;
+    }
+    
+    & .hb-appex-bg{
+        position: absolute;
+        width: 151.5px;
+        height: 151.5px;
+    }
+
+    & .hb-appex-logo{
+        position: absolute;
+        width: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) translateZ(0);
+        transition: transform 0.3s ease;
+    }
+
+    & .hb-appex-logo:hover{
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+
+    & .hb-battle-animation{
+        position: relative;
+        width: 151.5px;
+        height: 151.5px;
+    }
+    
+    & .hb-battle-bg{
+        position: absolute;
+        width: 151.5px;
+        height: 151.5px;
+    }
+
+    & .hb-battle-logo{
+        position: absolute;
+        width: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) translateZ(0);
+        transition: transform 0.3s ease;
+    }
+
+    & .hb-battle-logo:hover{
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+
+    & .hb-sims-animation{
+        position: relative;
+        width: 151.5px;
+        height: 151.5px;
+    }
+    
+    & .hb-sims-bg{
+        position: absolute;
+        width: 151.5px;
+        height: 151.5px;
+    }
+
+    & .hb-sims-logo{
+        position: absolute;
+        width: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) translateZ(0);
+        transition: transform 0.3s ease;
+    }
+
+    & .hb-sims-logo:hover{
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+}
+
+.header-title{
+    margin-inline-end: 50px;
+}
+
+.header-link{
+    text-decoration: none;
+    color: gray;
+}
+
+.header-link:hover{
+    color: #ff4747;
+}
+.header-list-divider{
+    color:black;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(179, 173, 173);
+    margin-bottom: 0;
+}
+
 .header-games{
-    padding: 10px;
+ & .header-games-button{
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgba(51, 51, 51);
+    }
+
+ & .header-games-button:hover{
+    color: #ff4747; 
+    }
+
+ & .header-games-hidden{
+        display: none;
+    } 
+    
+ & .games-visible{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: white;
+        opacity: 0.9;
+        border-radius: 5px;
+        position: absolute;
+        top: 105px;
+        left: 295px;
+        gap: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        z-index: 1;
+    }
+    
+ & .header-explore-games{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+ & .header-platforms{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 }
+
 .header-experiences{
-    padding: 10px;
+    margin-inline-start: 25px;
+
+    & .header-experiencies-button{
+        background: transparent;
+        border: none;
+        font-size: 18px;
+        color: rgb(51, 51, 51);
+    }
+
+    & .header-experiencies-button:hover{
+        color: #ff4747; 
+    }
+
+    & .header-experiencies-hidden{
+        display: none;
+    }
+    
+    & .experiences-visible{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        opacity: 0.9;
+        border-radius: 5px;
+        position: absolute;
+        top: 105px;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        z-index: 1;
+        gap: 16px;
+    }
 }
+
 .header-about{
-    padding: 10px;
+    margin-inline-start: 25px;
+
+    & .header-about-button{
+        background: transparent;
+        border: none;
+        font-size: 18px;
+        color: rgb(51, 51, 51);
+    }
+
+    & .header-about-button:hover{
+        color: #ff4747; 
+        }
+
+    & .header-about-hidden{
+        display: none;
+    }
+
+    & .about-visible{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        opacity: 0.9;
+        border-radius: 5px;
+        position: absolute;
+        top: 105px;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        z-index: 1;
+        gap: 16px;
+    }
 }
 .header-commitments{
-    padding: 10px;
+    margin-inline-start: 25px;
+
+    & .header-commitments-button{
+        background: transparent;
+        border: none;
+        font-size: 18px;
+        color: rgb(51, 51, 51);
+    }
+
+    & .header-commitments-button:hover{
+        color: #ff4747; 
+        }
+
+    & .header-commitments-hidden{
+        display: none;
+    }
+
+    & .commitments-visible{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        opacity: 0.9;
+        border-radius: 5px;
+        position: absolute;
+        top: 105px;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        z-index: 1;
+        gap: 16px;
+    }
 }
 .header-resources{
-    padding: 10px;
-}
-.banner-bg{
-    position:absolute
+    margin-inline-start: 25px;
 
+    & .header-resources-button{
+        background: transparent;
+        border: none;
+        font-size: 18px;
+        color: rgb(51, 51, 51);
+    }
+
+    & .header-resources-button:hover{
+        color: #ff4747; 
+    }
+
+    & .header-resources-hidden{
+        display: none;
+    }
+
+    & .resources-visible{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        opacity: 0.9;
+        border-radius: 5px;
+        position: absolute;
+        top: 105px;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        z-index: 1;
+        gap: 16px;
+    }
 }
-.banner-title{
-    position: relative;
-}
-.banner-description{
-    position: relative;
-    color: white;
-}
-.banner-moreinfo{
-    position: relative;
-}
-.banner-buynow{
-    position: relative;
+
+.header-banner{
+
+    & .banner-info{
+        padding: 7vw 21vw 3vw;
+    }
+
+    & .header-bg-container{
+        width: 100%;
+    }
+    & .banner-bg{
+        position: absolute;
+        width: fit-content;
+        width: 100%;
+    }
+
+    & .banner-title{
+        position: relative;
+    }
+
+    & .banner-description{
+        position: relative;
+        color: white;
+        font-size: 18px;
+        width: 27vw;
+    }
+    
+    & .banner-moreinfo{
+        position: relative;
+        background-color: transparent;
+        color: white;
+        font-size: 18px;
+        border: 2px solid white;
+        width: 192px;
+        height: 58px;
+        top: 33px;
+        left: 97px;
+        border-radius: 5px;
+        transform: translate(-50%, -50%) scale(1) translateZ(0); 
+        transition: 0.3 ease-in-out;
+    }
+
+    & .banner-moreinfo:hover{
+        width: 196px;
+        height: 62px;
+    }
+
+    & .p-info{
+        position: sticky;
+    }
+
+    & .p-info:hover{
+        transform: scale(1);
+    }
+
+    & .banner-buynow{
+        position: relative;
+        background-color: #ff4747;
+        color: #161616;
+        font-size: 18px;
+        border: none;
+        width: 192px;
+        height: 58px;
+        top: 31px;
+        left: 130px;
+        border-radius: 5px;
+        transform: translate(-50%, -50%) scale(1) translateZ(0); 
+        transition: 0.3 ease-in-out;
+    }
+
+    & .banner-buynow:hover {
+        width: 196px;
+        height: 62px; 
+    }
+
+    .p-buy{
+        position: sticky;
+    }
+
+    .p-buy:hover {
+        transform: scale(1); 
+    }
 }
 #ea-home-updates-tab {
     display: flex;
@@ -71,5 +598,5 @@ nav{
 }
 footer {
     position: absolute;
-    top:900px
+    top:3000px 
 }
