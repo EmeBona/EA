@@ -700,10 +700,15 @@ nav{
     height: 420px;
     border: 1px solid rgb(218, 218, 218);
 }
+#star-wars-card:hover {
+    position: relative;
+    bottom: 10px;
+    box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5)
+}
 .star-wars-cards-menu {
     height: auto;
     width: 100vw;
-    display: none;
+    display: flex;
     justify-content: center;
 }
 .star-wars-cards-grid {
