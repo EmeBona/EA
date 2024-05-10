@@ -1,0 +1,587 @@
+@import url(https://db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+@font-face {
+  font-family: "Electronic Arts Text";
+  src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+  src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
+      format("svg");
+}
+
+:root {
+  font-family: "Electronic Arts Text";
+}
+body {
+  margin-left: 0;
+  background-image: url(/ea-play/assets/header/ea-play-hero-gradient.png.adapt.crop16x9.767w.png);
+  background-size: cover;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 3px solid white;
+  padding: 0 10px;
+  background-color: #232529;
+  color: white;
+  font-family: Arial, sans-serif;
+  width: 98vw;
+  & .navbar-menu {
+    list-style: none;
+    display: flex;
+  }
+}
+.header-menu {
+  display: flex;
+  background-color: white;
+  & img {
+    height: 40px;
+  }
+  & .header-options {
+    display: flex;
+  }
+  & .header-btn-div {
+    display: flex;
+    justify-content: flex-end;
+    width: 10vw;
+  }
+}
+
+.header-banner {
+  background-image: url(assets/header/grid-with-background.png);
+  background-size: cover;
+  color: white;
+  width: 100vw;
+  height: 440px;
+}
+
+.pruebas-juegos {
+  display: flex;
+  flex-direction: column;
+  & h2 {
+    color: white;
+  }
+  & .pruebas-juegos-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    & .pruebas-juegos-card {
+      display: flex;
+      flex-direction: column;
+      & img {
+        height: 201px;
+      }
+      & h6 {
+        color: #fe4647;
+        font-size: 16px;
+      }
+      & p {
+        color: white;
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.recompensas-miembros {
+  display: flex;
+  flex-direction: column;
+  & .recompensas-titulo {
+    display: flex;
+    justify-content: space-around;
+    & h2 {
+      color: white;
+    }
+    & button {
+      background-color: transparent;
+      color: white;
+    }
+  }
+  & .recompensas-cards-group {
+    display: flex;
+    flex-direction: row;
+    & .recompensas-card {
+      display: flex;
+      flex-direction: column;
+      height: 393px;
+      & img {
+        height: 201px;
+      }
+      & div {
+        background-color: white;
+        height: 100%;
+
+        & h2 {
+          color: #fe4647;
+          font-size: 16px;
+          text-align: center;
+        }
+        & h3 {
+          font-size: 24px;
+          text-align: center;
+        }
+        & p {
+          font-size: 18px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  & .recompensas-btns {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.recompensas-cards-1st-group {
+  display: flex;
+  gap: 20px;
+}
+
+.recompensas-cards-2nd-group {
+  visibility: hidden;
+  display: flex;
+  gap: 20px;
+}
+
+.recompensas-cards-3rd-group {
+  visibility: hidden;
+  display: flex;
+  gap: 20px;
+}
+
+.novedades {
+  display: flex;
+  flex-direction: column;
+  & .novedades-title {
+    display: flex;
+    justify-content: space-around;
+    & h2 {
+      color: white;
+    }
+    & button {
+      background-color: transparent;
+      color: white;
+    }
+  }
+  & .novedades-card-position {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    & .novedades-card {
+      display: flex;
+      flex-direction: column;
+      & img {
+        height: 301px;
+        width: 536px;
+      }
+      & h2 {
+        font-size: 16px;
+        color: #fe4647;
+        text-align: center;
+      }
+      & h3 {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.ea-play-definition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h2 {
+    color: white;
+  }
+  & .eaplay-def-cards-position {
+    display: flex;
+    gap: 100px;
+    & .eaplay-def-card {
+      display: flex;
+      flex-direction: column;
+      & h3 {
+        color: white;
+        text-align: center;
+      }
+      & p {
+        color: white;
+        text-align: center;
+      }
+      & button {
+        background-color: transparent;
+        color: white;
+      }
+    }
+  }
+}
+
+.ea-play-subs-cards-position {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  & .eaplay-subs-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ff4747;
+    border-radius: 10px;
+    align-items: center;
+    width: 528px;
+    height: 753px;
+    & h6 {
+      color: white;
+      font-size: 18px;
+    }
+    & img {
+      height: 72px;
+    }
+    & .subs-card-price {
+      & p {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        & span {
+          font-size: 40px;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+  & .subs-card-check-list {
+    & .subs-card-check-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      & i {
+        color: #ff4747;
+        font-size: 25px;
+      }
+      & p {
+        color: white;
+        font-size: 18px;
+      }
+    }
+    & button {
+      background-color: #fe4647;
+    }
+  }
+}
+
+#ea-playpro-logo {
+  width: 320px;
+  height: 74px;
+}
+
+#subs-card-check-item-middle1,
+#subs-card-check-item-middle2 {
+  border-top: 1px dashed white;
+  border-bottom: 1px dashed white;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+
+  & .subscription-form-left {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    & h2 {
+      color: white;
+      font-size: 32px;
+    }
+    & p {
+      color: white;
+      font-size: 18px;
+    }
+  }
+  & .subscription-form-right {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    & input {
+      height: 60px;
+      width: 540px;
+      background-color: transparent;
+      border: 2px solid white;
+      border-radius: 2px;
+    }
+    & .form-data {
+      display: flex;
+      & input {
+        width: 258px;
+      }
+    }
+    & .privacy-agreement {
+      display: flex;
+      & input {
+        height: 18px;
+      }
+      & p {
+        color: white;
+        & a {
+          color: #ff4747;
+          text-decoration: none;
+        }
+      }
+    }
+    & button {
+      background-color: #fe4647;
+    }
+  }
+}
+
+.faqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & .faqs-title {
+    display: flex;
+    justify-content: space-around;
+    & h2 {
+      color: white;
+      font-size: 32px;
+    }
+  }
+  & .faqs-text {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+    & div {
+      width: 352px;
+      & h3 {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+      }
+      & p {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+  .eaplay-conditions {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 36vw;
+    & a {
+      color: #fe4647;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer-greyspace {
+  padding: 50px 400px 0;
+  background-color: #eaeaea;
+  height: 258px;
+  & .footer-condition {
+    & p {
+      margin: 0;
+      padding-bottom: 16px;
+      border-bottom: 1px solid black;
+      font-size: 14px;
+    }
+    & a {
+      color: #ff4747;
+      text-decoration: none;
+    }
+  }
+  & .footer-top {
+    display: flex;
+    padding: 40px 0 40px 0;
+    justify-content: space-between;
+    & .footer-top-left-links {
+      & a {
+        padding-right: 40px;
+        text-decoration: none;
+      }
+      & a:hover {
+        color: #ff4747;
+      }
+    }
+    & .footer-top-right-links {
+      & h3 {
+        font-size: 14px;
+        text-align: right;
+        font-stretch: expanded;
+      }
+      & .footer-media-links {
+        font-size: 22px;
+        text-align: right;
+        display: flex;
+        & a {
+          color: black;
+          transition: font-size 0.3s;
+          margin-inline-end: 32px;
+          transition: font-size 0.3s, margin-inline-end 0.3s;
+        }
+        & a:hover {
+          font-size: 25px;
+          margin-inline-end: 29px;
+        }
+        & .footer-twitch-icon {
+          margin-inline-end: 0;
+        }
+        & .footer-twitch-icon:hover {
+          margin-inline-end: 0;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  padding: 30px 400px;
+  gap: 25px;
+  & .footer-bottom-nav {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    & img {
+      height: 64px;
+    }
+    & .footer-bottom-nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 550px;
+      gap: 25px;
+      & div {
+        display: flex;
+        gap: 45px;
+      }
+      & a {
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
+    & .footer-bottom-nav-btns {
+      display: flex;
+      gap: 40px;
+      & button {
+        display: inline-flex;
+        align-items: center;
+        background-color: transparent;
+        border: 2px solid #c2c2c2;
+        border-radius: 2px;
+        font-family: "Electronic Arts Text";
+        font-size: 15px;
+        padding: 15px;
+        width: 190px;
+        height: 61px;
+        text-align: left;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.footer-bottom-info {
+  display: flex;
+  justify-content: space-between;
+  & .footer-bottom-copyright {
+    margin-left: 107px;
+    & .footer-bottom-privacy {
+      width: 630px;
+      display: flex;
+      gap: 5px 30px;
+      flex-wrap: wrap;
+      & a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.region-hidden {
+  display: none;
+}
+.region-visible {
+  display: flex;
+  position: absolute;
+  bottom: 270px;
+  border: 3px solid lightgray;
+  width: 645px;
+  height: 452px;
+  background-color: #f3f3f3;
+  padding: 10px;
+  & div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    & a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      height: 47px;
+      width: 130px;
+      border-top: 2px solid #eaeaea;
+    }
+  }
+  & .footer-fourth-column a {
+    width: 105px;
+  }
+}
+
+.language-hidden {
+  display: none;
+}
+
+.language-visible {
+  display: flex;
+  position: absolute;
+  bottom: 270px;
+  border: 3px solid lightgray;
+  width: 540px;
+  height: 453px;
+  background-color: #f3f3f3;
+  & div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    & a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      height: 47px;
+      width: 150px;
+      border-top: 2px solid #eaeaea;
+      & i {
+        padding: 5px;
+      }
+    }
+  }
+  & .footer-third-language {
+    height: 423px;
+    & a {
+      width: 120px;
+    }
+  }
+}
+#language i {
+  padding: 5px;
+}
+#footer-no-border {
+  border: none;
+}
+
+.region-visible div a:hover,
+.language-visible div a:hover {
+  text-indent: 10px;
+}
