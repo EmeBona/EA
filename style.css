@@ -1,10 +1,24 @@
 @import url(https://db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
-
-:root{
-    font-family: "Electronic Arts Text";
+@font-face {
+  font-family: "Electronic Arts Text";
+  src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+  src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
+      format("svg");
 }
-body{
-    margin: 0;
+
+:root {
+  font-family: "Electronic Arts Text";
+}
+body {
+  margin: 0;
 }
 nav{
 
@@ -594,8 +608,8 @@ nav{
     justify-content: center;
 }
 .ea-home-cards-main {
-    position: absolute;
-    top: 670px;
+  position: absolute;
+  top: 670px;
 }
 #newest-games {
     display: flex;
@@ -746,3 +760,274 @@ nav{
     justify-content: center;
     margin-top: 20px;
 }
+/* Footer */
+footer {
+    position: absolute;
+    top: 3000px;
+    width: 100vw;
+  }
+  
+  .footer-ea-play-promo-bg {
+    background-image: url(/assets/footer/grid-with-background.png);
+    height: 471px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    & .footer-ea-play-promo {
+      margin-left: 250px;
+      border-top: 50px;
+      width: 550px;
+      line-height: 27px;
+      padding: 150px;
+      & p {
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+      }
+  
+      & button {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 15px 40px;
+        border-radius: 2px;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+  
+  .footer-herramientas-banner {
+    background-color: #6FB0D6;
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & h2 {
+      width: 520px;
+      margin-left: 400px;
+      font-size: 25px;
+      line-height: 35px;
+    }
+    & button {
+      background-color: transparent;
+      height: 59px;
+      width: 181px;
+      margin-right: 400px;
+      border-radius: 3px;
+      font-size: 18px;
+  
+    }
+  }
+  
+  .footer-greyspace {
+    padding: 50px 400px 0;
+    background-color: #EAEAEA;
+    height: 258px;
+    & .footer-condition {
+      & p {
+        margin: 0;
+        padding-bottom: 16px;
+        border-bottom: 1px solid black;
+        font-size: 14px;
+      }
+      & a {
+        color: #ff4747;
+        text-decoration: none;
+      }
+    }
+    & .footer-top {
+      display: flex;
+      padding: 40px 0 40px 0;
+      justify-content: space-between;
+      & .footer-top-left-links {
+        & a {
+          padding-right: 40px;
+          text-decoration: none;
+        }
+        & a:hover {
+          color: #ff4747;
+        }
+      }
+      & .footer-top-right-links {
+        & h3 {
+          font-size: 14px;
+          text-align: right;
+          font-stretch: expanded;
+        }
+        & .footer-media-links {
+          font-size: 22px;
+          text-align: right;
+          display: flex;
+          & a {
+            color: black;
+            transition: font-size 0.3s;
+            margin-inline-end: 32px;
+            transition: font-size 0.3s,
+            margin-inline-end 0.3s;
+          }
+          & a:hover{
+            font-size: 25px;
+            margin-inline-end: 29px;
+          }
+          & .footer-twitch-icon{
+            margin-inline-end: 0;
+          }
+          & .footer-twitch-icon:hover{
+            margin-inline-end: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F3F3;
+    padding: 30px 400px;
+    gap: 25px;
+    & .footer-bottom-nav {
+      display: flex;
+      gap: 25px;
+      justify-content: space-between;
+      & img {
+        height: 64px;
+      }
+      & .footer-bottom-nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+        gap: 25px;
+        & div {
+          display: flex;
+          gap: 45px;
+        }
+        & a {
+          text-decoration: none;
+          font-size: 18px;
+        }
+      }
+      & .footer-bottom-nav-btns {
+        display: flex;
+        gap: 40px;
+        & button {
+          display: inline-flex;
+          align-items: center;
+          background-color: transparent;
+          border: 2px solid #C2C2C2;
+          border-radius: 2px;
+          font-family: "Electronic Arts Text";
+          font-size: 15px;
+          padding: 15px;
+          width: 190px;
+          height: 61px;
+          text-align: left;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  
+  .footer-bottom-info {
+    display: flex;
+    justify-content: space-between;
+    & .footer-bottom-copyright {
+      margin-left: 107px;
+      & .footer-bottom-privacy {
+        width: 630px;
+        display: flex;
+        gap: 5px 30px;
+        flex-wrap: wrap;
+        & a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  
+  .region-hidden{
+    display: none;
+  }
+  .region-visible{
+    display: flex;
+    position: absolute;
+    bottom: 270px;
+    border: 3px solid lightgray;
+    width: 645px;
+    height: 452px;
+    background-color: #F3F3F3;
+    padding: 10px;
+    & div{
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      & a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        height: 47px;
+        width: 130px;
+        border-top: 2px solid #EAEAEA;
+      }
+    }
+    & .footer-fourth-column a{
+      width: 105px;
+    }
+  }
+  
+  .language-hidden {
+    display: none;
+  }
+  
+  .language-visible {
+    display: flex;
+    position: absolute;
+    bottom: 270px;
+    border: 3px solid lightgray;
+    width: 540px;
+    height: 453px;
+    background-color: #F3F3F3;
+    & div {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      & a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        height: 47px;
+        width: 150px;
+        border-top: 2px solid #EAEAEA;
+        & i{
+          padding: 5px;
+        }
+      }
+    }
+    & .footer-third-language {
+      height: 423px;
+      & a{
+        width: 120px;
+      }
+    }
+  }
+  #language i {
+    padding: 5px;
+  }
+  #footer-no-border{
+    border: none;
+  }
+  
+  .region-visible div a:hover, .language-visible div a:hover{
+    text-indent: 10px;
+  }
+  
+  .transition-btn:hover{
+    animation: expand-btn 0.7s;
+  }
+  
+  @keyframes expand-btn{
+    100%{
+      transform: scale(1.07);
+    }
+  }
