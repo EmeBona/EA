@@ -86,7 +86,7 @@ nav {
 /* Footer */
 footer {
   position: absolute;
-  /* top: 3000px; */
+  top: 3000px;
   width: 100vw;
 }
 
