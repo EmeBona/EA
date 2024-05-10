@@ -64,6 +64,7 @@ nav{
 }
 #ea-home-updates-tab {
     display: flex;
+    justify-content: center;
 }
 .ea-home-cards-main {
     position: absolute;
@@ -71,5 +72,139 @@ nav{
 }
 footer {
     position: absolute;
-    top:900px
+    top:3000px;
+}
+#newest-games {
+    display: flex;
+    justify-content: center;
+    
+}
+#ea-home-updates {
+    margin: 20px;
+    border-bottom: 1px 1px 1px black;
+    
+}
+#ea-home-updates-cards {
+    height: auto;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    
+}
+
+#ea-home-news-cardsgrid {
+    display: grid;
+    grid-template-columns: auto repeat(2,1fr);
+    gap: 30px;
+    
+}
+.ea-sports-cardsgrid {
+    display: grid;
+    grid-template-columns: auto repeat(2,1fr);
+    gap: 30px;
+}
+
+#nuevas-reglas-card {
+    width: 363px;
+    height: 569px;
+    border: 1px solid rgb(218, 218, 218);
+    
+    
+}
+#nuevas-reglas-card:hover {
+    position: relative;
+    bottom: 10px;
+    box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5)
+}
+#battlefield-2042-card {
+    width: 363px;
+    height: 569px;
+    border: 1px solid rgb(218, 218, 218);
+    
+}
+#kate-kellogg-card {
+    width: 363px;
+    height: 569px;
+    border: 1px solid rgb(218, 218, 218);
+}
+#ea-app-mac-card {
+    width: 363px;
+    height: 569px;
+    border: 1px solid rgb(218, 218, 218);
+}
+#maxis-card {
+    width: 363px;
+    height: 569px;
+    border: 1px solid rgb(218, 218, 218);
+}
+#kate-gorman-card {
+    width: 363px;
+    height: 569px;
+    border: 1px solid rgb(218, 218, 218);
+}
+.ea-sports-fc-menu {
+    height: auto;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+}
+#nike-sports-card {
+    width: 371px;
+    height: 491px;
+    border: 1px solid rgb(218, 218, 218);
+}
+#nike-sports-card:hover {
+    position: relative;
+    bottom: 10px;
+    box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5)
+}
+#star-wars-card {
+    width: 371px;
+    height: 491px;
+    border: 1px solid rgb(218, 218, 218);
+}
+.star-wars-cards-menu {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.h5-cards {
+    color:rgb(248, 73, 9);
+    margin-left: 30px;
+}
+.h3-cards {
+    color:rgb(248, 73, 9);
+    margin-left: 30px;
+}
+
+.h2-cards {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: larger;
+}
+.h1-cards {
+    display: flex;
+    justify-content: center;
+}
+.cards-image-top-var {
+    width: 371px;
+    height: 201px;
+}
+.cards-top-position {
+    display: flex;
+    gap: 20px;
+}
+.cards-image-top {
+    width: 363px;
+}
+.cards-content-position {
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#ea-home-readmore {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
