@@ -108,6 +108,8 @@ nav {
   & .recompensas-cards-group {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+
     & .recompensas-card {
       display: flex;
       flex-direction: column;
@@ -140,20 +142,23 @@ nav {
     justify-content: center;
   }
 }
-
+.recompensas-animation{
+  /* transform: translateX(-100vw); */
+  /* añadir funcionalidad, apretar boton = +translate */
+  display: flex;
+  gap: 20px;
+}
 .recompensas-cards-1st-group {
   display: flex;
   gap: 20px;
 }
 
 .recompensas-cards-2nd-group {
-  visibility: hidden;
   display: flex;
   gap: 20px;
 }
 
 .recompensas-cards-3rd-group {
-  visibility: hidden;
   display: flex;
   gap: 20px;
 }
