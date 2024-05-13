@@ -22,19 +22,58 @@ body {
   background-image: url(/ea-play/assets/header/ea-play-hero-gradient.png.adapt.crop16x9.767w.png);
   background-size: cover;
 }
-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border-bottom: 3px solid white;
-  padding: 0 10px;
-  background-color: #232529;
-  color: white;
-  font-family: Arial, sans-serif;
-  width: 98vw;
-  & .navbar-menu {
-    list-style: none;
-    display: flex;
+nav{
+
+  & .navbar-menu{
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+      background-color: #232529;
+      color: white;
+      height: 2vw;
+      margin:0;
+      padding: 0 32px 0 0;
+      position: relative;
+      z-index: 1;
+  }
+
+  &.navbar-login-button{
+      height: 2vw;
+      width: 2vw;
+  }
+
+  & .navbar-login-btn{
+      background-color: transparent;
+      border: none;
+      width: 30px;
+      height: 30px;
+      margin-top: 5px;
+    
+  }
+
+  & .navbar-help-btn{
+      height: 2vw;
+      width: 2vw;
+      margin-inline-start: 30px;
+  }
+
+  & .navbar-help-btn{
+      background-color: transparent;
+      border: none;
+      width: 27px;
+      height: 27px;
+      margin-top: 5px;
+  }
+
+  & .navbar-ea-button{
+      height: 2vw;
+      width: 2vw;
+      margin-inline-start: 30px;
+  }
+
+  & .navbar-ea-btn{
+      background-color: transparent;
+      border: none;
   }
 }
 .header-menu {

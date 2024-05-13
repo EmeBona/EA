@@ -20,61 +20,21 @@
 body {
   margin: 0;
 }
-nav{
-
-    & .navbar-menu{
-        display: flex;
-        list-style: none;
-        justify-content: flex-end;
-        background-color: #232529;
-        color: white;
-        height: 2vw;
-        margin:0;
-        padding: 0 32px 0 0;
-        position: relative;
-        z-index: 1;
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 3px solid white;
+    padding: 0 10px;
+    background-color: #232529;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 98vw;
+    & .navbar-menu {
+      list-style: none;
+      display: flex;
     }
-
-    &.navbar-login-button{
-        height: 2vw;
-        width: 2vw;
-    }
-
-    & .navbar-login-btn{
-        background-color: transparent;
-        border: none;
-        width: 30px;
-        height: 30px;
-        margin-top: 5px;
-      
-    }
-
-    & .navbar-help-btn{
-        height: 2vw;
-        width: 2vw;
-        margin-inline-start: 30px;
-    }
-
-    & .navbar-help-btn{
-        background-color: transparent;
-        border: none;
-        width: 27px;
-        height: 27px;
-        margin-top: 5px;
-    }
-
-    & .navbar-ea-button{
-        height: 2vw;
-        width: 2vw;
-        margin-inline-start: 30px;
-    }
-
-    & .navbar-ea-btn{
-        background-color: transparent;
-        border: none;
-    }
-}
-
+  }
 .header-menu{
     display: flex;
     justify-content: flex-start;
@@ -549,7 +509,7 @@ nav{
     
     & .banner-moreinfo{
         position: relative;
-        background-color: transparent;
+        /*background-color: transparent;
         color: white;
         font-size: 18px;
         border: 2px solid white;
@@ -559,10 +519,28 @@ nav{
         left: 97px;
         border-radius: 5px;
         transform: translate(-50%, -50%) scale(1) translateZ(0); 
+        transition: 0.3 ease-in-out; */
+    }
+
+    & .fondo{
+        position: absolute;
+        background-color: transparent;
+        color: white;
+        font-size: 18px;
+        border: 2px solid white;
+        width: 192px;
+        height: 58px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 5px;
+        transform: translate(-50%, -50%) scale(1) translateZ(0); 
         transition: 0.3 ease-in-out;
     }
 
-    & .banner-moreinfo:hover{
+    & .fondo:hover{
         width: 196px;
         height: 62px;
     }
