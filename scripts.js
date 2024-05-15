@@ -1,3 +1,4 @@
+// nav def
 const gamesButton = document.getElementById("header-games-btn");
 const gamesMenu = document.getElementById("header-games-menu");
 const experiencesButton = document.getElementById("header-experiences-btn");
@@ -16,6 +17,7 @@ const chevronAbout = document.getElementById("chevron-about");
 const chevronCommitments = document.getElementById("chevron-commitments");
 const chevronResources = document.getElementById("chevron-resources");
 
+//footer def
 const regionButton = document.getElementById("region");
 const regionMenu = document.getElementById("region-menu");
 const languageButton = document.getElementById("language");
@@ -24,7 +26,7 @@ const chevronRegion = document.getElementById("chevron-region")
 const chevronLanguage = document.getElementById("chevron-language")
 
 
-
+//nav fnc
 function showHamburguerClass (){
     hamburguerMenu.classList.toggle("hamburguer-visible")
 }
@@ -111,6 +113,7 @@ commitmentsButton.addEventListener("click", changeCommitmentsChevron);
 resourcesButton.addEventListener("click", showResourcesClass);
 resourcesButton.addEventListener("click", changeResourcesChevron);
 
+//footer fnc
 function showRegionClass(){
     regionMenu.classList.toggle("region-visible")
 }
