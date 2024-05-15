@@ -122,26 +122,31 @@ nav {
     & .recompensas-card {
       display: flex;
       flex-direction: column;
-      height: 393px;
+      height: 375px;
       & img {
         height: 201px;
       }
       & div {
-        background-color: white;
+        background-color: #F3F3F3;
         height: 100%;
+        padding: 24px 16px;
 
         & h2 {
           color: #fe4647;
           font-size: 16px;
           text-align: center;
+          margin-bottom: 0;
+          margin: 0;
         }
         & h3 {
+          margin: 8px;
           font-size: 24px;
           text-align: center;
         }
         & p {
           font-size: 18px;
           text-align: center;
+          margin-top: 14px;
         }
       }
     }
