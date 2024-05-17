@@ -633,9 +633,79 @@ nav{
       transform: scale(1); 
   }
 }
+#ea-home-updates-tab button {
+    
+}
 #ea-home-updates-tab {
     display: flex;
     justify-content: center;
+}
+
+#ea-home-gamesgrid {
+    display: grid;
+    grid-template-columns: auto repeat(2,1fr);
+    gap: 30px;
+}
+.cards-size {
+    height: 363px ;
+    width: 363px ;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-size:hover  .icon-position-cards {
+    position: relative;
+    bottom: 50px;
+    
+}
+.cards-size:hover .hidden-site {
+    display: block;
+}
+.cards-size:hover .opacity-img {
+    opacity: 85%;
+    display: block;
+}
+.opacity-img {
+    width: 363px;
+    height: 363px;
+    position: absolute;
+    display: none;
+}
+#ufc5-card {
+    background-image: url(assets/ufc5.jpg);
+    background-size: cover;
+}
+#fc24-card {
+    background-image: url(assets/fc24.jpeg.adapt.crop1x1.767p.jpeg);
+    background-size: cover;
+}
+#f1-card {
+    background-image: url(assets/f123-gametile-16x9.jpg.adapt.crop1x1.767p.jpg);
+    background-size: cover;
+}
+#nfs-card {
+    background-image: url(assets/nfs-unbound-1x1.png.adapt.crop1x1.767p.png);
+    background-size: cover;
+}
+#sims-card {
+    background-image: url(assets/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg);
+    background-size: cover;
+}
+#apex-card {
+    background-image: url(assets/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg);
+    background-size: cover;
+}
+
+.icon-position-cards {
+    height: 53px;
+    width: 180px;
+}
+.hidden-site {
+    position: absolute;
+    color: white;
+    font-size: large;
+    display: none;
 }
 .ea-home-cards-main {
   position: absolute;
@@ -738,13 +808,98 @@ nav{
 .star-wars-cards-menu {
     height: auto;
     width: 100vw;
-    display: flex;
+    display: none;
+    justify-content: center;
+}
+.apex-legends-cards-menu {
+    height: auto;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+}
+.apex-legends-cards-grid {
+    display: grid;
+    grid-template-columns:auto repeat(2,1fr);
+    gap: 30px;
+}
+#apex-legends-card {
+    width: 363px;
+    height: 569px;
+    border: 1px solid rgb(218, 218, 218);
+}
+#apex-legends-card:hover {
+        position: relative;
+        bottom: 10px;
+        box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5)
+}
+.los-sims-cards-menu {
+    height: auto;
+    width: 100vw;
+    display: none;
     justify-content: center;
 }
 .star-wars-cards-grid {
     display: grid;
     grid-template-columns:auto repeat(2,1fr);
     gap: 30px;
+}
+.los-sims-card {
+    width: 363px;
+    height: 569px;
+    border: 1px solid rgb(218, 218, 218);
+}
+.los-sims-card:hover {
+        position: relative;
+        bottom: 10px;
+        box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5)
+}
+.los-sims-grid {
+    display: grid;
+    grid-template-columns:auto repeat(2,1fr);
+    gap: 30px;
+}
+.f1-card {
+    width: 363px;
+    height: 569px;
+    border: 1px solid rgb(218, 218, 218);
+}
+.f1-card:hover {
+        position: relative;
+        bottom: 10px;
+        box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5)
+}
+
+.f1-cards-grid {
+    display: grid;
+    grid-template-columns:auto repeat(2,1fr);
+    gap: 30px;
+}
+.f1-cards-menu {
+    height: auto;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+}
+.battlefield-cards-menu {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.battlefield-cards-grid {
+    display: grid;
+    grid-template-columns:auto repeat(2,1fr);
+    gap: 30px;
+}
+.battlefield-card {
+    width: 363px;
+    height: 569px;
+    border: 1px solid rgb(218, 218, 218);
+}
+.battlefield-card:hover {
+       position: relative;
+        bottom: 10px;
+        box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5)
 }
 .h5-cards {
     color:rgb(248, 73, 9);
