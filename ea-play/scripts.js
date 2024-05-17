@@ -1,3 +1,24 @@
+//navbar
+
+const gamesButton = document.getElementById("header-games-btn");
+const gamesMenu = document.getElementById("header-games-menu");
+
+function showGamesClass (){
+    gamesMenu.classList.toggle("games-visible")
+}
+
+function changeGamesChevron(){
+    if(chevronGames.className === "fa-solid fa-chevron-down"){
+        chevronGames.classList.replace("fa-chevron-down", "fa-chevron-up")
+    } else if (chevronGames.className === "fa-solid fa-chevron-up"){
+        chevronGames.classList.replace("fa-chevron-up", "fa-chevron-down")
+    }
+    
+}
+
+gamesButton.addEventListener("click", showGamesClass);
+gamesButton.addEventListener("click", changeGamesChevron);
+
 //recompensas def
 const cardsPosition = document.getElementById("recompensas-card-div");
 const slideLeftBtn = document.getElementById("slide-left");
