@@ -548,60 +548,90 @@ nav{
     }
     
     & .banner-moreinfo{
-        position: relative;
-        background-color: transparent;
-        color: white;
-        font-size: 18px;
-        border: 2px solid white;
-        width: 192px;
-        height: 58px;
-        top: 33px;
-        left: 97px;
-        border-radius: 5px;
-        transform: translate(-50%, -50%) scale(1) translateZ(0); 
-        transition: 0.3 ease-in-out;
-    }
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 18px;
+  }
 
-    & .banner-moreinfo:hover{
-        width: 196px;
-        height: 62px;
-    }
+  & .fondo{
+      position: absolute;
+      background-color: transparent;
+      color: white;
+      font-size: 18px;
+      border: 2px solid white;
+      width: 192px;
+      height: 58px;
+      top: 62px;
+      left: 100px;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 5px;
+      transform: translate(-50%, -50%) scale(1) translateZ(0); 
+      transition: 0.3 ease-in-out;
+  }
 
-    & .p-info{
-        position: sticky;
-    }
+  & .fondo:hover{
+      width: 196px;
+      height: 62px;
+  }
 
-    & .p-info:hover{
-        transform: scale(1);
-    }
+  & .p-info{
+      position: relative;
+      left: 27px;
+  }
 
-    & .banner-buynow{
-        position: relative;
-        background-color: #ff4747;
-        color: #161616;
-        font-size: 18px;
-        border: none;
-        width: 192px;
-        height: 58px;
-        top: 31px;
-        left: 130px;
-        border-radius: 5px;
-        transform: translate(-50%, -50%) scale(1) translateZ(0); 
-        transition: 0.3 ease-in-out;
-    }
+  & .p-info:hover{
+      transform: scale(1);
+  }
 
-    & .banner-buynow:hover {
-        width: 196px;
-        height: 62px; 
-    }
+  & .banner-buynow{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    top: 25px;
+    left: 110px;
+  }
+  & .fondo2{
+    position: relative;
+    background-color: #fe4647;
+    color: white;
+    font-size: 18px;
+    width: 192px;
+    height: 60px;
+    top: 475px;
+    left: 638px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(1) translateZ(0); 
+    transition: 0.3 ease-in-out;
+}
 
-    .p-buy{
-        position: sticky;
-    }
+& .fondo2:hover{
+    width: 196px;
+    height: 62px;
+}
 
-    .p-buy:hover {
-        transform: scale(1); 
-    }
+  & .banner-buynow:hover {
+      width: 196px;
+      height: 62px; 
+  }
+
+  .p-buy{
+      position: absolute;
+      left: 703px;
+      top: 474px;
+  }
+
+  .p-buy:hover {
+      transform: scale(1); 
+  }
 }
 #ea-home-updates-tab {
     display: flex;
