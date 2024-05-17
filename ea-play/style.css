@@ -60,10 +60,13 @@ nav {
   width: 100vw;
   height: 440px;
 }
-
+.game-demo-title {
+  margin-left: 60px;
+}
 .pruebas-juegos {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
   & h2 {
     color: white;
   }
@@ -71,6 +74,9 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+    position: relative;
+    top: 100px;
+    
     & .pruebas-juegos-card {
       display: flex;
       flex-direction: column;
@@ -84,7 +90,7 @@ nav {
       & p {
         color: white;
         font-size: 18px;
-        width: 300px;
+        width: 357.33px;
         text-align: center;
       }
     }
@@ -94,6 +100,7 @@ nav {
 .recompensas-miembros {
   display: flex;
   flex-direction: column;
+  
   & .recompensas-titulo {
     display: flex;
     justify-content: space-around;
@@ -131,6 +138,7 @@ nav {
         & p {
           font-size: 18px;
           text-align: center;
+        
         }
       }
     }
@@ -140,7 +148,14 @@ nav {
     justify-content: center;
   }
 }
-
+ .h6-rewards {
+  display: flex;
+  justify-content: center;
+  }
+  .p-rewards {
+    display: flex;
+    justify-content: center;
+  }
 .recompensas-cards-1st-group {
   display: flex;
   gap: 20px;
@@ -161,6 +176,7 @@ nav {
 .novedades {
   display: flex;
   flex-direction: column;
+  
   & .novedades-title {
     display: flex;
     justify-content: space-around;
@@ -176,6 +192,7 @@ nav {
     display: flex;
     gap: 20px;
     justify-content: center;
+    
     & .novedades-card {
       display: flex;
       flex-direction: column;
@@ -201,12 +218,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   & h2 {
     color: white;
   }
   & .eaplay-def-cards-position {
     display: flex;
     gap: 100px;
+    
     & .eaplay-def-card {
       display: flex;
       flex-direction: column;
@@ -230,6 +249,8 @@ nav {
   display: flex;
   gap: 50px;
   justify-content: center;
+  
+  
   & .eaplay-subs-card {
     display: flex;
     flex-direction: column;
