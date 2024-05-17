@@ -780,33 +780,35 @@ footer {
       font-weight: 400;
     }
 
-    & .join-now-border {
-      position: relative;
-      background-color: transparent;
-      color: white;
-      border: 2px solid white;
-      border-radius: 3px;
-      font-size: 18px;
-      font-weight: 400;
-      width: 192px;
-      height: 58px;
-      transform: translate(-50%, -50%) scale(1) translateZ(0);
-      left: 96px;
-      top: 35px;
-      & .p-join-now {
-        position: sticky;
-      }
-    }
-    & .join-now-border:hover {
-      width: 196px;
-      height: 62px;
-      & .p-join-now:hover {
-        transform: scale(1);
-      }
-    }
+    
   }
 }
-
+.join-now-border {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 192px;
+  height: 58px;
+  /* transform: translate(-50%, -50%) scale(1) translateZ(0); */
+  /* left: 96px;
+  top: 35px; */
+}
+#p-join-now {
+  position: absolute;
+  top: 312px;
+  left: 459px;
+}
+.join-now-border:hover {
+  width: 196px;
+  height: 62px;
+}
+#p-join-now:hover {
+  transform: scale(1);
+}
 .footer-herramientas-banner {
   background-color: #6fb0d6;
   height: 112px;
@@ -819,34 +821,39 @@ footer {
     font-size: 25px;
     line-height: 35px;
   }
-  & .footer-moreinfo-border{
+  
+}
+.footer-moreinfo-border{
     
-    position: relative;
-    background-color: transparent;
-    margin-right: 400px;
-    border-radius: 3px;
-    font-size: 18px;
-    border: 2px solid black;
-    font-weight: 400;
-    width: 192px;
-    height: 58px;
-    transform: translate(-50%, -50%) scale(1) translateZ(0);
-    left: 96px;
-    top: 35px;
-    &.footer-p-moreinfo{
-      position: sticky;
-    }
-  }
-  & .footer-moreinfo-border:hover{
-    
-    width: 196px;
-      height: 62px;
-    &.footer-p-moreinfo:hover{
-      transform: scale(1);
-    }
-  }
+  position: relative;
+  background-color: transparent;
+  margin-right: 400px;
+  border-radius: 3px;
+  font-size: 18px;
+  border: 2px solid black;
+  font-weight: 400;
+  width: 192px;
+  height: 58px;
+  /* transform: translate(-50%, -50%) scale(1) translateZ(0); */
+  /* left: 96px;
+  top: 35px; */
+ 
+}
+.footer-p-moreinfo{
+  position: absolute;
+  left: 1365px;
 }
 
+.footer-moreinfo-border:hover{
+    
+  width: 196px;
+    height: 62px;
+  
+}
+
+.footer-p-moreinfo:hover{
+  transform: scale(1);
+}
 .footer-greyspace {
   padding: 50px 400px 0;
   background-color: #eaeaea;
