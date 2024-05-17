@@ -19,62 +19,61 @@
 }
 body {
   margin: 0;
-}nav{
-
-  & .navbar-menu{
-      display: flex;
-      list-style: none;
-      justify-content: flex-end;
-      background-color: #232529;
-      color: white;
-      height: 2vw;
-      margin:0;
-      padding: 0 32px 0 0;
-      position: relative;
-      z-index: 1;
+}
+nav {
+  & .navbar-menu {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    background-color: #232529;
+    color: white;
+    height: 2vw;
+    margin: 0;
+    padding: 0 32px 0 0;
+    position: relative;
+    z-index: 1;
   }
 
-  &.navbar-login-button{
-      height: 2vw;
-      width: 2vw;
+  &.navbar-login-button {
+    height: 2vw;
+    width: 2vw;
   }
 
-  & .navbar-login-btn{
-      background-color: transparent;
-      border: none;
-      width: 30px;
-      height: 30px;
-      margin-top: 5px;
-    
+  & .navbar-login-btn {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
   }
 
-  & .navbar-help-btn{
-      height: 2vw;
-      width: 2vw;
-      margin-inline-start: 30px;
+  & .navbar-help-btn {
+    height: 2vw;
+    width: 2vw;
+    margin-inline-start: 30px;
   }
 
-  & .navbar-help-btn{
-      background-color: transparent;
-      border: none;
-      width: 27px;
-      height: 27px;
-      margin-top: 5px;
+  & .navbar-help-btn {
+    background-color: transparent;
+    border: none;
+    width: 27px;
+    height: 27px;
+    margin-top: 5px;
   }
 
-  & .navbar-ea-button{
-      height: 2vw;
-      width: 2vw;
-      margin-inline-start: 30px;
+  & .navbar-ea-button {
+    height: 2vw;
+    width: 2vw;
+    margin-inline-start: 30px;
   }
 
-  & .navbar-ea-btn{
-      background-color: transparent;
-      border: none;
+  & .navbar-ea-btn {
+    background-color: transparent;
+    border: none;
   }
 }
 
-.header-menu{
+.header-menu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -82,479 +81,478 @@ body {
   height: 3vw;
 }
 
-.hamburguer-menu{
+.hamburguer-menu {
   margin-inline-start: 10px;
   margin-inline-end: 20px;
 
-  & .hamburguer-icon{
-      display: flex;
-      background: transparent;
-      border: none;
+  & .hamburguer-icon {
+    display: flex;
+    background: transparent;
+    border: none;
   }
 
-  & .hamburguer-icon:hover{
-      color: #ff4747;
+  & .hamburguer-icon:hover {
+    color: #ff4747;
   }
 
-  & .close-icon{
-      width: 20px;
-      height: 20px;
+  & .close-icon {
+    width: 20px;
+    height: 20px;
   }
 
-  & .hb-allgames{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+  & .hb-allgames {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  & .hamburguer-dpd-hidden{
-      display: none;
+  & .hamburguer-dpd-hidden {
+    display: none;
   }
 
-  & .hamburguer-visible{
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      position: absolute;
-      top: 96px;
-      left: 0px;
-      z-index: 1;
-      padding-top: 1vw;
-      padding-left: 1vw;
-      padding-right: 2vw;
-      padding-bottom: 2vw;
+  & .hamburguer-visible {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 96px;
+    left: 0px;
+    z-index: 1;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
   }
 
-  & .hb-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      padding-top: 1vw;
-      gap: 2vw;
+  & .hb-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 1vw;
+    gap: 2vw;
   }
 
-  & .hamburguer-games{
-      text-decoration: none;
-      color: gray;
+  & .hamburguer-games {
+    text-decoration: none;
+    color: gray;
   }
 
-  & .header-title{
-      margin-inline-end: 50px;
+  & .header-title {
+    margin-inline-end: 50px;
   }
 
-  & .hb-ea-animation{
-      position: relative;
-      width: 344px;
-      height: 344px;
-  }
-  
-  & .hb-eaplay-bg{
-      position: absolute;
-      width: 344px;
-      height: 344px;
+  & .hb-ea-animation {
+    position: relative;
+    width: 344px;
+    height: 344px;
   }
 
-  & .hb-ea-logo{
-      position: absolute;
-      width: 80px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1) translateZ(0);
-      transition: transform 0.3s ease;
+  & .hb-eaplay-bg {
+    position: absolute;
+    width: 344px;
+    height: 344px;
   }
 
-  & .hb-ea-logo:hover{
-      transform: translate(-50%, -50%) scale(1.15);
+  & .hb-ea-logo {
+    position: absolute;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) translateZ(0);
+    transition: transform 0.3s ease;
   }
 
-  & .hb-fifa-animation{
-      position: relative;
-      width: 151.5px;
-      height: 151.5px;
-  }
-  
-  & .hb-fifa-bg{
-      position: absolute;
-      width: 151.5px;
-      height: 151.5px;
+  & .hb-ea-logo:hover {
+    transform: translate(-50%, -50%) scale(1.15);
   }
 
-  & .hb-fifa-logo{
-      position: absolute;
-      width: 60px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1) translateZ(0);
-      transition: transform 0.3s ease;
+  & .hb-fifa-animation {
+    position: relative;
+    width: 151.5px;
+    height: 151.5px;
   }
 
-  & .hb-fifa-logo:hover{
-      transform: translate(-50%, -50%) scale(1.15);
+  & .hb-fifa-bg {
+    position: absolute;
+    width: 151.5px;
+    height: 151.5px;
   }
 
-  & .hb-f1-animation{
-      position: relative;
-      width: 151.5px;
-      height: 151.5px;
-  }
-  
-  & .hb-f1-bg{
-      position: absolute;
-      width: 151.5px;
-      height: 151.5px;
+  & .hb-fifa-logo {
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) translateZ(0);
+    transition: transform 0.3s ease;
   }
 
-  & .hb-f1-logo{
-      position: absolute;
-      width: 60px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1) translateZ(0);
-      transition: transform 0.3s ease;
+  & .hb-fifa-logo:hover {
+    transform: translate(-50%, -50%) scale(1.15);
   }
 
-  & .hb-f1-logo:hover{
-      transform: translate(-50%, -50%) scale(1.15);
+  & .hb-f1-animation {
+    position: relative;
+    width: 151.5px;
+    height: 151.5px;
   }
 
-  & .hb-madden-animation{
-      position: relative;
-      width: 151.5px;
-      height: 151.5px;
-  }
-  
-  & .hb-madden-bg{
-      position: absolute;
-      width: 151.5px;
-      height: 151.5px;
+  & .hb-f1-bg {
+    position: absolute;
+    width: 151.5px;
+    height: 151.5px;
   }
 
-  & .hb-madden-logo{
-      position: absolute;
-      width: 60px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1) translateZ(0);
-      transition: transform 0.3s ease;
+  & .hb-f1-logo {
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) translateZ(0);
+    transition: transform 0.3s ease;
   }
 
-  & .hb-madden-logo:hover{
-      transform: translate(-50%, -50%) scale(1.15);
+  & .hb-f1-logo:hover {
+    transform: translate(-50%, -50%) scale(1.15);
   }
 
-  & .hb-appex-animation{
-      position: relative;
-      width: 151.5px;
-      height: 151.5px;
-  }
-  
-  & .hb-appex-bg{
-      position: absolute;
-      width: 151.5px;
-      height: 151.5px;
+  & .hb-madden-animation {
+    position: relative;
+    width: 151.5px;
+    height: 151.5px;
   }
 
-  & .hb-appex-logo{
-      position: absolute;
-      width: 60px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1) translateZ(0);
-      transition: transform 0.3s ease;
+  & .hb-madden-bg {
+    position: absolute;
+    width: 151.5px;
+    height: 151.5px;
   }
 
-  & .hb-appex-logo:hover{
-      transform: translate(-50%, -50%) scale(1.15);
+  & .hb-madden-logo {
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) translateZ(0);
+    transition: transform 0.3s ease;
   }
 
-  & .hb-battle-animation{
-      position: relative;
-      width: 151.5px;
-      height: 151.5px;
-  }
-  
-  & .hb-battle-bg{
-      position: absolute;
-      width: 151.5px;
-      height: 151.5px;
+  & .hb-madden-logo:hover {
+    transform: translate(-50%, -50%) scale(1.15);
   }
 
-  & .hb-battle-logo{
-      position: absolute;
-      width: 60px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1) translateZ(0);
-      transition: transform 0.3s ease;
+  & .hb-appex-animation {
+    position: relative;
+    width: 151.5px;
+    height: 151.5px;
   }
 
-  & .hb-battle-logo:hover{
-      transform: translate(-50%, -50%) scale(1.15);
+  & .hb-appex-bg {
+    position: absolute;
+    width: 151.5px;
+    height: 151.5px;
   }
 
-  & .hb-sims-animation{
-      position: relative;
-      width: 151.5px;
-      height: 151.5px;
-  }
-  
-  & .hb-sims-bg{
-      position: absolute;
-      width: 151.5px;
-      height: 151.5px;
+  & .hb-appex-logo {
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) translateZ(0);
+    transition: transform 0.3s ease;
   }
 
-  & .hb-sims-logo{
-      position: absolute;
-      width: 60px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1) translateZ(0);
-      transition: transform 0.3s ease;
+  & .hb-appex-logo:hover {
+    transform: translate(-50%, -50%) scale(1.15);
   }
 
-  & .hb-sims-logo:hover{
-      transform: translate(-50%, -50%) scale(1.15);
+  & .hb-battle-animation {
+    position: relative;
+    width: 151.5px;
+    height: 151.5px;
+  }
+
+  & .hb-battle-bg {
+    position: absolute;
+    width: 151.5px;
+    height: 151.5px;
+  }
+
+  & .hb-battle-logo {
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) translateZ(0);
+    transition: transform 0.3s ease;
+  }
+
+  & .hb-battle-logo:hover {
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+
+  & .hb-sims-animation {
+    position: relative;
+    width: 151.5px;
+    height: 151.5px;
+  }
+
+  & .hb-sims-bg {
+    position: absolute;
+    width: 151.5px;
+    height: 151.5px;
+  }
+
+  & .hb-sims-logo {
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) translateZ(0);
+    transition: transform 0.3s ease;
+  }
+
+  & .hb-sims-logo:hover {
+    transform: translate(-50%, -50%) scale(1.15);
   }
 }
 
-.header-title{
+.header-title {
   margin-inline-end: 50px;
 }
 
-.header-link{
+.header-link {
   text-decoration: none;
   color: gray;
 }
 
-.header-link:hover{
+.header-link:hover {
   color: #ff4747;
 }
-.header-list-divider{
-  color:black;
+.header-list-divider {
+  color: black;
   font-weight: bold;
   border-bottom: 2px solid rgb(179, 173, 173);
   margin-bottom: 0;
 }
 
-.header-games{
-& .header-games-button{
-  background: transparent;
-  border: none;
-  font-size: 18px;
-  color: rgba(51, 51, 51);
+.header-games {
+  & .header-games-button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgba(51, 51, 51);
   }
 
-& .header-games-button:hover{
-  color: #ff4747; 
+  & .header-games-button:hover {
+    color: #ff4747;
   }
 
-& .header-games-hidden{
-      display: none;
-  } 
-  
-& .games-visible{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      background-color: white;
-      opacity: 0.9;
-      border-radius: 5px;
-      position: absolute;
-      top: 105px;
-      left: 295px;
-      gap: 2vw;
-      padding-top: 1vw;
-      padding-bottom: 1vw;
-      padding-left: 2vw;
-      padding-right: 2vw;
-      z-index: 1;
+  & .header-games-hidden {
+    display: none;
   }
-  
-& .header-explore-games{
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+
+  & .games-visible {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 5px;
+    position: absolute;
+    top: 105px;
+    left: 295px;
+    gap: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    z-index: 1;
   }
-  
-& .header-platforms{
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+
+  & .header-explore-games {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  & .header-platforms {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }
 
-.header-experiences{
+.header-experiences {
   margin-inline-start: 25px;
 
-  & .header-experiencies-button{
-      background: transparent;
-      border: none;
-      font-size: 18px;
-      color: rgb(51, 51, 51);
+  & .header-experiencies-button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
   }
 
-  & .header-experiencies-button:hover{
-      color: #ff4747; 
+  & .header-experiencies-button:hover {
+    color: #ff4747;
   }
 
-  & .header-experiencies-hidden{
-      display: none;
+  & .header-experiencies-hidden {
+    display: none;
   }
-  
-  & .experiences-visible{
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      opacity: 0.9;
-      border-radius: 5px;
-      position: absolute;
-      top: 105px;
-      padding-top: 1vw;
-      padding-bottom: 1vw;
-      padding-left: 2vw;
-      padding-right: 2vw;
-      z-index: 1;
-      gap: 16px;
+
+  & .experiences-visible {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 5px;
+    position: absolute;
+    top: 105px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    z-index: 1;
+    gap: 16px;
   }
 }
 
-.header-about{
+.header-about {
   margin-inline-start: 25px;
 
-  & .header-about-button{
-      background: transparent;
-      border: none;
-      font-size: 18px;
-      color: rgb(51, 51, 51);
+  & .header-about-button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
   }
 
-  & .header-about-button:hover{
-      color: #ff4747; 
-      }
-
-  & .header-about-hidden{
-      display: none;
+  & .header-about-button:hover {
+    color: #ff4747;
   }
 
-  & .about-visible{
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      opacity: 0.9;
-      border-radius: 5px;
-      position: absolute;
-      top: 105px;
-      padding-top: 1vw;
-      padding-bottom: 1vw;
-      padding-left: 2vw;
-      padding-right: 2vw;
-      z-index: 1;
-      gap: 16px;
+  & .header-about-hidden {
+    display: none;
+  }
+
+  & .about-visible {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 5px;
+    position: absolute;
+    top: 105px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    z-index: 1;
+    gap: 16px;
   }
 }
-.header-commitments{
+.header-commitments {
   margin-inline-start: 25px;
 
-  & .header-commitments-button{
-      background: transparent;
-      border: none;
-      font-size: 18px;
-      color: rgb(51, 51, 51);
+  & .header-commitments-button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
   }
 
-  & .header-commitments-button:hover{
-      color: #ff4747; 
-      }
-
-  & .header-commitments-hidden{
-      display: none;
+  & .header-commitments-button:hover {
+    color: #ff4747;
   }
 
-  & .commitments-visible{
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      opacity: 0.9;
-      border-radius: 5px;
-      position: absolute;
-      top: 105px;
-      padding-top: 1vw;
-      padding-bottom: 1vw;
-      padding-left: 2vw;
-      padding-right: 2vw;
-      z-index: 1;
-      gap: 16px;
+  & .header-commitments-hidden {
+    display: none;
+  }
+
+  & .commitments-visible {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 5px;
+    position: absolute;
+    top: 105px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    z-index: 1;
+    gap: 16px;
   }
 }
-.header-resources{
+.header-resources {
   margin-inline-start: 25px;
 
-  & .header-resources-button{
-      background: transparent;
-      border: none;
-      font-size: 18px;
-      color: rgb(51, 51, 51);
+  & .header-resources-button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
   }
 
-  & .header-resources-button:hover{
-      color: #ff4747; 
+  & .header-resources-button:hover {
+    color: #ff4747;
   }
 
-  & .header-resources-hidden{
-      display: none;
+  & .header-resources-hidden {
+    display: none;
   }
 
-  & .resources-visible{
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      opacity: 0.9;
-      border-radius: 5px;
-      position: absolute;
-      top: 105px;
-      padding-top: 1vw;
-      padding-bottom: 1vw;
-      padding-left: 2vw;
-      padding-right: 2vw;
-      z-index: 1;
-      gap: 16px;
+  & .resources-visible {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 5px;
+    position: absolute;
+    top: 105px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    z-index: 1;
+    gap: 16px;
   }
 }
 
-.header-banner{
-
-  & .banner-info{
-      padding: 7vw 21vw 3vw;
+.header-banner {
+  & .banner-info {
+    padding: 7vw 21vw 3vw;
   }
 
-  & .header-bg-container{
-      width: 100%;
+  & .header-bg-container {
+    width: 100%;
   }
-  & .banner-bg{
-      position: absolute;
-      width: fit-content;
-      width: 100%;
-  }
-
-  & .banner-title{
-      position: relative;
+  & .banner-bg {
+    position: absolute;
+    width: fit-content;
+    width: 100%;
   }
 
-  & .banner-description{
-      position: relative;
-      color: white;
-      font-size: 18px;
-      width: 27vw;
+  & .banner-title {
+    position: relative;
   }
-  
-  & .banner-moreinfo{
+
+  & .banner-description {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    width: 27vw;
+  }
+
+  & .banner-moreinfo {
     position: absolute;
     background-color: transparent;
     border: none;
     color: white;
     font-size: 18px;
-}
+  }
 
-& .fondo{
+  & .fondo {
     position: absolute;
     background-color: transparent;
     color: white;
@@ -568,69 +566,69 @@ body {
     bottom: 0;
     margin: auto;
     border-radius: 5px;
-    transform: translate(-50%, -50%) scale(1) translateZ(0); 
+    transform: translate(-50%, -50%) scale(1) translateZ(0);
     transition: 0.3 ease-in-out;
-}
+  }
 
-& .fondo:hover{
+  & .fondo:hover {
     width: 196px;
     height: 62px;
-}
+  }
 
-& .p-info{
+  & .p-info {
     position: relative;
     left: 27px;
-}
+  }
 
-& .p-info:hover{
+  & .p-info:hover {
     transform: scale(1);
-}
+  }
 
-& .banner-buynow{
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 18px;
-  top: 25px;
-  left: 110px;
-}
-& .fondo2{
-  position: relative;
-  background-color: #fe4647;
-  color: white;
-  font-size: 18px;
-  width: 192px;
-  height: 60px;
-  top: 475px;
-  left: 638px;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  border-radius: 5px;
-  transform: translate(-50%, -50%) scale(1) translateZ(0); 
-  transition: 0.3 ease-in-out;
-}
+  & .banner-buynow {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    top: 25px;
+    left: 110px;
+  }
+  & .fondo2 {
+    position: relative;
+    background-color: #fe4647;
+    color: white;
+    font-size: 18px;
+    width: 192px;
+    height: 60px;
+    top: 475px;
+    left: 638px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(1) translateZ(0);
+    transition: 0.3 ease-in-out;
+  }
 
-& .fondo2:hover{
-  width: 196px;
-  height: 62px;
-}
-
-& .banner-buynow:hover {
+  & .fondo2:hover {
     width: 196px;
-    height: 62px; 
-}
+    height: 62px;
+  }
 
-.p-buy{
+  & .banner-buynow:hover {
+    width: 196px;
+    height: 62px;
+  }
+
+  & .p-buy {
     position: absolute;
     left: 703px;
     top: 474px;
-}
+  }
 
-.p-buy:hover {
-    transform: scale(1); 
-}
+  & .p-buy:hover {
+    transform: scale(1);
+  }
 }
 
 #ea-home-updates-tab {
@@ -639,70 +637,69 @@ body {
 }
 
 #ea-home-gamesgrid {
-    display: grid;
-    grid-template-columns: auto repeat(2,1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: auto repeat(2, 1fr);
+  gap: 30px;
 }
 .cards-size {
-    height: 363px ;
-    width: 363px ;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 363px;
+  width: 363px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.cards-size:hover  .icon-position-cards {
-    position: relative;
-    bottom: 50px;
-    
+.cards-size:hover .icon-position-cards {
+  position: relative;
+  bottom: 50px;
 }
 .cards-size:hover .hidden-site {
-    display: block;
+  display: block;
 }
 .cards-size:hover .opacity-img {
-    opacity: 85%;
-    display: block;
+  opacity: 85%;
+  display: block;
 }
 .opacity-img {
-    width: 363px;
-    height: 363px;
-    position: absolute;
-    display: none;
+  width: 363px;
+  height: 363px;
+  position: absolute;
+  display: none;
 }
 #ufc5-card {
-    background-image: url(assets/ufc5.jpg);
-    background-size: cover;
+  background-image: url(assets/ufc5.jpg);
+  background-size: cover;
 }
 #fc24-card {
-    background-image: url(assets/fc24.jpeg.adapt.crop1x1.767p.jpeg);
-    background-size: cover;
+  background-image: url(assets/fc24.jpeg.adapt.crop1x1.767p.jpeg);
+  background-size: cover;
 }
 #f1-card {
-    background-image: url(assets/f123-gametile-16x9.jpg.adapt.crop1x1.767p.jpg);
-    background-size: cover;
+  background-image: url(assets/f123-gametile-16x9.jpg.adapt.crop1x1.767p.jpg);
+  background-size: cover;
 }
 #nfs-card {
-    background-image: url(assets/nfs-unbound-1x1.png.adapt.crop1x1.767p.png);
-    background-size: cover;
+  background-image: url(assets/nfs-unbound-1x1.png.adapt.crop1x1.767p.png);
+  background-size: cover;
 }
 #sims-card {
-    background-image: url(assets/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg);
-    background-size: cover;
+  background-image: url(assets/the-sims-4-keyart.jpg.adapt.crop1x1.767w.jpg);
+  background-size: cover;
 }
 #apex-card {
-    background-image: url(assets/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg);
-    background-size: cover;
+  background-image: url(assets/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg);
+  background-size: cover;
 }
 
 .icon-position-cards {
-    height: 53px;
-    width: 180px;
+  height: 53px;
+  width: 180px;
 }
 .hidden-site {
-    position: absolute;
-    color: white;
-    font-size: large;
-    display: none;
+  position: absolute;
+  color: white;
+  font-size: large;
+  display: none;
 }
 .ea-home-cards-main {
   position: absolute;
@@ -796,100 +793,100 @@ body {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 .star-wars-cards-menu {
-    height: auto;
-    width: 100vw;
-    display: none;
-    justify-content: center;
+  height: auto;
+  width: 100vw;
+  display: none;
+  justify-content: center;
 }
 .apex-legends-cards-menu {
-    height: auto;
-    width: 100vw;
-    display: none;
-    justify-content: center;
+  height: auto;
+  width: 100vw;
+  display: none;
+  justify-content: center;
 }
 .apex-legends-cards-grid {
-    display: grid;
-    grid-template-columns:auto repeat(2,1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: auto repeat(2, 1fr);
+  gap: 30px;
 }
 #apex-legends-card {
-    width: 363px;
-    height: 569px;
-    border: 1px solid rgb(218, 218, 218);
+  width: 363px;
+  height: 569px;
+  border: 1px solid rgb(218, 218, 218);
 }
 #apex-legends-card:hover {
-        position: relative;
-        bottom: 10px;
-        box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5)
+  position: relative;
+  bottom: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 .los-sims-cards-menu {
-    height: auto;
-    width: 100vw;
-    display: none;
-    justify-content: center;
+  height: auto;
+  width: 100vw;
+  display: none;
+  justify-content: center;
 }
 .star-wars-cards-grid {
-    display: grid;
-    grid-template-columns:auto repeat(2,1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: auto repeat(2, 1fr);
+  gap: 30px;
 }
 .los-sims-card {
-    width: 363px;
-    height: 569px;
-    border: 1px solid rgb(218, 218, 218);
+  width: 363px;
+  height: 569px;
+  border: 1px solid rgb(218, 218, 218);
 }
 .los-sims-card:hover {
-        position: relative;
-        bottom: 10px;
-        box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5)
+  position: relative;
+  bottom: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 .los-sims-grid {
-    display: grid;
-    grid-template-columns:auto repeat(2,1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: auto repeat(2, 1fr);
+  gap: 30px;
 }
 .f1-card {
-    width: 363px;
-    height: 569px;
-    border: 1px solid rgb(218, 218, 218);
+  width: 363px;
+  height: 569px;
+  border: 1px solid rgb(218, 218, 218);
 }
 .f1-card:hover {
-        position: relative;
-        bottom: 10px;
-        box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5)
+  position: relative;
+  bottom: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .f1-cards-grid {
-    display: grid;
-    grid-template-columns:auto repeat(2,1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: auto repeat(2, 1fr);
+  gap: 30px;
 }
 .f1-cards-menu {
-    height: auto;
-    width: 100vw;
-    display: none;
-    justify-content: center;
+  height: auto;
+  width: 100vw;
+  display: none;
+  justify-content: center;
 }
 .battlefield-cards-menu {
-    height: auto;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 .battlefield-cards-grid {
-    display: grid;
-    grid-template-columns:auto repeat(2,1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: auto repeat(2, 1fr);
+  gap: 30px;
 }
 .battlefield-card {
-    width: 363px;
-    height: 569px;
-    border: 1px solid rgb(218, 218, 218);
+  width: 363px;
+  height: 569px;
+  border: 1px solid rgb(218, 218, 218);
 }
 .battlefield-card:hover {
-       position: relative;
-        bottom: 10px;
-        box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5)
+  position: relative;
+  bottom: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 .h5-cards {
   color: rgb(248, 73, 9);
@@ -964,8 +961,6 @@ footer {
       font-size: 18px;
       font-weight: 400;
     }
-
-    
   }
 }
 .join-now-border {
@@ -1006,10 +1001,8 @@ footer {
     font-size: 25px;
     line-height: 35px;
   }
-  
 }
-.footer-moreinfo-border{
-    
+.footer-moreinfo-border {
   position: relative;
   background-color: transparent;
   margin-right: 400px;
@@ -1022,21 +1015,18 @@ footer {
   /* transform: translate(-50%, -50%) scale(1) translateZ(0); */
   /* left: 96px;
   top: 35px; */
- 
 }
-.footer-p-moreinfo{
+.footer-p-moreinfo {
   position: absolute;
   left: 1365px;
 }
 
-.footer-moreinfo-border:hover{
-    
+.footer-moreinfo-border:hover {
   width: 196px;
-    height: 62px;
-  
+  height: 62px;
 }
 
-.footer-p-moreinfo:hover{
+.footer-p-moreinfo:hover {
   transform: scale(1);
 }
 .footer-greyspace {
@@ -1147,7 +1137,6 @@ footer {
   }
 }
 
-
 .footer-bottom-info {
   display: flex;
   justify-content: space-between;
@@ -1251,31 +1240,3 @@ footer {
       transform: scale(1.07);
     }
   } */
-
-.banner-buynow {
-  position: relative;
-  background-color: #ff4747;
-  color: #161616;
-  font-size: 18px;
-  border: none;
-  width: 192px;
-  height: 58px;
-  top: 31px;
-  left: 130px;
-  border-radius: 5px;
-  transform: translate(-50%, -50%) scale(1) translateZ(0);
-  transition: 0.3 ease-in-out;
-}
-
-.banner-buynow:hover {
-  width: 196px;
-  height: 62px;
-}
-
-.p-buy {
-  position: sticky;
-}
-
-.p-buy:hover {
-  transform: scale(1);
-}
