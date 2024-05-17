@@ -620,13 +620,13 @@ nav {
     height: 62px;
   }
 
-  & .p-buy {
+  .p-buy {
     position: absolute;
     left: 703px;
     top: 474px;
   }
 
-  & .p-buy:hover {
+  .p-buy:hover {
     transform: scale(1);
   }
 }
@@ -1230,13 +1230,3 @@ footer {
 .language-visible div a:hover {
   text-indent: 10px;
 }
-
-/* .transition-btn:hover{
-    animation: expand-btn 0.7s;
-  }
-  
-  @keyframes expand-btn{
-    100%{
-      transform: scale(1.07);
-    }
-  } */
