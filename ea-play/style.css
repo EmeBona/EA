@@ -79,16 +79,99 @@ nav{
 .header-menu {
   display: flex;
   background-color: white;
+  height: 3vw;
+  align-items: center;
   & img {
-    height: 40px;
+    padding-inline-start: 2vw;
+    height: 6vw;
+    width: 6vw;
   }
+
   & .header-options {
     display: flex;
   }
+
+  & .header-links{
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgba(51, 51, 51);
+    text-decoration: none;
+    padding-inline-start: 2vw;
+  }
+  
+  & .header-links:hover{
+    color: #ff4747; 
+  }
+
+  
   & .header-btn-div {
-    display: flex;
+    padding-inline-start: 39vw;
+  }
+
+  & .header-join-button{
+    position: relative;
     justify-content: flex-end;
-    width: 10vw;
+    background-color: #ff4747;
+    border: none;
+    width: 172px;
+    height: 44px;
+    color: white;
+    font-size: 18px;
+  }
+}
+
+.header-games{  
+  & .header-games-boton{
+     background: transparent;
+     border: none;
+     font-size: 18px;
+     color: rgba(51, 51, 51);
+     padding-inline-start: 3vw;
+     }
+ 
+  & .header-games-boton:hover{
+     color: #ff4747; 
+     }
+ 
+  & .header-games-hidden{
+      display: none;
+    } 
+     
+  & .games-visible{
+      display: flex;
+      flex-direction: column;
+      grid-template-columns: repeat(2, 1fr);
+      background-color: white;
+      opacity: 0.9;
+      border-radius: 5px;
+      position: absolute;
+      top: 105px;
+      left: 180px;
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      z-index: 1;
+      gap: 1vw;
+      margin-bottom: 10px;
+     }
+  & .header-games-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    color: rgba(51, 51, 51);
+    text-decoration: none;
+  }
+
+  & .header-list-divider{
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid rgb(179, 173, 173);
+    margin-bottom: 0;
   }
 }
 
@@ -240,8 +323,12 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 99px;
+  padding-right: 99px;
+  padding-top: 50px;
   & h2 {
     color: white;
+    font-size: 32px;
   }
   & .eaplay-def-cards-position {
     display: flex;
@@ -249,17 +336,39 @@ nav{
     & .eaplay-def-card {
       display: flex;
       flex-direction: column;
+      align-items: start;
+      height: 595px;
       & h3 {
         color: white;
         text-align: center;
+        font-size: 25px;
       }
       & p {
+        display: flex;
         color: white;
-        text-align: center;
+        font-size: 18px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
       }
       & button {
         background-color: transparent;
         color: white;
+        border-color: white;
+        padding: 16px 24px;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      & .scnd-btn{
+        margin-top: 102px;
+      }
+      & .trd-btn{
+        margin-top: 102px;
+        padding: 16px;
+      }
+      & .frt-btn{
+        margin-top: 102px;
       }
     }
   }
@@ -276,19 +385,49 @@ nav{
     border-radius: 10px;
     align-items: center;
     width: 528px;
-    height: 753px;
+    height: 730px;
     & h6 {
       color: white;
       font-size: 18px;
     }
+    & .margin{
+      width: 125px;
+      height: 90px;
+    }
     & img {
       height: 72px;
+      margin: auto;  
+    }
+    & .sub-card-content{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: -50px;
     }
     & .subs-card-price {
+      display: flex;
+      flex-direction: column;
       & p {
         color: white;
         font-size: 18px;
         text-align: center;
+        margin: 0;
+        & span {
+          font-size: 40px;
+          font-weight: 800;
+        }
+      }
+    }
+    & .subs-card-price2{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 27px;
+      & p {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
         & span {
           font-size: 40px;
           font-weight: 800;
@@ -297,9 +436,16 @@ nav{
     }
   }
   & .subs-card-check-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
     & .subs-card-check-item {
       display: flex;
       align-items: center;
+      margin: auto;
       gap: 15px;
       & i {
         color: #ff4747;
@@ -311,6 +457,12 @@ nav{
       }
     }
     & button {
+      position: relative;
+      width: 399px;
+      height: 59px;
+      border: none;
+      color: white;
+      font-size: 18px;
       background-color: #fe4647;
     }
   }
