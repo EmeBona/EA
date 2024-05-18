@@ -543,92 +543,62 @@ nav {
     font-size: 18px;
     width: 27vw;
   }
-
+  & .moreinfo-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
   & .banner-moreinfo {
     position: absolute;
     background-color: transparent;
     border: none;
-    color: white;
-    font-size: 18px;
-  }
-
-  & .fondo {
-    position: absolute;
-    background-color: transparent;
-    color: white;
-    font-size: 18px;
     border: 2px solid white;
     width: 192px;
     height: 58px;
-    top: 62px;
-    left: 100px;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    top: 0;
+    left: 0;
     border-radius: 5px;
-    transform: translate(-50%, -50%) scale(1) translateZ(0);
-    transition: 0.3 ease-in-out;
   }
-
-  & .fondo:hover {
-    width: 196px;
-    height: 62px;
+  & .banner-moreinfo:hover{
+    transform: scale(1.1);
   }
-
   & .p-info {
     position: relative;
-    left: 27px;
+    color:  white;
+    left: -41%;
+    font-size: 18px;
   }
 
-  & .p-info:hover {
-    transform: scale(1);
+  & .buynow-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
   }
-
   & .banner-buynow {
     position: absolute;
-    background-color: transparent;
+    background-color: #FF4747;
     border: none;
-    color: white;
-    font-size: 18px;
-    top: 25px;
-    left: 110px;
-  }
-  & .fondo2 {
-    position: relative;
-    background-color: #fe4647;
-    color: white;
-    font-size: 18px;
     width: 192px;
-    height: 60px;
-    top: 475px;
-    left: 638px;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    height: 58px;
+    top: -101%;
+    left: 20%;
     border-radius: 5px;
-    transform: translate(-50%, -50%) scale(1) translateZ(0);
-    transition: 0.3 ease-in-out;
-  }
-
-  & .fondo2:hover {
-    width: 196px;
-    height: 62px;
   }
 
   & .banner-buynow:hover {
-    width: 196px;
-    height: 62px;
+    transform: scale(1.1);
   }
 
   .p-buy {
-    position: absolute;
-    left: 703px;
-    top: 474px;
+    position: relative;
+    color: black;
+    font-size: 18px;
+    top: -3vw;
+    left: -21%;
   }
 
-  .p-buy:hover {
-    transform: scale(1);
-  }
 }
 
 #ea-home-updates-tab {
