@@ -1,0 +1,114 @@
+@import url(https://db.onlinewebfonts.com/c/48656eabd3fef6464367d956315c749a?family=Electronic+Arts+Text);
+@font-face {
+  font-family: "Electronic Arts Text";
+  src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot");
+  src: url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/48656eabd3fef6464367d956315c749a.svg#Electronic Arts Text")
+      format("svg");
+}
+:root {
+  font-family: "Electronic Arts Text";
+}
+/* body middle */
+
+.controles-juego {
+    display: flex;
+    flex-direction: column;
+    margin: 20%;
+    & .controles-juego-top{
+        display: flex;
+        flex-direction: column;
+        & h3{
+            font-size: 48px;
+        }
+        & p {
+            font-size: 18px;;
+        }
+    }
+    & .controles-juego-bottom{
+        display: flex;
+        & img{
+            width: 536px;
+            height: 301px;
+        }
+        & div{
+            & a{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 24px;
+                & img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+.sist-clasificacion-videojuegos{
+    display: flex;
+    flex-direction: column;
+    margin: 20%;
+    & .sist-clasificacion-videojuegos-top{
+        display: flex;
+        flex-direction: column;
+        & h3{
+            font-size: 48px;
+        }
+        & p {
+            font-size: 18px;
+        }
+    }
+    & .sist-clasificacion-videojuegos-bottom{
+        display: flex;
+        & img{
+            width: 535px;
+            height: 301px;
+        }
+        & .pegi-right-content{
+            display: flex;
+            flex-direction: column;
+            & h4{
+                font-size: 24px;
+            }
+            & p{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.clasificacion-videojuegos{
+    display: flex;
+    flex-direction: column;
+    margin: 20%;
+    & h3 {
+        font-size: 48px;
+    }
+    & .clasificacion-videojuegos-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        & .clasificacion-videojuegos-card{
+            & img{
+                width: 347px;
+            }
+            & h4{
+                font-size: 24px;
+            }
+            & p{
+                font-size: 18px;
+            }
+            & a{
+                font-size: 18px;
+                text-decoration: none;
+            }
+        }
+    }
+}
