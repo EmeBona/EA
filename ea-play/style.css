@@ -449,23 +449,103 @@ nav{
         margin-inline-start: 0px;
         margin-inline-end: 0px;
       }
-      & button {
+      & .fst-btn-container{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+      }
+      & .fst-btn {
+        position:absolute;
         background-color: transparent;
-        color: white;
         border-color: white;
-        padding: 16px 24px;
+        width: 298px;
+        height: 59px;
+        left: 0;
+      }
+      & .fst-btn:hover{
+        transform: scale(1.04)
+      }
+      & .p-fst-btn{
+        position: relative;
+        color: white;
         font-size: 18px;
-        margin-top: 20px;
+        left: 10%;
+      }
+      & .scnd-btn-container{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
       }
       & .scnd-btn{
-        margin-top: 102px;
+        position: absolute;
+        background-color: transparent;
+        border-color: white;
+        width: 229px;
+        height: 59px;
+        top: 140%;
+        left: 0;
+      }
+      & .scnd-btn:hover{
+        transform: scale(1.04)
+      }
+      & .p-scnd-btn{
+        position: relative;
+        color: white;
+        font-size: 18px;
+        left: 14%;
+        top: 140%;
+      }
+      & .trd-btn-container{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
       }
       & .trd-btn{
-        margin-top: 102px;
-        padding: 16px;
+        position: absolute;
+        background-color: transparent;
+        border-color: white;
+        width: 292px;
+        height: 59px;
+        top: 140%;
+        left: 0;
+      }
+      & .trd-btn:hover{
+        transform: scale(1.04);
+      }
+      & .p-trd-btn{
+        position: relative;
+        color: white;
+        font-size: 18px;
+        left: 10%;
+        top: 140%;
+      }
+      & .frt-btn-container{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
       }
       & .frt-btn{
-        margin-top: 102px;
+        position: absolute;
+        background-color: transparent;
+        border-color: white;
+        width: 160px;
+        height: 59px;
+        top: 140%;
+        left: 0;
+      }
+      & .frt-btn:hover{
+        transform: scale(1.04);
+      }
+      & .p-frt-btn{
+        position: relative;
+        color: white;
+        font-size: 18px;
+        left: 70%;
+        top: 140%;
       }
     }
   }
@@ -475,12 +555,12 @@ nav{
   display: flex;
   gap: 50px;
   justify-content: center;
-  
+  margin-bottom: 10%;
   
   & .eaplay-subs-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ff4747;
+    box-shadow: 0 0 7px 1px #ff4747;
     border-radius: 10px;
     align-items: center;
     width: 528px;
@@ -488,20 +568,27 @@ nav{
     & h6 {
       color: white;
       font-size: 18px;
+      margin: 0;
+      margin-top: 11%;
     }
     & .margin{
       width: 125px;
       height: 90px;
     }
-    & img {
+    & .ea-play-logo-img {
       height: 72px;
-      margin: auto;  
     }
     & .sub-card-content{
       display: flex;
       flex-direction: column;
       position: relative;
-      top: -50px;
+      top: 3%;
+    }
+    & .sub-card-content2{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: -11%;
     }
     & .subs-card-price {
       display: flex;
@@ -520,8 +607,7 @@ nav{
     & .subs-card-price2{
       display: flex;
       flex-direction: column;
-      position: relative;
-      top: 27px;
+      margin-top: 5vw;
       & p {
         color: white;
         font-size: 18px;
@@ -555,14 +641,52 @@ nav{
         font-size: 18px;
       }
     }
-    & button {
+
+    & .joinEa-container{
+      display: flex;
       position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+    & .joinEa-btn{
+      position: absolute;
       width: 399px;
       height: 59px;
       border: none;
-      color: white;
-      font-size: 18px;
+      border-radius: 5px;
       background-color: #fe4647;
+      top: 34%;
+    }
+    & .joinEa-btn:hover{
+      transform: scale(1.04);
+    }
+    & .p-joinEa{
+      position: relative;
+      font-size: 18px;
+      color: white;
+      top: 34%;
+    }
+    & .joinEaPro-container{
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+    & .joinEaPro-btn {
+      position: absolute;
+      width: 399px;
+      height: 59px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fe4647;
+    }
+    & .joinEaPro-btn:hover{
+      transform: scale(1.04);
+    }
+    & .p-joinEaPro{
+      position: relative;
+      font-size: 18px;
+      color: white;
     }
   }
 }
@@ -570,22 +694,40 @@ nav{
 #ea-playpro-logo {
   width: 320px;
   height: 74px;
+  margin-top: 2%;
 }
 
 #subs-card-check-item-middle1,
 #subs-card-check-item-middle2 {
+  position: relative;
+  left: -9%;
+}
+
+#subs-card-check-item-last1{
+  position: relative;
+  left: 1%;
   border-top: 1px dashed white;
+}
+#subs-card-check-item-last2{
+  position: relative;
+  left: -2%;
+  border-top: 1px dashed white;
+}
+
+#subs-card-check-item-first1{
   border-bottom: 1px dashed white;
 }
 
 .subscription-form {
   display: flex;
   justify-content: center;
+  margin-bottom: 5%;
 
   & .subscription-form-left {
     display: flex;
     flex-direction: column;
     width: 30vw;
+    align-items: flex-start;
     & h2 {
       color: white;
       font-size: 32px;
@@ -599,55 +741,236 @@ nav{
     display: flex;
     flex-direction: column;
     width: 30vw;
-    & input {
+    position: relative;
+    top: 1.5vw;
+    & .email-container{
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    & .email-btn {
       height: 60px;
       width: 540px;
       background-color: transparent;
       border: 2px solid white;
       border-radius: 2px;
     }
-    & .form-data {
-      display: flex;
-      & input {
-        width: 258px;
+    & .email-btn:hover{
+      transform: scale(1.04);
+    }
+    & .p-form-email{
+      color: #4C4D54;
+      position: relative;
+      top: -13%;
+      left: 8%;
+      font-size: 18px;
+      width: 100%;
       }
+    & .form-date {
+      display: flex;
+      & .date-btn {
+        height: 60px;
+        width: 258px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 2px;
+        left: 2.5%;
+        position: relative;
+      }
+      & .date-btn:hover{
+        transform: scale(1.04);
+      }
+      & .date-info{
+        color: #4C4D54;
+        position: relative;
+        top: -90%;
+        left: -43%;
+        font-size: 18px;
+      }
+    }
     }
     & .privacy-agreement {
       display: flex;
+      align-items: baseline;
+      justify-content: flex-start;
+      position: relative;
+      left: -9%;
+      margin-top: 10%;
       & input {
-        height: 18px;
+        position: relative;
+        top: -57%;
+        left: 11%;
+        height: 20px;
+        width: 20px;
+        border-color: white;
+        border-radius: 2px;
+
       }
+      & input :checked{
+        background-color: transparent;
+      }
+
       & p {
+        position: relative;
+        top: -64%;
+        left: 17%;
         color: white;
+        text-align: start;
         & a {
           color: #ff4747;
           text-decoration: none;
         }
       }
-    }
-    & button {
-      background-color: #fe4647;
-    }
   }
 }
+ .signUp-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+ .signUp-btn{
+  position: absolute;
+  width: 136px;
+  height: 56px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fe4647;
+  top: -80%;
+  left: 3%;
+}
+ .signUp-btn:hover{
+  transform: scale(1.04);
+}
+ #p-signUp{
+  position: relative;
+  font-size: 18px;
+  color: white;
+  top: -80%;
+  left: -35%;
+}
 
-.faqs {
+.countries {
+  & .countries-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  & .countries-button {
+    position: absolute;
+    width: 263px;
+    height: 64px;
+    font-size: 18px;
+    color: #4C4D54;
+    background-color: transparent;
+    border: 2px solid white;
+    top: -109%;
+    left: 52%;
+  }
+
+  & .countries-button:hover {
+    transform: scale(1.04);
+  }
+
+  & #p-countries{
+    position: relative;
+    color: #8D8D95;
+    font-size: 18px;
+    top: -3vw;
+    left: 12%;
+  }
+
+  & #chevron-countries{
+    top: -3vw;
+    left: 12vw;
+    position: relative;
+    color: white;
+  }
+  & .countries-hidden {
+    display: none;
+  }
+
+  & .countries-visible {
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    border-radius: 5px;
+    position: absolute;
+    width: 306px;
+    height: 270px;
+    overflow: scroll;
+    top: 37%;
+    left: 50%;
+    z-index: 1;
+    gap: 16px;
+  }
+
+  & .country-link{
+    text-decoration: none;
+    color: #F3F3F3;
+    border-bottom: 2px solid #585858;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    margin-top: 5%;
+  }
+
+  & .country-link:hover{
+    text-indent: 10px;
+  }
+}
+#faqs {
   display: flex;
   flex-direction: column;
   align-items: center;
-  & .faqs-title {
+  & #faqs-title {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 2%;
     & h2 {
       color: white;
       font-size: 32px;
+      left: -32%;
+      top: 1vw;
+      position: relative;
     }
+
+    & #seeAnswers-container{
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+    & #seeAnswers-btn {
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      border: 2px solid white;
+      width: 247px;
+      height: 59px;
+      top: 2vw;
+      left: 100%;
+      border-radius: 5px;
+    }
+    & #seeAnswers-btn:hover{
+      transform: scale(1.04);
+    }
+    & #p-seeAnswers {
+      position: relative;
+      color:  white;
+      left: 112%;
+      top: 1vw;
+      font-size: 18px;
+    }
+    
   }
-  & .faqs-text {
+  & #faqs-text {
     display: flex;
     gap: 30px;
     justify-content: center;
-
+    margin-bottom: 4%;
     & div {
       width: 352px;
       & h3 {
@@ -662,216 +985,15 @@ nav{
       }
     }
   }
-  .eaplay-conditions {
+  #eaplay-conditions {
     color: white;
     font-size: 18px;
     text-align: center;
     width: 36vw;
+    margin-bottom: 2%;
     & a {
       color: #fe4647;
       text-decoration: none;
     }
   }
-}
-
-.footer-greyspace {
-  padding: 50px 400px 0;
-  background-color: #eaeaea;
-  height: 258px;
-  & .footer-condition {
-    & p {
-      margin: 0;
-      padding-bottom: 16px;
-      border-bottom: 1px solid black;
-      font-size: 14px;
-    }
-    & a {
-      color: #ff4747;
-      text-decoration: none;
-    }
-  }
-  & .footer-top {
-    display: flex;
-    padding: 40px 0 40px 0;
-    justify-content: space-between;
-    & .footer-top-left-links {
-      & a {
-        padding-right: 40px;
-        text-decoration: none;
-      }
-      & a:hover {
-        color: #ff4747;
-      }
-    }
-    & .footer-top-right-links {
-      & h3 {
-        font-size: 14px;
-        text-align: right;
-        font-stretch: expanded;
-      }
-      & .footer-media-links {
-        font-size: 22px;
-        text-align: right;
-        display: flex;
-        & a {
-          color: black;
-          transition: font-size 0.3s;
-          margin-inline-end: 32px;
-          transition: font-size 0.3s, margin-inline-end 0.3s;
-        }
-        & a:hover {
-          font-size: 25px;
-          margin-inline-end: 29px;
-        }
-        & .footer-twitch-icon {
-          margin-inline-end: 0;
-        }
-        & .footer-twitch-icon:hover {
-          margin-inline-end: 0;
-        }
-      }
-    }
-  }
-}
-
-.footer-bottom {
-  display: flex;
-  flex-direction: column;
-  background-color: #f3f3f3;
-  padding: 30px 400px;
-  gap: 25px;
-  & .footer-bottom-nav {
-    display: flex;
-    gap: 25px;
-    justify-content: space-between;
-    & img {
-      height: 64px;
-    }
-    & .footer-bottom-nav-links {
-      display: flex;
-      flex-direction: column;
-      width: 550px;
-      gap: 25px;
-      & div {
-        display: flex;
-        gap: 45px;
-      }
-      & a {
-        text-decoration: none;
-        font-size: 18px;
-      }
-    }
-    & .footer-bottom-nav-btns {
-      display: flex;
-      gap: 40px;
-      & button {
-        display: inline-flex;
-        align-items: center;
-        background-color: transparent;
-        border: 2px solid #c2c2c2;
-        border-radius: 2px;
-        font-family: "Electronic Arts Text";
-        font-size: 15px;
-        padding: 15px;
-        width: 190px;
-        height: 61px;
-        text-align: left;
-        justify-content: space-between;
-      }
-    }
-  }
-}
-
-.footer-bottom-info {
-  display: flex;
-  justify-content: space-between;
-  & .footer-bottom-copyright {
-    margin-left: 107px;
-    & .footer-bottom-privacy {
-      width: 630px;
-      display: flex;
-      gap: 5px 30px;
-      flex-wrap: wrap;
-      & a {
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-.region-hidden {
-  display: none;
-}
-.region-visible {
-  display: flex;
-  position: absolute;
-  /* bottom: 50px; */
-  border: 3px solid lightgray;
-  width: 645px;
-  height: 452px;
-  background-color: #f3f3f3;
-  padding: 10px;
-  & div {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    & a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      height: 47px;
-      width: 130px;
-      border-top: 2px solid #eaeaea;
-    }
-  }
-  & .footer-fourth-column a {
-    width: 105px;
-  }
-}
-
-.language-hidden {
-  display: none;
-}
-
-.language-visible {
-  display: flex;
-  position: absolute;
-  /* bottom: 270px; */
-  border: 3px solid lightgray;
-  width: 540px;
-  height: 453px;
-  background-color: #f3f3f3;
-  & div {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    & a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      height: 47px;
-      width: 150px;
-      border-top: 2px solid #eaeaea;
-      & i {
-        padding: 5px;
-      }
-    }
-  }
-  & .footer-third-language {
-    height: 423px;
-    & a {
-      width: 120px;
-    }
-  }
-}
-#language i {
-  padding: 5px;
-}
-#footer-no-border {
-  border: none;
-}
-
-.region-visible div a:hover,
-.language-visible div a:hover {
-  text-indent: 10px;
 }

@@ -274,7 +274,10 @@
             transferirá al juego completo.
           </p>
           <p>La duración y disponibilidad de la prueba dependen del título</p>
-          <button>Descubre las pruebas de juego</button>
+          <div class="fst-btn-container">
+            <button class="fst-btn"></button>
+            <p class="p-fst-btn">Descubre las pruebas de juego</p>
+          </div>
         </div>
         <div class="eaplay-def-card">
           <h3>Recompensas para miembros</h3>
@@ -283,7 +286,10 @@
             que te permitirán mejorar la experiencia de juego y destacar entre
             la multitud
           </p>
-          <button class="scnd-btn">Explorar recompensas</button>
+          <div class="scnd-btn-container">
+            <button class="scnd-btn"></button>
+            <p class="p-scnd-btn">Explorar recompensas</p>
+          </div>
         </div>
         <div class="eaplay-def-card">
           <h3>The Play List</h3>
@@ -291,7 +297,10 @@
             Siempre tendrás algo más a lo que jugar con acceso ilimitado a una
             colección de las series y títulos favoritos de nuestros fans.
           </p>
-          <button class="trd-btn">Echa un vistazo a The Play List</button>
+          <div class="trd-btn-container">
+            <button class="trd-btn"></button>
+            <p class="p-trd-btn">Echa un vistazo a The Play List</p>
+          </div>
         </div>
         <div class="eaplay-def-card">
           <h3>10% de descuento</h3>
@@ -300,7 +309,10 @@
             incluidas descargas de juegos, pases de temporada, paquetes de
             puntos y DLC.
           </p>
-          <button class="frt-btn">Detalles</button>
+          <div class="frt-btn-container">
+            <button class="frt-btn"></button>
+            <p class="p-frt-btn">Detalles</p>
+          </div>
         </div>
       </div>
     </div>
@@ -311,6 +323,7 @@
         <img
           src="assets/svg/ea-play-logo-coral-hero-logo-small.svg"
           alt="ea-play-logo"
+          class="ea-play-logo-img"
         />
         <div class="sub-card-content">
           <div class="subs-card-price">
@@ -319,7 +332,7 @@
             <p><span>39,99 €</span>/año</p>
           </div>
           <div class="subs-card-check-list">
-            <div class="subs-card-check-item">
+            <div class="subs-card-check-item" id="subs-card-check-item-first1">
               <i class="fa-solid fa-square-check"></i>
               <p>
                 Juega a una selección de títulos nuevos días <br> 
@@ -332,14 +345,17 @@
               <p>Desbloquea recompensas solo para <br> 
                 miembros en el juego.</p>
             </div>
-            <div class="subs-card-check-item">
+            <div class="subs-card-check-item" id="subs-card-check-item-last1">
               <i class="fa-solid fa-square-check"></i>
               <p>
                 Consigue acceso ilimitado a una colección de <br>
                 nuestros juegos más populares.
               </p>
             </div>
-            <button>Unirse a EA Play</button>
+            <div class="joinEa-container">
+              <button class="joinEa-btn"></button>
+              <p class="p-joinEa">Unirse a EA Play</p>
+            </div>
         </div>
         </div>
       </div>
@@ -350,14 +366,14 @@
           alt="ea-playpro-logo"
           id="ea-playpro-logo"
         />
-        <div class="sub-card-content">
+        <div class="sub-card-content2">
           <div class="subs-card-price2">
             <p><span>16,99 €</span>/ mes</p>
             <p>O paga un año completo y ahorra un 41%</p>
             <p><span>119,99 €</span>/ año</p>
           </div>
           <div class="subs-card-check-list">
-            <div class="subs-card-check-item">
+            <div class="subs-card-check-item" id="subs-card-check-item-first1">
               <i class="fa-solid fa-square-check"></i>
               <p>
                 Juega a las ediciones prémium de una <br> 
@@ -370,7 +386,7 @@
               <p>Desbloquea recompensas solo para <br>
                 miembros en el juego.</p>
             </div>
-            <div class="subs-card-check-item">
+            <div class="subs-card-check-item" id="subs-card-check-item-last2">
               <i class="fa-solid fa-square-check"></i>
               <p>
                 Consigue acceso ilimitado a una biblioteca <br> 
@@ -378,7 +394,10 @@
                 Electronic Arts y las sagas más populares.
               </p>
             </div>
-            <button>Unirse a EA Play Pro</button>
+            <div class="joinEaPro-container">
+              <button class="joinEaPro-btn"></button>
+              <p class="p-joinEaPro">Unirse a EA Play Pro</p>
+            </div>
         </div>
         </div>
       </div>
@@ -386,41 +405,106 @@
     <!-- formulario de suscripción -->
     <div class="subscription-form">
       <div class="subscription-form-left">
-        <h2>No te pierdas las novedades de EA Play</h2>
+        <h2>No te pierdas las novedades de EA <br>
+          Play</h2>
         <p>
           Recibe las últimas noticias y ofertas de Ea Play, además de
           actualizaciones y promociones de Electronic Arts.
         </p>
       </div>
       <div class="subscription-form-right">
-        <input type="email" />
-        <div class="form-data">
-          <input type="date" />
-          <!-- aqui va un selector de pais, button o select? -->
+        <div class="email-container">
+          <input type="email"  class="email-btn"/>
+        </div>
+        <p class="p-form-email">Correo electrónico</p>
+        <div class="form-date">
+          <input type="date" class="date-btn"/>
+          <!-- <p class= "date-info">Fecha de nacimiento</p> -->
+        </div>
+        <div class="countries">
+          <div class="countries-container">
+            <button class="countries-button" id="countries-btn">
+            </button>
+            <p id="p-countries">País</p>
+            <i class="fa-solid fa-chevron-down" id="chevron-countries"></i>
+          </div>
+            <div class="countries-hidden" id="countries-menu">
+                <a href="#" class="country-link">Estados Unidos</a>
+                <a href="#" class="country-link">Alemania</a>
+                <a href="#" class="country-link">Arabia Saudí</a>
+                <a href="#" class="country-link">Argentina</a>
+                <a href="#" class="country-link">Australia</a>
+                <a href="#" class="country-link">Brasil</a>
+                <a href="#" class="country-link">Bélgica</a>
+                <a href="#" class="country-link">Canadá</a>
+                <a href="#" class="country-link">Chile</a>
+                <a href="#" class="country-link">China</a>
+                <a href="#" class="country-link">Colombia</a>
+                <a href="#" class="country-link">Corea</a>
+                <a href="#" class="country-link">Dinamarca</a>
+                <a href="#" class="country-link">Emiratos Árabes Unidos</a>
+                <a href="#" class="country-link">Eslovaquia</a>
+                <a href="#" class="country-link">España</a>
+                <a href="#" class="country-link">Finlandia</a>
+                <a href="#" class="country-link">Francia</a>
+                <a href="#" class="country-link">Grecia</a>
+                <a href="#" class="country-link">Hong Kong</a>
+                <a href="#" class="country-link">Hungría</a>
+                <a href="#" class="country-link">India</a>
+                <a href="#" class="country-link">Irlanda</a>
+                <a href="#" class="country-link">Israel</a>
+                <a href="#" class="country-link">Italia</a>
+                <a href="#" class="country-link">Japón</a>
+                <a href="#" class="country-link">México</a>
+                <a href="#" class="country-link">Noruega</a>
+                <a href="#" class="country-link">Nueva Zelanda</a>
+                <a href="#" class="country-link">Países Bajos</a>
+                <a href="#" class="country-link">Polonia</a>
+                <a href="#" class="country-link">Portugal</a>
+                <a href="#" class="country-link">Reino Unido</a>
+                <a href="#" class="country-link">República Checa</a>
+                <a href="#" class="country-link">Rumanía</a>
+                <a href="#" class="country-link">Rusia</a>
+                <a href="#" class="country-link">Singapur</a>
+                <a href="#" class="country-link">Sudáfrica</a>
+                <a href="#" class="country-link">Suecia</a>
+                <a href="#" class="country-link">Suiza</a>
+                <a href="#" class="country-link">Tailandia</a>
+                <a href="#" class="country-link">Taiwán</a>
+                <a href="#" class="country-link">Turquía</a>
+                <a href="#" class="country-link">Ucrania</a>
+                <a href="#" class="country-link">Argentina</a>
+            </div>
         </div>
         <div class="privacy-agreement">
-          <input type="checkbox" />
+          <input type="checkbox"/>
           <p>
-            Puedo retirar mi consentimiento en cualquier momento. Para ello,
-            debo cambiar mis
+            Puedo retirar mi consentimiento en cualquier momento. Para ello, <br>
+            debo cambiar mis 
             <a href="https://myaccount.ea.com/cp-ui/aboutme/index"
               >preferencias de correo electrónico</a
-            >, ponerme en contacto con
+            >, ponerme en <br> contacto con
             <a href="https://privacyadmin.ea.com/">privacyadmin.ea.com</a> o
-            enviar una carta a Electronic Arts Inc., ATTN: Email Opt-Out, 209
-            Redwood Shores Pkwy, Redwood City, CA, 94065 (EE. UU.).
+            enviar una carta a Electronic <br> Arts Inc., ATTN: Email Opt-Out, 209
+            Redwood Shores Pkwy, Redwood <br> City, CA, 94065 (EE. UU.).
           </p>
         </div>
-        <button>Regístrate</button>
+        <div class="signUp-container">
+          <button class="signUp-btn"></button>
+          <p id="p-signUp">Regístrate</p>
+        </div>
       </div>
     </div>
     <!-- FAQs -->
-    <div class="faqs">
-      <div class="faqs-title">
+    <div id="faqs">
+      <div id="faqs-title">
         <h2>Preguntas frecuentes de EA Play</h2>
-        <button>Ver todas las respuestas</button>
+        <div id="seeAnswers-container">
+          <button id="seeAnswers-btn"></button>
+          <p id="p-seeAnswers">Ver todas las respuestas</p>
+        </div>
       </div>
-      <div class="faqs-text">
+      <div id="faqs-text">
         <div>
           <h3>¿Cuánto cuesta EA Play?</h3>
           <p>
@@ -444,7 +528,7 @@
           </p>
         </div>
       </div>
-      <div class="eaplay-conditions">
+      <div id="eaplay-conditions">
         * SUJETO A CONDICIONES, LIMITACIONES Y EXCLUSIONES. CONSULTA LOS
         <a href="https://www.ea.com/es-es/legal/ea-play-terms"
           >TÉRMINOS DE EA PLAY</a
@@ -453,168 +537,6 @@
       </div>
     </div>
 
-    <footer>
-      <div class="footer-greyspace">
-        <div class="footer-top">
-          <div class="footer-top-left-links">
-            <h3>EA Play</h3>
-            <a href="https://www.ea.com/es-es/ea-play/member-benefits"
-              >Ventajas de los miembros</a
-            >
-            <a href="https://www.ea.com/es-es/ea-play/games">Juegos</a>
-            <a href="https://www.ea.com/es-es/ea-play/news">Novedades</a>
-            <a href="https://www.ea.com/es-es/ea-play/newsletter">Boletín</a>
-            <a href="https://www.ea.com/es-es/ea-play/faq"
-              >Preguntas frecuentes</a
-            >
-            <a href="https://www.ea.com/es-es/ea-play?modal-id=ea-play-drawer"
-              >Unirse</a
-            >
-          </div>
-          <div class="footer-top-right-links">
-            <div class="footer-media-links">
-              <a href="https://www.facebook.com/ea.es/"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a href="https://twitter.com/EA_Espana"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
-              <a href="https://www.instagram.com/ea"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom-nav">
-          <img src="assets/footer/october-ea-ring.png" alt="ea icon" />
-          <div class="footer-bottom-nav-links">
-            <div>
-              <a href="https://www.ea.com/es-es/games/library"
-                >Biblioteca de juegos</a
-              >
-              <a href="https://www.ea.com/es-es/ea-play">Suscribirse</a>
-              <a href="https://www.ea.com/es-es/ea-app">EA app</a>
-            </div>
-            <div>
-              <a href="https://www.ea.com/es-es/about">Acerca de</a>
-              <a href="https://www.ea.com/es-es/accessibility">Accesibilidad</a>
-              <a href="https://help.ea.com/es/help-home/">Ayuda</a>
-            </div>
-          </div>
-          <div class="footer-bottom-nav-btns">
-            <button id="region">
-              Precios regionales Spain
-              <i class="fa-solid fa-chevron-down" id="chevron-region"></i>
-            </button>
-            <div class="region-hidden" id="region-menu">
-              <div>
-                <a href="#" id="footer-no-border">Austria</a>
-                <a href="#">Belgium</a>
-                <a href="#">Bulgaria</a>
-                <a href="#">Croatia</a>
-                <a href="#">Cyprus</a>
-                <a href="#">Czech Republic</a>
-                <a href="#">Denmark</a>
-                <a href="#">Estonia</a>
-                <a href="#">Finland</a>
-              </div>
-              <div>
-                <a href="#" id="footer-no-border">France</a>
-                <a href="#">Germany</a>
-                <a href="#">Greece</a>
-                <a href="#">Hungary</a>
-                <a href="#">Iceland</a>
-                <a href="#">Ireland</a>
-                <a href="#">Italy</a>
-                <a href="#">Latvia</a>
-                <a href="#">Liechtenstein</a>
-              </div>
-              <div>
-                <a href="#" id="footer-no-border">Lithuania</a>
-                <a href="#">Luxembourg</a>
-                <a href="#">Malta</a>
-                <a href="#">Netherlands</a>
-                <a href="#">Norway</a>
-                <a href="#">Poland</a>
-                <a href="#">Portugal</a>
-                <a href="#">Romania</a>
-                <a href="#">Slovakia</a>
-              </div>
-              <div class="footer-fourth-column">
-                <a href="#" id="footer-no-border">Slovenia</a>
-                <a href="#">Spain</a>
-                <a href="#">Sweden</a>
-                <a href="#">Switzerland</a>
-              </div>
-            </div>
-            <button id="language">
-              <span><i class="fa-regular fa-flag"></i> Idioma</span>
-              <i class="fa-solid fa-chevron-down" id="chevron-language"></i>
-            </button>
-            <div class="language-hidden" id="language-menu">
-              <div>
-                <a href="#" id="footer-no-border"
-                  ><i class="fa-regular fa-flag"></i>United States</a
-                >
-                <a href="#"><i class="fa-regular fa-flag"></i>United Kingdom</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>Australia</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>France</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>Deustchland</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>Italia</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>日本</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>Polska</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>Brasil</a>
-              </div>
-              <div>
-                <a href="#" id="footer-no-border"
-                  ><i class="fa-regular fa-flag"></i>Россия</a
-                >
-                <a href="#"><i class="fa-regular fa-flag"></i>España</a>
-                <a href="#"
-                  ><i class="fa-regular fa-flag"></i>Česká republika</a
-                >
-                <a href="#"><i class="fa-regular fa-flag"></i>Canada (En)</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>Canada (Fr)</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>Danmark</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>Suomi</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>México</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>Nederland</a>
-              </div>
-              <div class="footer-third-language">
-                <a href="#" id="footer-no-border"
-                  ><i class="fa-regular fa-flag"></i>Norge</a
-                >
-                <a href="#"><i class="fa-regular fa-flag"></i>Sverige</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>中国</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>대한민국</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>繁體中文</a>
-                <a href="#"><i class="fa-regular fa-flag"></i>Türkiye</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom-info">
-          <div class="footer-bottom-copyright">
-            <div class="footer-bottom-privacy">
-              <a href="#">Información legal y privacidad</a>
-              <a href="#">Acuerdo de usuario</a>
-              <a href="#"
-                >Política de privacidad y directiva de cookies (tus derechos de
-                privacidad)</a
-              >
-              <a href="#">Actualizaciones del servicio online</a>
-              <a href="#">Seguridad</a>
-              <a href="#">Sus preferencias</a>
-            </div>
-
-            <p>© 2024 Electronic Arts Inc.</p>
-          </div>
-          <img src="assets/svg/truste.svg" alt="truste" />
-        </div>
-      </div>
-    </footer>
 
     <script src="scripts.js"></script>
     <script
