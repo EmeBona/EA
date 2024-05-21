@@ -16,7 +16,632 @@
 :root {
   font-family: "Electronic Arts Text";
 }
-/* body middle */
+body{
+    margin: 0;
+}
+/* NAVBAR */
+
+nav {
+    & .navbar-menu {
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+      background-color: #232529;
+      color: white;
+      height: 2vw;
+      margin: 0;
+      padding: 0 32px 0 0;
+      position: relative;
+      z-index: 1;
+    }
+  
+    &.navbar-login-button {
+      height: 2vw;
+      width: 2vw;
+    }
+  
+    & .navbar-login-btn {
+      background-color: transparent;
+      border: none;
+      width: 30px;
+      height: 30px;
+      margin-top: 5px;
+    }
+  
+    & .navbar-help-btn {
+      height: 2vw;
+      width: 2vw;
+      margin-inline-start: 30px;
+    }
+  
+    & .navbar-help-btn {
+      background-color: transparent;
+      border: none;
+      width: 27px;
+      height: 27px;
+      margin-top: 5px;
+    }
+  
+    & .navbar-ea-button {
+      height: 2vw;
+      width: 2vw;
+      margin-inline-start: 30px;
+    }
+  
+    & .navbar-ea-btn {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+/* HEADER MENU */
+  
+  .header-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 3vw;
+    height: 3vw;
+  }
+  
+  .hamburguer-menu {
+    margin-inline-start: 10px;
+    margin-inline-end: 20px;
+  
+    & .hamburguer-icon {
+      display: flex;
+      background: transparent;
+      border: none;
+    }
+  
+    & .hamburguer-icon:hover {
+      color: #ff4747;
+    }
+  
+    & .close-icon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    & .hb-allgames {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    & .hamburguer-dpd-hidden {
+      display: none;
+    }
+  
+    & .hamburguer-visible {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      position: absolute;
+      top: 96px;
+      left: 0px;
+      z-index: 1;
+      padding-top: 1vw;
+      padding-left: 1vw;
+      padding-right: 2vw;
+      padding-bottom: 2vw;
+    }
+  
+    & .hb-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-top: 1vw;
+      gap: 2vw;
+    }
+  
+    & .hamburguer-games {
+      text-decoration: none;
+      color: gray;
+    }
+  
+    & .header-title {
+      margin-inline-end: 50px;
+    }
+  
+    & .hb-ea-animation {
+      position: relative;
+      width: 344px;
+      height: 344px;
+    }
+  
+    & .hb-eaplay-bg {
+      position: absolute;
+      width: 344px;
+      height: 344px;
+    }
+  
+    & .hb-ea-logo {
+      position: absolute;
+      width: 80px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1) translateZ(0);
+      transition: transform 0.3s ease;
+    }
+  
+    & .hb-ea-logo:hover {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+  
+    & .hb-fifa-animation {
+      position: relative;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-fifa-bg {
+      position: absolute;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-fifa-logo {
+      position: absolute;
+      width: 60px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1) translateZ(0);
+      transition: transform 0.3s ease;
+    }
+  
+    & .hb-fifa-logo:hover {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+  
+    & .hb-f1-animation {
+      position: relative;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-f1-bg {
+      position: absolute;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-f1-logo {
+      position: absolute;
+      width: 60px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1) translateZ(0);
+      transition: transform 0.3s ease;
+    }
+  
+    & .hb-f1-logo:hover {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+  
+    & .hb-madden-animation {
+      position: relative;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-madden-bg {
+      position: absolute;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-madden-logo {
+      position: absolute;
+      width: 60px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1) translateZ(0);
+      transition: transform 0.3s ease;
+    }
+  
+    & .hb-madden-logo:hover {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+  
+    & .hb-appex-animation {
+      position: relative;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-appex-bg {
+      position: absolute;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-appex-logo {
+      position: absolute;
+      width: 60px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1) translateZ(0);
+      transition: transform 0.3s ease;
+    }
+  
+    & .hb-appex-logo:hover {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+  
+    & .hb-battle-animation {
+      position: relative;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-battle-bg {
+      position: absolute;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-battle-logo {
+      position: absolute;
+      width: 60px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1) translateZ(0);
+      transition: transform 0.3s ease;
+    }
+  
+    & .hb-battle-logo:hover {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+  
+    & .hb-sims-animation {
+      position: relative;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-sims-bg {
+      position: absolute;
+      width: 151.5px;
+      height: 151.5px;
+    }
+  
+    & .hb-sims-logo {
+      position: absolute;
+      width: 60px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1) translateZ(0);
+      transition: transform 0.3s ease;
+    }
+  
+    & .hb-sims-logo:hover {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+  }
+  
+  .header-title {
+    margin-inline-end: 50px;
+  }
+  
+  .header-link {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  .header-link:hover {
+    color: #ff4747;
+  }
+  .header-list-divider {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(179, 173, 173);
+    margin-bottom: 0;
+  }
+  
+  .header-games {
+    & .header-games-button {
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      color: rgba(51, 51, 51);
+    }
+  
+    & .header-games-button:hover {
+      color: #ff4747;
+    }
+  
+    & .header-games-hidden {
+      display: none;
+    }
+  
+    & .games-visible {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background-color: white;
+      opacity: 0.9;
+      border-radius: 5px;
+      position: absolute;
+      top: 105px;
+      left: 295px;
+      gap: 2vw;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      z-index: 1;
+    }
+  
+    & .header-explore-games {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    & .header-platforms {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  
+  .header-experiences {
+    margin-inline-start: 25px;
+  
+    & .header-experiencies-button {
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      color: rgb(51, 51, 51);
+    }
+  
+    & .header-experiencies-button:hover {
+      color: #ff4747;
+    }
+  
+    & .header-experiencies-hidden {
+      display: none;
+    }
+  
+    & .experiences-visible {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      opacity: 0.9;
+      border-radius: 5px;
+      position: absolute;
+      top: 105px;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      z-index: 1;
+      gap: 16px;
+    }
+  }
+  
+  .header-about {
+    margin-inline-start: 25px;
+  
+    & .header-about-button {
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      color: rgb(51, 51, 51);
+    }
+  
+    & .header-about-button:hover {
+      color: #ff4747;
+    }
+  
+    & .header-about-hidden {
+      display: none;
+    }
+  
+    & .about-visible {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      opacity: 0.9;
+      border-radius: 5px;
+      position: absolute;
+      top: 105px;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      z-index: 1;
+      gap: 16px;
+    }
+  }
+  .header-commitments {
+    margin-inline-start: 25px;
+  
+    & .header-commitments-button {
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      color: rgb(51, 51, 51);
+    }
+  
+    & .header-commitments-button:hover {
+      color: #ff4747;
+    }
+  
+    & .header-commitments-hidden {
+      display: none;
+    }
+  
+    & .commitments-visible {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      opacity: 0.9;
+      border-radius: 5px;
+      position: absolute;
+      top: 105px;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      z-index: 1;
+      gap: 16px;
+    }
+  }
+  .header-resources {
+    margin-inline-start: 25px;
+  
+    & .header-resources-button {
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      color: rgb(51, 51, 51);
+    }
+  
+    & .header-resources-button:hover {
+      color: #ff4747;
+    }
+  
+    & .header-resources-hidden {
+      display: none;
+    }
+  
+    & .resources-visible {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      opacity: 0.9;
+      border-radius: 5px;
+      position: absolute;
+      top: 105px;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      z-index: 1;
+      gap: 16px;
+    }
+  }
+
+/* BANNER */
+
+.banner-bg-container{
+    height: 364px;
+    display: flex;
+    align-items: center;
+}
+.banner-image{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: inherit;
+}
+.p-banner{
+    position: relative;
+    font-size: 50px;
+    color: white;
+    padding-left: 22%;
+}
+
+/* BODY TOP */
+
+.experiences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .experiences-title{
+        padding-right: 15%;
+    }
+    & h3{
+        position: relative;
+        color: black;
+        font-size: 48px;
+    }
+    & h4{
+        position: relative;
+        color: black;  
+        font-size: 24px;
+        font-weight: lighter;
+    }
+    & .experiences-icons{
+        display: flex;
+        padding-top: 3%;
+        margin-bottom: 8%;
+        & .exp-icon{
+            width: 260px;
+            height: 51px;
+        }
+        & .p-icons{
+            font-size: 22px;
+            text-align: center;
+        }
+    }
+    & .learn-tools{
+        padding-right: 15%;
+        & h3{
+            font-size: 48px;
+            margin-bottom: 0;
+        }
+        & p{
+            font-size: 18px;
+            color: rgb(22, 22, 22);
+        }
+        & h4{
+            font-size: 24px;
+            font-weight: 600;
+        }
+        & ul{
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+            padding-left: 1vw;
+            list-style: none;
+            padding: 0;
+        }
+        & li:before{
+            content: "\2022";
+            color: rgb(153, 7, 3);
+            padding-right: 1vw;
+        }
+        & a{
+            color: rgb(153, 7, 3);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
+
+.choose-platforms{
+  & .platforms-fst-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  & .platforms-snd-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding-inline-end: 7vw;
+    padding-inline-start: 7vw
+  }
+
+  & h4{
+    font-size: 24px;
+    font-weight: 600;
+    left: -1.8%;
+  }
+  & .platforms-img{
+    width: 352px;
+    height: 198px;
+  }
+  & .p-platforms{
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+
+/* BODY BOTTOM */
 
 .controles-juego {
     display: flex;
