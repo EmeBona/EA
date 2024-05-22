@@ -561,7 +561,7 @@ nav {
     border-radius: 5px;
   }
   & .banner-moreinfo:hover{
-    transform: scale(1.1);
+    transform: scale(1.04);
   }
   & .p-info {
     position: relative;
@@ -588,7 +588,7 @@ nav {
   }
 
   & .banner-buynow:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
   }
 
   .p-buy {
