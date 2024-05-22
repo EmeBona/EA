@@ -946,10 +946,10 @@ footer {
 
 .footer-ea-play-promo-bg {
   background-image: url(/assets/footer/grid-with-background.png);
-  height: 471px;
   width: 100%;
   display: flex;
   align-items: center;
+  height: 84vh;
   & .footer-ea-play-promo {
     margin-left: 250px;
     border-top: 50px;
@@ -963,8 +963,16 @@ footer {
     }
   }
 }
+.join-now-container{
+  display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        margin-top: 10%;
+}
 .join-now-border {
-  position: relative;
+  position: absolute;
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -979,15 +987,10 @@ footer {
 }
 #p-join-now {
   position: absolute;
-  top: 312px;
-  left: 459px;
 }
 .join-now-border:hover {
   width: 196px;
   height: 62px;
-}
-#p-join-now:hover {
-  transform: scale(1);
 }
 .footer-herramientas-banner {
   background-color: #6fb0d6;
@@ -1002,10 +1005,17 @@ footer {
     line-height: 35px;
   }
 }
+
+.footer-moreinfo-container{
+  display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+}
 .footer-moreinfo-border {
   position: relative;
   background-color: transparent;
-  margin-right: 400px;
   border-radius: 3px;
   font-size: 18px;
   border: 2px solid black;
