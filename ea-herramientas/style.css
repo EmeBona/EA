@@ -148,8 +148,7 @@
     & h3 {
         font-size: 48px;
         line-height: 55px;
-        margin-bottom: 5%;
-        margin-right: 27%;
+        margin: 0 27% 5% 0;
     }
     & .clasificacion-videojuegos-grid{
         display: grid;
@@ -178,6 +177,16 @@
             & a:hover{
                 color: #990703;
             }
+            
         }
     }
 }
+
+/* .div-underline{
+    width: 127px;
+    border-bottom:2px solid #990703;
+}
+.div-underline:hover{
+    width: 135px;
+    border-bottom:2px solid #990703;
+} */
