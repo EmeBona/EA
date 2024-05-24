@@ -646,28 +646,41 @@ nav {
 .controles-juego {
     display: flex;
     flex-direction: column;
-    margin: 20%;
+    margin: 10% 20%;
+    padding-left: 1%;
     & .controles-juego-top{
         display: flex;
         flex-direction: column;
+        margin-right: 15%;
         & h3{
             font-size: 48px;
+            font-weight: bolder;
+            margin-bottom: 0;
         }
         & p {
-            font-size: 18px;;
+            font-size: 18px;
+            margin-right: 10%;
+            margin-bottom: 8%;
         }
     }
     & .controles-juego-bottom{
         display: flex;
+        gap: 3%;
         & img{
             width: 536px;
             height: 301px;
         }
         & div{
+            display: flex;
+            flex-direction: column;
+            gap: 3%;
             & a{
                 display: flex;
                 flex-wrap: wrap;
                 font-size: 24px;
+                text-decoration: none;
+                color: black;
+                font-weight: bolder;
                 & img{
                     width: 40px;
                     height: 40px;
@@ -680,19 +693,28 @@ nav {
 .sist-clasificacion-videojuegos{
     display: flex;
     flex-direction: column;
-    margin: 20%;
+    margin: 10% 20%;
+    padding-left: 1%;
     & .sist-clasificacion-videojuegos-top{
         display: flex;
         flex-direction: column;
+        margin-right: 27%;
+        margin-bottom: 8%;
         & h3{
             font-size: 48px;
+            line-height: 55px;
+            margin-bottom: 2%;
         }
-        & p {
+        & .pegi-top-txt {
             font-size: 18px;
+            margin-top: 2%;
+            margin-bottom: 0;
+            line-height: 27px;
         }
     }
     & .sist-clasificacion-videojuegos-bottom{
         display: flex;
+        gap: 3%;
         & img{
             width: 535px;
             height: 301px;
@@ -700,40 +722,96 @@ nav {
         & .pegi-right-content{
             display: flex;
             flex-direction: column;
+            
             & h4{
                 font-size: 24px;
+                margin-bottom: 0;
+                margin-top: 0;
             }
-            & p{
+            & .pegi-right-txt{
                 font-size: 18px;
+                line-height: 27px;
+                margin-right: 2%;
+            }
+            & div{
+                height: 20%;
+                width: 50%;
+                display: flex;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1%;
+                & button{
+                    position: absolute;
+                    background-color: #990703;
+                    color: white;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 3px;
+                    
+                }
+                & button:hover{
+                    transform: scale(1.04);
+                }
+                & #button-txt{
+                    color: white;
+                    position: relative;
+                    font-size: 18px;
+                }
             }
         }
     }
 }
 
+
 .clasificacion-videojuegos{
     display: flex;
     flex-direction: column;
-    margin: 20%;
+    margin: 10% 20%;
+    padding-left: 1%;
     & h3 {
         font-size: 48px;
+        line-height: 55px;
+        margin: 0 27% 5% 0;
     }
     & .clasificacion-videojuegos-grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         & .clasificacion-videojuegos-card{
+            width: 347px;
+            margin-bottom: 20%;
             & img{
                 width: 347px;
             }
             & h4{
                 font-size: 24px;
+                margin: 0 0 1%;
             }
             & p{
                 font-size: 18px;
+                line-height: 27px;
+                margin-top: 2%;
             }
             & a{
                 font-size: 18px;
                 text-decoration: none;
+                color: black;
+                border-bottom: 2px solid black;
             }
+            & a:hover{
+                color: #990703;
+            }
+            
         }
     }
 }
+
+/* .div-underline{
+    width: 127px;
+    border-bottom:2px solid #990703;
+}
+.div-underline:hover{
+    width: 135px;
+    border-bottom:2px solid #990703;
+} */
