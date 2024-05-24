@@ -921,11 +921,11 @@ footer {
   align-items: center;
   height: 84vh;
   & .footer-ea-play-promo {
-    margin-left: 250px;
+    margin-left: 20%;
     border-top: 50px;
     width: 550px;
     line-height: 27px;
-    padding: 150px;
+    /* padding: 150px; */
     & p {
       color: white;
       font-size: 18px;
