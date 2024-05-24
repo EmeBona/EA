@@ -2,6 +2,7 @@
 
 const gamesButton = document.getElementById("header-games-btn");
 const gamesMenu = document.getElementById("header-games-menu");
+const chevronGames = document.getElementById("chevron-games");
 
 function showGamesClass (){
     gamesMenu.classList.toggle("games-visible")
@@ -82,6 +83,28 @@ function seeLessCards() {
 
 slideRightBtn.addEventListener("click", seeMoreCards);
 slideLeftBtn.addEventListener("click", seeLessCards);
+
+//countries menu
+
+const countriesButton = document.getElementById("countries-btn");
+const countriesMenu = document.getElementById("countries-menu");
+const chevronCountries = document.getElementById("chevron-countries");
+
+function showCountriesClass (){
+    countriesMenu.classList.toggle("countries-visible")
+}
+
+function changeCountriesChevron(){
+    if(chevronCountries.className === "fa-solid fa-chevron-down"){
+        chevronCountries.classList.replace("fa-chevron-down", "fa-chevron-up")
+    } else if (chevronCountries.className === "fa-solid fa-chevron-up"){
+        chevronCountries.classList.replace("fa-chevron-up", "fa-chevron-down")
+    }
+    
+}
+
+countriesButton.addEventListener("click", showCountriesClass);
+countriesButton.addEventListener("click", changeCountriesChevron);
 
 //footer fnc
 function showRegionClass() {
