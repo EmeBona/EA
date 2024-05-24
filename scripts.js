@@ -98,6 +98,7 @@ function changeResourcesChevron(){
     
 }
 
+
 hamburguerButton.addEventListener("click", showHamburguerClass);
 
 gamesButton.addEventListener("click", showGamesClass);
@@ -114,6 +115,124 @@ commitmentsButton.addEventListener("click", changeCommitmentsChevron);
 
 resourcesButton.addEventListener("click", showResourcesClass);
 resourcesButton.addEventListener("click", changeResourcesChevron);
+// Cards
+const newsButton = document.getElementById("ea-news-button")
+const newsVisibilitySection = document.getElementById("news-section")
+
+const eaSportsButton = document.getElementById("ea-sports-button")
+const eaSportsVisibilitySection = document.getElementById("ea-sports-section")
+
+const starWarsButton = document.getElementById("star-wars-button")
+const starWarsVisibilitySection = document.getElementById("star-wars-section")
+
+const apexLegendsButton = document.getElementById("apex-legends-button")
+const apexVisibilitySection = document.getElementById("apex-section")
+
+const simsButton = document.getElementById("los-sims-button")
+const simsVisibilitySection = document.getElementById("los-sims-section")
+
+const f1Button = document.getElementById("f1-button")
+const f1VisibilitySection = document.getElementById("f1-section")
+
+const battlefieldButton = document.getElementById("battlefield-button")
+const battlefieldVisibilitySection = document.getElementById("battlefield-section")
+
+const footerPosition = document.getElementById("footer-id")
+
+function newsButtonVisibility () {
+    if (newsVisibilitySection.className === "ea-home-updates-cards-hidden") {
+        newsVisibilitySection.classList.replace("ea-home-updates-cards-hidden", "ea-home-updates-cards-visible")
+        eaSportsVisibilitySection.classList.replace("ea-sports-fc-menu-visible","ea-sports-fc-menu-hidden")
+        starWarsVisibilitySection.classList.replace("star-wars-cards-menu-visible", "star-wars-cards-menu-hidden")
+        apexVisibilitySection.classList.replace("apex-legends-cards-menu-visible","apex-legends-cards-menu-hidden")
+        simsVisibilitySection.classList.replace("los-sims-cards-menu-visible","los-sims-cards-menu-hidden")
+        f1VisibilitySection.classList.replace("f1-cards-menu-visible","f1-cards-menu-hidden")
+        battlefieldVisibilitySection.classList.replace("battlefield-cards-menu-visible", "battlefield-cards-menu-hidden")
+        footerPosition.classList.replace("footer-position","footer-regular")
+    }
+}
+function sportsButtonVisibility () {
+    if (eaSportsVisibilitySection.className === "ea-sports-fc-menu-hidden" ) {
+        eaSportsVisibilitySection.classList.replace("ea-sports-fc-menu-hidden","ea-sports-fc-menu-visible")
+        newsVisibilitySection.classList.replace("ea-home-updates-cards-visible", "ea-home-updates-cards-hidden")
+        starWarsVisibilitySection.classList.replace("star-wars-cards-menu-visible", "star-wars-cards-menu-hidden")
+        apexVisibilitySection.classList.replace("apex-legends-cards-menu-visible","apex-legends-cards-menu-hidden")
+        simsVisibilitySection.classList.replace("los-sims-cards-menu-visible","los-sims-cards-menu-hidden")
+        battlefieldVisibilitySection.classList.replace("battlefield-cards-menu-visible", "battlefield-cards-menu-hidden")       
+        f1VisibilitySection.classList.replace("f1-cards-menu-visible","f1-cards-menu-hidden")
+        footerPosition.classList.replace("footer-regular","footer-position")
+        
+    }
+}
+function starWarsButtonVisibility () {
+    if (starWarsVisibilitySection.className === "star-wars-cards-menu-hidden") {
+        starWarsVisibilitySection.classList.replace("star-wars-cards-menu-hidden", "star-wars-cards-menu-visible")
+        eaSportsVisibilitySection.classList.replace("ea-sports-fc-menu-visible","ea-sports-fc-menu-hidden")
+        newsVisibilitySection.classList.replace("ea-home-updates-cards-visible", "ea-home-updates-cards-hidden")
+        apexVisibilitySection.classList.replace("apex-legends-cards-menu-visible","apex-legends-cards-menu-hidden")
+        simsVisibilitySection.classList.replace("los-sims-cards-menu-visible","los-sims-cards-menu-hidden")
+        battlefieldVisibilitySection.classList.replace("battlefield-cards-menu-visible", "battlefield-cards-menu-hidden")
+        f1VisibilitySection.classList.replace("f1-cards-menu-visible","f1-cards-menu-hidden")
+        footerPosition.classList.replace("footer-position","footer-regular")
+    }
+}
+function apexButtonVisibility () {
+    if (apexVisibilitySection.className === "apex-legends-cards-menu-hidden") {
+        apexVisibilitySection.classList.replace("apex-legends-cards-menu-hidden","apex-legends-cards-menu-visible")
+        eaSportsVisibilitySection.classList.replace("ea-sports-fc-menu-visible","ea-sports-fc-menu-hidden")
+        starWarsVisibilitySection.classList.replace("star-wars-cards-menu-visible", "star-wars-cards-menu-hidden")
+        newsVisibilitySection.classList.replace("ea-home-updates-cards-visible", "ea-home-updates-cards-hidden")
+        simsVisibilitySection.classList.replace("los-sims-cards-menu-visible","los-sims-cards-menu-hidden")
+        battlefieldVisibilitySection.classList.replace("battlefield-cards-menu-visible", "battlefield-cards-menu-hidden")
+        f1VisibilitySection.classList.replace("f1-cards-menu-visible","f1-cards-menu-hidden")
+        footerPosition.classList.replace("footer-position","footer-regular")
+    }
+}
+function simsVisibilityButton () {
+    if (simsVisibilitySection.className === "los-sims-cards-menu-hidden") {
+        simsVisibilitySection.classList.replace("los-sims-cards-menu-hidden","los-sims-cards-menu-visible")
+        eaSportsVisibilitySection.classList.replace("ea-sports-fc-menu-visible","ea-sports-fc-menu-hidden")
+        starWarsVisibilitySection.classList.replace("star-wars-cards-menu-visible", "star-wars-cards-menu-hidden")
+        newsVisibilitySection.classList.replace("ea-home-updates-cards-visible", "ea-home-updates-cards-hidden")
+        apexVisibilitySection.classList.replace("apex-legends-cards-menu-visible","apex-legends-cards-menu-hidden")
+        f1VisibilitySection.classList.replace("f1-cards-menu-visible","f1-cards-menu-hidden")
+        battlefieldVisibilitySection.classList.replace("battlefield-cards-menu-visible", "battlefield-cards-menu-hidden")
+        footerPosition.classList.replace("footer-position","footer-regular")
+    }
+}
+function f1VisibilityButton () {
+    if (f1VisibilitySection.className === "f1-cards-menu-hidden") {
+        f1VisibilitySection.classList.replace("f1-cards-menu-hidden","f1-cards-menu-visible")
+        eaSportsVisibilitySection.classList.replace("ea-sports-fc-menu-visible","ea-sports-fc-menu-hidden")
+        starWarsVisibilitySection.classList.replace("star-wars-cards-menu-visible", "star-wars-cards-menu-hidden")
+        newsVisibilitySection.classList.replace("ea-home-updates-cards-visible", "ea-home-updates-cards-hidden")
+        apexVisibilitySection.classList.replace("apex-legends-cards-menu-visible","apex-legends-cards-menu-hidden")
+        simsVisibilitySection.classList.replace("los-sims-cards-menu-visible","los-sims-cards-menu-hidden")
+        battlefieldVisibilitySection.classList.replace("battlefield-cards-menu-visible", "battlefield-cards-menu-hidden")
+        footerPosition.classList.replace("footer-position","footer-regular")
+
+    }
+}
+function battlefieldButtonVisibility () {
+    if (battlefieldVisibilitySection.className === "battlefield-cards-menu-hidden") {
+        battlefieldVisibilitySection.classList.replace("battlefield-cards-menu-hidden", "battlefield-cards-menu-visible")
+        eaSportsVisibilitySection.classList.replace("ea-sports-fc-menu-visible","ea-sports-fc-menu-hidden")
+        starWarsVisibilitySection.classList.replace("star-wars-cards-menu-visible", "star-wars-cards-menu-hidden")
+        newsVisibilitySection.classList.replace("ea-home-updates-cards-visible", "ea-home-updates-cards-hidden")
+        apexVisibilitySection.classList.replace("apex-legends-cards-menu-visible","apex-legends-cards-menu-hidden")
+        simsVisibilitySection.classList.replace("los-sims-cards-menu-visible","los-sims-cards-menu-hidden")
+        f1VisibilitySection.classList.replace("f1-cards-menu-visible","f1-cards-menu-hidden")
+        footerPosition.classList.replace("footer-position","footer-regular")
+
+    }
+}
+newsButton.addEventListener("click",newsButtonVisibility)
+eaSportsButton.addEventListener("click",sportsButtonVisibility)
+starWarsButton.addEventListener("click", starWarsButtonVisibility)
+apexLegendsButton.addEventListener("click", apexButtonVisibility)
+simsButton.addEventListener("click", simsVisibilityButton)
+f1Button.addEventListener("click", f1VisibilityButton)
+battlefieldButton.addEventListener("click", battlefieldButtonVisibility)
 
 //footer fnc
 function showRegionClass(){
