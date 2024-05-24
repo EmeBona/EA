@@ -24,6 +24,8 @@ const languageButton = document.getElementById("language");
 const languageMenu =  document.getElementById("language-menu");
 const chevronRegion = document.getElementById("chevron-region")
 const chevronLanguage = document.getElementById("chevron-language")
+const joinNowBtn = document.getElementById("footer-join-now-btn")
+const moreInfoFooterBtn = document.getElementById("footer-herramientas-btn")
 
 
 //nav fnc
@@ -137,8 +139,19 @@ function changeLanguageChevron(){
     }
     
 }
+
+function goToEaPlay(){
+    window.open("ea-play/index.html")
+}
+
+function goToHerramientas(){
+    window.open("ea-herramientas/index.html")
+}
 regionButton.addEventListener("click", showRegionClass)
 regionButton.addEventListener("click", changeRegionChevron)
 
 languageButton.addEventListener("click", showLanguageClass)
 languageButton.addEventListener("click", changeLanguageChevron)
+
+joinNowBtn.addEventListener("click", goToEaPlay)
+moreInfoFooterBtn.addEventListener("click", goToHerramientas)
