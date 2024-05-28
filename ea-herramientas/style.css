@@ -83,6 +83,23 @@ nav {
     max-height: 3vw;
     height: 3vw;
   }
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+  }
+  .menu-overlay-visible {
+    display: block;
+  }
+  .hamburguer-dpd-hidden a,
+  .hamburguer-dpd-hidden img {
+    display: block;
+  }
   
   .hamburguer-menu {
     margin-inline-start: 10px;
@@ -95,12 +112,16 @@ nav {
     }
   
     & .hamburguer-icon:hover {
-      color: #ff4747;
+      color: #a01915;
+      transform: scale(1.5);
     }
   
     & .close-icon {
       width: 20px;
       height: 20px;
+    }
+    & .close-icon:hover{
+      color: #a01915;
     }
   
     & .hb-allgames {
@@ -120,11 +141,13 @@ nav {
       position: absolute;
       top: 96px;
       left: 0px;
-      z-index: 1;
       padding-top: 1vw;
       padding-left: 1vw;
       padding-right: 2vw;
       padding-bottom: 2vw;
+      z-index: 2000; 
+      max-height: calc(93vh - 96px); 
+      overflow-y: auto;
     }
   
     & .hb-grid {
@@ -329,7 +352,7 @@ nav {
   }
   
   .header-link:hover {
-    color: #ff4747;
+    color: #a01915;
   }
   .header-list-divider {
     color: black;
@@ -347,7 +370,7 @@ nav {
     }
   
     & .header-games-button:hover {
-      color: #ff4747;
+      color: #a01915;
     }
   
     & .header-games-hidden {
@@ -395,7 +418,7 @@ nav {
     }
   
     & .header-experiencies-button:hover {
-      color: #ff4747;
+      color: #a01915;
     }
   
     & .header-experiencies-hidden {
@@ -430,7 +453,7 @@ nav {
     }
   
     & .header-about-button:hover {
-      color: #ff4747;
+      color: #a01915;
     }
   
     & .header-about-hidden {
@@ -464,7 +487,7 @@ nav {
     }
   
     & .header-commitments-button:hover {
-      color: #ff4747;
+      color: #a01915;
     }
   
     & .header-commitments-hidden {
@@ -498,7 +521,7 @@ nav {
     }
   
     & .header-resources-button:hover {
-      color: #ff4747;
+      color: #a01915;
     }
   
     & .header-resources-hidden {
