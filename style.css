@@ -81,6 +81,23 @@ nav {
   height: 3vw;
 }
 
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+}
+.menu-overlay-visible {
+  display: block;
+}
+.hamburguer-dpd-hidden a,
+.hamburguer-dpd-hidden img {
+  display: block;
+}
 .hamburguer-menu {
   margin-inline-start: 10px;
   margin-inline-end: 20px;
@@ -102,6 +119,10 @@ nav {
     height: 20px;
   }
 
+  & .close-icon:hover{
+    color: #ff4747;
+  }
+
   & .hb-allgames {
     display: flex;
     align-items: center;
@@ -119,11 +140,14 @@ nav {
     position: absolute;
     top: 96px;
     left: 0px;
-    z-index: 1;
+    z-index: 2000;
     padding-top: 1vw;
     padding-left: 1vw;
     padding-right: 2vw;
     padding-bottom: 2vw;
+    z-index: 2000; 
+    max-height: calc(93vh - 96px); 
+    overflow-y: auto;
   }
 
   & .hb-grid {
