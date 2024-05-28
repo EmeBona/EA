@@ -718,10 +718,10 @@ nav {
   font-size: large;
   display: none;
 }
-.ea-home-cards-main {
+/* .ea-home-cards-main {
   position: absolute;
   top: 670px;
-}
+} */
 #newest-games {
   display: flex;
   justify-content: center;
@@ -1015,14 +1015,7 @@ nav {
   margin-top: 20px;
 }
 /* Footer */
-.footer-position {
-  position: absolute;
-  top: 4000px;
-  width: 100vw;
-}
-.footer-regular {
-  position: absolute;
-  top: 3000px;
+footer{
   width: 100vw;
 }
 .footer-ea-play-promo-bg {
@@ -1030,17 +1023,17 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  height: 84vh;
+  height: 58vh;
   & .footer-ea-play-promo {
-    margin-left: 20%;
-    border-top: 50px;
-    width: 550px;
+    margin-left: 21%;
+    width: 29%;
     line-height: 27px;
     /* padding: 150px; */
     & p {
       color: white;
       font-size: 18px;
       font-weight: 400;
+      margin: 0;
     }
   }
 }
@@ -1049,7 +1042,8 @@ nav {
   position: relative;
   align-items: center;
   justify-content: center;
-  width: 35%;
+  width: 28%;
+  height: 20%;
   margin-top: 10%;
 }
 .join-now-border {
@@ -1060,28 +1054,28 @@ nav {
   border-radius: 3px;
   font-size: 18px;
   font-weight: 400;
-  width: 192px;
-  height: 58px;
+  width: 100%;
+  height: 6vh;
   /* transform: translate(-50%, -50%) scale(1) translateZ(0); */
   /* left: 96px;
   top: 35px; */
+  z-index: 999;
 }
 #p-join-now {
   position: absolute;
 }
 .join-now-border:hover {
-  width: 196px;
-  height: 62px;
+ transform: scale(1.04);
 }
 .footer-herramientas-banner {
   background-color: #6fb0d6;
-  height: 112px;
+  height: 11vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   & h2 {
-    width: 520px;
-    margin-left: 400px;
+    width: 28%;
+    margin-left: 21%;
     font-size: 25px;
     line-height: 35px;
   }
@@ -1102,25 +1096,27 @@ nav {
   font-size: 18px;
   border: 2px solid black;
   font-weight: 400;
-  width: 192px;
-  height: 58px;
+  width: 98%;
+  height: 6vh;
+  z-index: 999;
   /* transform: translate(-50%, -50%) scale(1) translateZ(0); */
   /* left: 96px;
   top: 35px; */
 }
 .footer-p-moreinfo {
   position: absolute;
+  font-size: 18px;
 }
 
 .footer-moreinfo-border:hover {
-  width: 196px;
-  height: 62px;
+transform: scale(1.04);
 }
 
 .footer-greyspace {
-  padding: 50px 400px 0;
+  padding: 50px 21% 0;
+  
   background-color: #eaeaea;
-  height: 258px;
+  height: 26vh;
   & .footer-condition {
     & p {
       margin: 0;
@@ -1149,7 +1145,7 @@ nav {
     }
     & .footer-top-right-links {
       & h3 {
-        font-size: 14px;
+        font-size: 16px;
         text-align: right;
         font-stretch: expanded;
       }
@@ -1182,7 +1178,7 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: #f3f3f3;
-  padding: 30px 400px;
+  padding: 30px 21%;
   gap: 25px;
   & .footer-bottom-nav {
     display: flex;
