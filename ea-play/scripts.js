@@ -1,21 +1,45 @@
 //navbar
 
-const gamesButton = document.getElementById("header-games-btn");
-const gamesMenu = document.getElementById("header-games-menu");
-const chevronGames = document.getElementById("chevron-games");
+document.addEventListener("DOMContentLoaded", function() {
+  const botonJuegos = document.getElementById("header-games-btn");
+  const menuJuegos = document.getElementById("header-games-menu");
+  const chevronGames = document.getElementById("chevron-games");
+  let timeoutId;
 
-function showGamesClass (){
-    gamesMenu.classList.toggle("games-visible")
-}
 
-function changeGamesChevron(){
-    if(chevronGames.className === "fa-solid fa-chevron-down"){
-        chevronGames.classList.replace("fa-chevron-down", "fa-chevron-up")
-    } else if (chevronGames.className === "fa-solid fa-chevron-up"){
-        chevronGames.classList.replace("fa-chevron-up", "fa-chevron-down")
-    }
-    
-}
+  function mostrarMenu() {
+      menuJuegos.classList.add("games-visible");
+      chevronGames.classList.remove("fa-chevron-down");
+      chevronGames.classList.add("fa-chevron-up");
+  }
+
+
+  function ocultarMenu() {
+      menuJuegos.classList.remove("games-visible");
+      chevronGames.classList.remove("fa-chevron-up");
+      chevronGames.classList.add("fa-chevron-down");
+  }
+
+  botonJuegos.addEventListener("mouseover", function() {
+      clearTimeout(timeoutId);
+      mostrarMenu();
+  });
+
+
+  botonJuegos.addEventListener("mouseout", function() {
+      timeoutId = setTimeout(ocultarMenu, 200);
+  });
+
+  menuJuegos.addEventListener("mouseover", function() {
+      clearTimeout(timeoutId);
+      mostrarMenu();
+  });
+
+  menuJuegos.addEventListener("mouseout", function() {
+      timeoutId = setTimeout(ocultarMenu, 200);
+  });
+});
+
 
 gamesButton.addEventListener("click", showGamesClass);
 gamesButton.addEventListener("click", changeGamesChevron);

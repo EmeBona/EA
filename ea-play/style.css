@@ -167,6 +167,10 @@ nav{
     text-decoration: none;
   }
 
+  & .header-games-links:hover{
+    color: #ff4747;
+  }
+
   & .header-list-divider{
     font-weight: bold;
     color: black;
