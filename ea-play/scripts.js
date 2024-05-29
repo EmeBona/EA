@@ -28,6 +28,7 @@ const sliderBar = document.getElementById("slider-progress-bar");
 const sliderContainer = document.getElementById("slider-progress");
 
 // footer def
+const eaLogoBtn = document.getElementById("ea-logo")
 const regionButton = document.getElementById("region");
 const regionMenu = document.getElementById("region-menu");
 const languageButton = document.getElementById("language");
@@ -107,6 +108,9 @@ countriesButton.addEventListener("click", showCountriesClass);
 countriesButton.addEventListener("click", changeCountriesChevron);
 
 //footer fnc
+function returnHome (){
+  window.open("../index.html")
+}
 function showRegionClass() {
   regionMenu.classList.toggle("region-visible");
 }
@@ -133,3 +137,4 @@ regionButton.addEventListener("click", changeRegionChevron);
 
 languageButton.addEventListener("click", showLanguageClass);
 languageButton.addEventListener("click", changeLanguageChevron);
+eaLogoBtn.addEventListener("click", returnHome)
