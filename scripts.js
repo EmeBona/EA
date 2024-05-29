@@ -161,7 +161,10 @@ function sportsButtonVisibility () {
         battlefieldVisibilitySection.classList.replace("battlefield-cards-menu-visible", "battlefield-cards-menu-hidden")       
         f1VisibilitySection.classList.replace("f1-cards-menu-visible","f1-cards-menu-hidden")
         footerPosition.classList.replace("footer-regular","footer-position")
-        
+        if (eaSportsVisibilitySection.className === "ea-sports-fc-menu-visible"){
+            regionMenu.style.bottom = "-407vh";
+            languageMenu.style.bottom = "-407vh";
+        }
     }
 }
 function starWarsButtonVisibility () {
@@ -258,7 +261,9 @@ function changeLanguageChevron(){
     }
     
 }
-
+function fixMenuBtns(){
+  
+}
 function goToEaPlay(){
     window.open("ea-play/index.html")
 }
