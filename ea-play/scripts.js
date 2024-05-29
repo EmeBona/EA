@@ -41,9 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-gamesButton.addEventListener("click", showGamesClass);
-gamesButton.addEventListener("click", changeGamesChevron);
-
 //recompensas def
 const cardsPosition = document.getElementById("recompensas-card-div");
 const slideLeftBtn = document.getElementById("slide-left");
@@ -108,27 +105,26 @@ function seeLessCards() {
 slideRightBtn.addEventListener("click", seeMoreCards);
 slideLeftBtn.addEventListener("click", seeLessCards);
 
+
 //countries menu
 
-const countriesButton = document.getElementById("countries-btn");
-const countriesMenu = document.getElementById("countries-menu");
-const chevronCountries = document.getElementById("chevron-countries");
+document.getElementById("countries-btn").addEventListener("click", function() {
+  const menu = document.getElementById("countries-menu");
+  const chevron = document.getElementById("chevron-countries");
 
-function showCountriesClass (){
-    countriesMenu.classList.toggle("countries-visible")
-}
+  if (menu.classList.contains("countries-hidden")) {
+      menu.classList.remove("countries-hidden");
+      menu.classList.add("countries-visible");
+      chevron.classList.remove("fa-chevron-down");
+      chevron.classList.add("fa-chevron-up");
+  } else {
+      menu.classList.remove("countries-visible");
+      menu.classList.add("countries-hidden");
+      chevron.classList.remove("fa-chevron-up");
+      chevron.classList.add("fa-chevron-down");
+  }
+});
 
-function changeCountriesChevron(){
-    if(chevronCountries.className === "fa-solid fa-chevron-down"){
-        chevronCountries.classList.replace("fa-chevron-down", "fa-chevron-up")
-    } else if (chevronCountries.className === "fa-solid fa-chevron-up"){
-        chevronCountries.classList.replace("fa-chevron-up", "fa-chevron-down")
-    }
-    
-}
-
-countriesButton.addEventListener("click", showCountriesClass);
-countriesButton.addEventListener("click", changeCountriesChevron);
 
 //footer fnc
 function showRegionClass() {

@@ -422,23 +422,27 @@ nav{
 .ea-play-definition {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-left: 99px;
-  padding-right: 99px;
-  padding-top: 50px;
+  align-items: stretch;
+  padding-inline-end: 7vw;
+  padding-inline-start: 7vw;
+  margin-bottom: 10vw;
   & h2 {
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: 32px;
   }
   & .eaplay-def-cards-position {
     display: flex;
-    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
     
     & .eaplay-def-card {
       display: flex;
       flex-direction: column;
       align-items: start;
-      height: 595px;
+      height: 20vw;
       & h3 {
         color: white;
         text-align: center;
@@ -453,106 +457,143 @@ nav{
         margin-inline-start: 0px;
         margin-inline-end: 0px;
       }
-      & .fst-btn-container{
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-      }
-      & .fst-btn {
-        position:absolute;
-        background-color: transparent;
-        border-color: white;
-        width: 298px;
-        height: 59px;
-        left: 0;
-      }
-      & .fst-btn:hover{
-        transform: scale(1.04)
-      }
-      & .p-fst-btn{
-        position: relative;
-        color: white;
-        font-size: 18px;
-        left: 10%;
-      }
-      & .scnd-btn-container{
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-      }
-      & .scnd-btn{
-        position: absolute;
-        background-color: transparent;
-        border-color: white;
-        width: 229px;
-        height: 59px;
-        top: 140%;
-        left: 0;
-      }
-      & .scnd-btn:hover{
-        transform: scale(1.04)
-      }
-      & .p-scnd-btn{
-        position: relative;
-        color: white;
-        font-size: 18px;
-        left: 14%;
-        top: 140%;
-      }
-      & .trd-btn-container{
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-      }
-      & .trd-btn{
-        position: absolute;
-        background-color: transparent;
-        border-color: white;
-        width: 292px;
-        height: 59px;
-        top: 140%;
-        left: 0;
-      }
-      & .trd-btn:hover{
-        transform: scale(1.04);
-      }
-      & .p-trd-btn{
-        position: relative;
-        color: white;
-        font-size: 18px;
-        left: 10%;
-        top: 140%;
-      }
-      & .frt-btn-container{
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-      }
-      & .frt-btn{
-        position: absolute;
-        background-color: transparent;
-        border-color: white;
-        width: 160px;
-        height: 59px;
-        top: 140%;
-        left: 0;
-      }
-      & .frt-btn:hover{
-        transform: scale(1.04);
-      }
-      & .p-frt-btn{
-        position: relative;
-        color: white;
-        font-size: 18px;
-        left: 70%;
-        top: 140%;
-      }
     }
   }
+}
+
+ .fst-btn-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 383px;
+  min-height: 59px;
+  margin-top: auto;
+}
+ .fst-btn {
+  display: block;
+  position:relative;
+  background-color: transparent;
+  border-color: white;
+  width: 298px;
+  height: 59px;
+  left: 0;
+  top: 0;
+}
+ .fst-btn:hover{
+  transform: scale(1.04)
+}
+ .p-fst-btn{
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  font-size: 18px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding-inline-start: 6%;
+}
+ .scnd-btn-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 364px;
+  min-height: 59px;
+  margin-top: auto;
+}
+ .scnd-btn{
+  position: relative;
+  background-color: transparent;
+  border-color: white;
+  width: 229px;
+  height: 59px;
+  left: 0;
+  top: 0;
+}
+ .scnd-btn:hover{
+  transform: scale(1.04)
+}
+ .p-scnd-btn{
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  font-size: 18px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-inline-start: 7%;
+}
+ .trd-btn-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 303px;
+  min-height: 59px;
+  margin-top: auto;
+}
+ .trd-btn{
+  position: relative;
+  background-color: transparent;
+  border-color: white;
+  width: 292px;
+  height: 59px;
+  left: 0;
+  top: 0;
+}
+ .trd-btn:hover{
+  transform: scale(1.04);
+}
+ .p-trd-btn{
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  font-size: 18px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-inline-start: 8%;
+}
+ .frt-btn-container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 354px;
+  min-height: 59px;
+  margin-top: auto;
+}
+ .frt-btn{
+  position: relative;
+  background-color: transparent;
+  border-color: white;
+  width: 160px;
+  height: 59px;
+  left: 0;
+  top: 0;
+}
+ .frt-btn:hover{
+  transform: scale(1.04);
+}
+ .p-frt-btn{
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  color: white;
+  font-size: 18px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-inline-start: 14%;
 }
 
 .ea-play-subs-cards-position {
@@ -586,13 +627,13 @@ nav{
       display: flex;
       flex-direction: column;
       position: relative;
-      top: 3%;
+      
     }
     & .sub-card-content2{
       display: flex;
       flex-direction: column;
       position: relative;
-      top: -11%;
+      
     }
     & .subs-card-price {
       display: flex;
@@ -611,7 +652,6 @@ nav{
     & .subs-card-price2{
       display: flex;
       flex-direction: column;
-      margin-top: 5vw;
       & p {
         color: white;
         font-size: 18px;
@@ -651,6 +691,9 @@ nav{
       position: relative;
       align-items: center;
       justify-content: center;
+      min-width: 399px;
+      min-height: 59px;
+      margin-top: 5.1%;
     }
     & .joinEa-btn{
       position: absolute;
@@ -659,22 +702,32 @@ nav{
       border: none;
       border-radius: 5px;
       background-color: #fe4647;
-      top: 34%;
+      top: 0;
+      left: 0;
+      
     }
     & .joinEa-btn:hover{
       transform: scale(1.04);
     }
     & .p-joinEa{
-      position: relative;
+      position: absolute;
       font-size: 18px;
       color: white;
-      top: 34%;
+      width: fit-content;
+      height: fit-content;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
     }
     & .joinEaPro-container{
       display: flex;
       position: relative;
       align-items: center;
       justify-content: center;
+      min-width: 399px;
+      min-height: 59px;
     }
     & .joinEaPro-btn {
       position: absolute;
@@ -683,6 +736,8 @@ nav{
       border: none;
       border-radius: 5px;
       background-color: #fe4647;
+      top: 0;
+      left: 0;
     }
     & .joinEaPro-btn:hover{
       transform: scale(1.04);
@@ -691,6 +746,13 @@ nav{
       position: relative;
       font-size: 18px;
       color: white;
+      width: fit-content;
+      height: fit-content;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
     }
   }
 }
@@ -746,80 +808,97 @@ nav{
     flex-direction: column;
     width: 30vw;
     position: relative;
-    top: 1.5vw;
+    & .form-container{
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+    }
+    & .scnd-row-container{
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+      margin-top: 5%;
+    }
     & .email-container{
       display: flex;
       position: relative;
       align-items: center;
       justify-content: center;
+      min-width: 540px;
+      min-height: 60px;
       
     }
-    & .email-btn {
+    & .email-imput {
+      position: absolute;
       height: 60px;
       width: 540px;
       background-color: transparent;
       border: 2px solid white;
       border-radius: 2px;
+      top: 0;
+      left: 0;
     }
-    & .email-btn:hover{
+    & .email-imput:hover{
       transform: scale(1.04);
     }
-    & .p-form-email{
+    & .p-form-email-visible{
       color: #4C4D54;
-      position: relative;
-      top: -13%;
-      left: 8%;
+      position: absolute;
       font-size: 18px;
-      width: 100%;
+      width: fit-content;
+      height: fit-content;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-inline-start: 5%;
       }
-    & .form-date {
+    & .p-form-email-hidden{
+      display: none;
+    }
+    & .date-container {
       display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      min-width: 258px;
+      min-height: 58px;
+          
       & .date-btn {
-        height: 60px;
-        width: 258px;
+        width: 263px;
+        height: 58px;
         background-color: transparent;
         border: 2px solid white;
-        border-radius: 2px;
-        left: 2.5%;
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
       & .date-btn:hover{
         transform: scale(1.04);
       }
-      & .date-info{
-        color: #4C4D54;
-        position: relative;
-        top: -90%;
-        left: -43%;
-        font-size: 18px;
+      & #label{
+      color: #4C4D54;
+      position: absolute;
+      font-size: 18px;
+      width: fit-content;
+      height: fit-content;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-inline-start: 12%;
       }
     }
-    }
+  }
     & .privacy-agreement {
       display: flex;
       align-items: baseline;
       justify-content: flex-start;
       position: relative;
-      left: -9%;
-      margin-top: 10%;
-      & input {
-        position: relative;
-        top: -57%;
-        left: 11%;
-        height: 20px;
-        width: 20px;
-        border-color: white;
-        border-radius: 2px;
-
-      }
-      & input :checked{
-        background-color: transparent;
-      }
-
+      gap: 4%;
+      margin-top: 5%;
       & p {
         position: relative;
-        top: -64%;
-        left: 17%;
         color: white;
         text-align: start;
         & a {
@@ -829,11 +908,53 @@ nav{
       }
   }
 }
+.form-checkbox input[type="checkbox"]{
+  display: none;
+}
+.form-checkbox{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
+.form-checkbox .checkmark{
+  position: absolute;
+  top: -0.7vw;;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.form-checkbox .checkmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+.form-checkbox input:checked + .checkmark:after{
+  display: block;
+}
+.form-checkbox .checkmark:after{
+  left: 0.4vw;
+  top: 0.1vw;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg)
+}
  .signUp-container{
   display: flex;
   position: relative;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  min-width: 136px;
+  min-height: 56px;
+  margin-top: 5%;
 }
  .signUp-btn{
   position: absolute;
@@ -842,18 +963,22 @@ nav{
   border: none;
   border-radius: 5px;
   background-color: #fe4647;
-  top: -80%;
-  left: 3%;
+  top: 0;
+  left: 0;
 }
  .signUp-btn:hover{
   transform: scale(1.04);
 }
  #p-signUp{
-  position: relative;
+  position: absolute;
   font-size: 18px;
   color: white;
-  top: -80%;
-  left: -35%;
+  width: fit-content;
+  height: fit-content;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-inline-start: 5%;
 }
 
 .countries {
@@ -862,6 +987,8 @@ nav{
     position: relative;
     align-items: center;
     justify-content: center;
+    min-width: 263px;
+    height: 64px;
   }
   & .countries-button {
     position: absolute;
@@ -871,8 +998,8 @@ nav{
     color: #4C4D54;
     background-color: transparent;
     border: 2px solid white;
-    top: -109%;
-    left: 52%;
+    top: 0;
+    left: 0;
   }
 
   & .countries-button:hover {
@@ -880,18 +1007,20 @@ nav{
   }
 
   & #p-countries{
-    position: relative;
+    position: absolute;
     color: #8D8D95;
     font-size: 18px;
-    top: -3vw;
-    left: 12%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-inline-start: 10%;
   }
 
   & #chevron-countries{
-    top: -3vw;
-    left: 12vw;
     position: relative;
     color: white;
+    padding-inline-start: 70%;
   }
   & .countries-hidden {
     display: none;
@@ -906,8 +1035,8 @@ nav{
     width: 306px;
     height: 270px;
     overflow: scroll;
-    top: 37%;
-    left: 50%;
+    top: 39%;
+    left: 49%;
     z-index: 1;
     gap: 16px;
   }
