@@ -1261,12 +1261,13 @@ footer {
 .region-visible {
   display: flex;
   position: absolute;
-  bottom: 20%;
+  bottom: -313vh;
   border: 3px solid lightgray;
   width: 645px;
   height: 452px;
   background-color: #f3f3f3;
   padding: 10px;
+  z-index: 999;
   & div {
     display: flex;
     flex-direction: column;
@@ -1293,11 +1294,12 @@ footer {
 .language-visible {
   display: flex;
   position: absolute;
-  bottom: 20%;
+  bottom: -313vh;
   border: 3px solid lightgray;
   width: 540px;
   height: 453px;
   background-color: #f3f3f3;
+  z-index: 999;
   & div {
     display: flex;
     flex-direction: column;
