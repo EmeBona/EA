@@ -635,6 +635,7 @@ nav {
 }
 
 .choose-platforms{
+  padding-inline-end: 2.5%;
   & .platforms-fst-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -651,7 +652,6 @@ nav {
   & h4{
     font-size: 24px;
     font-weight: 600;
-    left: -1.8%;
   }
   & .platforms-img{
     width: 352px;
