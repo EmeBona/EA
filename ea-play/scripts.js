@@ -4,24 +4,46 @@ const mobileQuery = window.matchMedia("(max-width: 429px)");
 const otherQuery = window.matchMedia("min-width: 769px) ");
 //navbar
 
-const gamesButton = document.getElementById("header-games-btn");
-const gamesMenu = document.getElementById("header-games-menu");
-const chevronGames = document.getElementById("chevron-games");
+document.addEventListener("DOMContentLoaded", function() {
+  const botonJuegos = document.getElementById("header-games-btn");
+  const menuJuegos = document.getElementById("header-games-menu");
+  const chevronGames = document.getElementById("chevron-games");
+  let timeoutId;
 
-function showGamesClass() {
-  gamesMenu.classList.toggle("games-visible");
-}
 
-function changeGamesChevron() {
-  if (chevronGames.className === "fa-solid fa-chevron-down") {
-    chevronGames.classList.replace("fa-chevron-down", "fa-chevron-up");
-  } else if (chevronGames.className === "fa-solid fa-chevron-up") {
-    chevronGames.classList.replace("fa-chevron-up", "fa-chevron-down");
+  function mostrarMenu() {
+      menuJuegos.classList.add("games-visible");
+      chevronGames.classList.remove("fa-chevron-down");
+      chevronGames.classList.add("fa-chevron-up");
   }
-}
 
-gamesButton.addEventListener("click", showGamesClass);
-gamesButton.addEventListener("click", changeGamesChevron);
+
+  function ocultarMenu() {
+      menuJuegos.classList.remove("games-visible");
+      chevronGames.classList.remove("fa-chevron-up");
+      chevronGames.classList.add("fa-chevron-down");
+  }
+
+  botonJuegos.addEventListener("mouseover", function() {
+      clearTimeout(timeoutId);
+      mostrarMenu();
+  });
+
+
+  botonJuegos.addEventListener("mouseout", function() {
+      timeoutId = setTimeout(ocultarMenu, 200);
+  });
+
+  menuJuegos.addEventListener("mouseover", function() {
+      clearTimeout(timeoutId);
+      mostrarMenu();
+  });
+
+  menuJuegos.addEventListener("mouseout", function() {
+      timeoutId = setTimeout(ocultarMenu, 200);
+  });
+});
+
 
 //recompensas def
 const cardsPosition = document.getElementById("recompensas-card-div");
@@ -95,26 +117,26 @@ function seeLessCards() {
 slideRightBtn.addEventListener("click", seeMoreBtn);
 slideLeftBtn.addEventListener("click", seeLessCards);
 
+
 //countries menu
 
-const countriesButton = document.getElementById("countries-btn");
-const countriesMenu = document.getElementById("countries-menu");
-const chevronCountries = document.getElementById("chevron-countries");
+document.getElementById("countries-btn").addEventListener("click", function() {
+  const menu = document.getElementById("countries-menu");
+  const chevron = document.getElementById("chevron-countries");
 
-function showCountriesClass() {
-  countriesMenu.classList.toggle("countries-visible");
-}
-
-function changeCountriesChevron() {
-  if (chevronCountries.className === "fa-solid fa-chevron-down") {
-    chevronCountries.classList.replace("fa-chevron-down", "fa-chevron-up");
-  } else if (chevronCountries.className === "fa-solid fa-chevron-up") {
-    chevronCountries.classList.replace("fa-chevron-up", "fa-chevron-down");
+  if (menu.classList.contains("countries-hidden")) {
+      menu.classList.remove("countries-hidden");
+      menu.classList.add("countries-visible");
+      chevron.classList.remove("fa-chevron-down");
+      chevron.classList.add("fa-chevron-up");
+  } else {
+      menu.classList.remove("countries-visible");
+      menu.classList.add("countries-hidden");
+      chevron.classList.remove("fa-chevron-up");
+      chevron.classList.add("fa-chevron-down");
   }
-}
+});
 
-countriesButton.addEventListener("click", showCountriesClass);
-countriesButton.addEventListener("click", changeCountriesChevron);
 
 //footer fnc
 function returnHome() {
