@@ -260,7 +260,7 @@ function goToEaPlay(){
 }
 
 function goToHerramientas(){
-    window.open("ea-herramientas/index.html")
+    window.open("/ea-herramientas/index.html")
 }
 regionButton.addEventListener("click", showRegionClass)
 regionButton.addEventListener("click", changeRegionChevron)
