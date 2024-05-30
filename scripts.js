@@ -94,17 +94,15 @@ document.addEventListener('DOMContentLoaded', function() {
 function updateImage() {
   var img = document.getElementById('responsive-image');
   if (window.innerWidth <= 768) {
-      img.src = 'assets/Navbar/banner-tablet.jpg';
+      img.src = 'https://media.contentapi.ea.com/content/dam/ea/tales-of-kenzera/zau/images/2023/12/talesofkenzera-hero-md-franchisehub-tophero-7x2-xl-newest.jpg.adapt.crop16x9.767w.jpg';
   } else {
       img.src = 'https://media.contentapi.ea.com/content/dam/ea/tales-of-kenzera/zau/images/2023/12/talesofkenzera-hero-md-franchisehub-tophero-7x2-xl-newest.jpg.adapt.crop7x2.1920w.jpg';
   }
 }
 
-// Llama a la función cuando la página se carga
-window.onload = updateImage;
+window.addEventListener('load', updateImage);
 
-// Llama a la función cuando la ventana se redimensiona
-window.onresize = updateImage;
+window.addEventListener('resize', updateImage);
 
 // Cards
 const newsButton = document.getElementById("ea-news-button")
