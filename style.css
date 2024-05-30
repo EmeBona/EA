@@ -552,6 +552,10 @@ nav {
   }
 }
 
+.header-tablet-menu{
+  display: none;
+}
+
 .header-banner {
   & .banner-info {
     padding: 7vw 21vw 3vw;
@@ -654,6 +658,10 @@ nav {
     left: 0;
     margin: auto;
   }
+}
+
+.banner-tablet-container{
+  display: none;
 }
 
 .games-tab-buttons button {
@@ -1483,14 +1491,16 @@ NAVBAR */
   }
 }
 
-.header-bg-container{
-  display: none; 
+.header-banner{
+  display: none;
 }
 
 .banner-tablet-container{
+  display: flex;
   & .banner-tablet-bg{
     position: absolute;
     top: 11.5vw;
+    width: fit-content;
     
   }
   & .banner-content-tablet{
@@ -1501,14 +1511,95 @@ NAVBAR */
     position: relative;
     width: 312px;
     height: 112px;
-    top: 9vw;
-    left: 5vw;
+    top: 10vw;
+    left: 8vw;
   }
   & .banner-tablet-p{
     position: relative;
     color: white;
-    top: 7vw;
-    left: 5.5vw;
+    top: 9vw;
+    left: 8.5vw;
+  }
+  & .banner-btns-tablet-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 4%;
+    align-items: flex-start;
+  } 
+
+  & .moreinfo-tablet-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-width: 136px;
+    min-height: 50px;
+  }
+
+  & .banner-tablet-moreinfo {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    border: 2px solid white;
+    width: 136px;
+    height: 50px;
+    top: 9vw;
+    left: 9vw;
+    border-radius: 5px;
+  }
+
+  & .banner-tablet-moreinfo:hover {
+    transform: scale(1.04);
+  }
+
+  & .p-info-tablet {
+
+    position: absolute;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    top: 12vw;
+    right: 0;
+    bottom: 0;
+    left: 12vw;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  & .buynow-tablet-container {
+    min-width: 136px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .banner-tablet-buynow {
+    position: absolute;
+    background-color: #ff4747;
+    border: none;
+    width: 136px;
+    height: 50px;
+    top: 11vw;
+    left: 9vw;
+    border-radius: 5px;
+  }
+
+  & .banner-tablet-buynow:hover {
+    transform: scale(1.04);
+  }
+
+  .p-buy-tablet {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    top: 13vw;
+    right: 0;
+    bottom: 0;
+    left: 9vw;
+    margin: auto;
   }
 }
 
@@ -1817,7 +1908,6 @@ NAVBAR */
 
 
 @media (max-width: 429px){
-
   
   .footer-ea-play-promo-bg {
     height: 75vh;
