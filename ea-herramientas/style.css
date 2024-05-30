@@ -28,7 +28,7 @@ nav {
       justify-content: flex-end;
       background-color: #232529;
       color: white;
-      height: 2vw;
+      height: 2%;
       margin: 0;
       padding: 0 32px 0 0;
       position: relative;
@@ -83,6 +83,23 @@ nav {
     max-height: 3vw;
     height: 3vw;
   }
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+  }
+  .menu-overlay-visible {
+    display: block;
+  }
+  .hamburguer-dpd-hidden a,
+  .hamburguer-dpd-hidden img {
+    display: block;
+  }
   
   .hamburguer-menu {
     margin-inline-start: 10px;
@@ -95,12 +112,16 @@ nav {
     }
   
     & .hamburguer-icon:hover {
-      color: #ff4747;
+      color: #a01915;
+      transform: scale(1.5);
     }
   
     & .close-icon {
       width: 20px;
       height: 20px;
+    }
+    & .close-icon:hover{
+      color: #a01915;
     }
   
     & .hb-allgames {
@@ -120,11 +141,13 @@ nav {
       position: absolute;
       top: 96px;
       left: 0px;
-      z-index: 1;
       padding-top: 1vw;
       padding-left: 1vw;
       padding-right: 2vw;
       padding-bottom: 2vw;
+      z-index: 2000; 
+      max-height: calc(93vh - 96px); 
+      overflow-y: auto;
     }
   
     & .hb-grid {
@@ -329,7 +352,7 @@ nav {
   }
   
   .header-link:hover {
-    color: #ff4747;
+    color: #a01915;
   }
   .header-list-divider {
     color: black;
@@ -347,7 +370,7 @@ nav {
     }
   
     & .header-games-button:hover {
-      color: #ff4747;
+      color: #a01915;
     }
   
     & .header-games-hidden {
@@ -395,7 +418,7 @@ nav {
     }
   
     & .header-experiencies-button:hover {
-      color: #ff4747;
+      color: #a01915;
     }
   
     & .header-experiencies-hidden {
@@ -430,7 +453,7 @@ nav {
     }
   
     & .header-about-button:hover {
-      color: #ff4747;
+      color: #a01915;
     }
   
     & .header-about-hidden {
@@ -464,7 +487,7 @@ nav {
     }
   
     & .header-commitments-button:hover {
-      color: #ff4747;
+      color: #a01915;
     }
   
     & .header-commitments-hidden {
@@ -498,7 +521,7 @@ nav {
     }
   
     & .header-resources-button:hover {
-      color: #ff4747;
+      color: #a01915;
     }
   
     & .header-resources-hidden {
@@ -612,6 +635,7 @@ nav {
 }
 
 .choose-platforms{
+  padding-inline-end: 2.5%;
   & .platforms-fst-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -628,7 +652,6 @@ nav {
   & h4{
     font-size: 24px;
     font-weight: 600;
-    left: -1.8%;
   }
   & .platforms-img{
     width: 352px;
@@ -644,174 +667,564 @@ nav {
 /* BODY BOTTOM */
 
 .controles-juego {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 20%;
+  padding-left: 1%;
+  & .controles-juego-top {
     display: flex;
     flex-direction: column;
-    margin: 10% 20%;
-    padding-left: 1%;
-    & .controles-juego-top{
-        display: flex;
-        flex-direction: column;
-        margin-right: 15%;
-        & h3{
-            font-size: 48px;
-            font-weight: bolder;
-            margin-bottom: 0;
-        }
-        & p {
-            font-size: 18px;
-            margin-right: 10%;
-            margin-bottom: 8%;
-        }
-    }
-    & .controles-juego-bottom{
-        display: flex;
-        gap: 3%;
-        & img{
-            width: 536px;
-            height: 301px;
-        }
-        & div{
-            display: flex;
-            flex-direction: column;
-            gap: 3%;
-            & a{
-                display: flex;
-                flex-wrap: wrap;
-                font-size: 24px;
-                text-decoration: none;
-                color: black;
-                font-weight: bolder;
-                & img{
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-        }
-    }
-}
-
-.sist-clasificacion-videojuegos{
-    display: flex;
-    flex-direction: column;
-    margin: 10% 20%;
-    padding-left: 1%;
-    & .sist-clasificacion-videojuegos-top{
-        display: flex;
-        flex-direction: column;
-        margin-right: 27%;
-        margin-bottom: 8%;
-        & h3{
-            font-size: 48px;
-            line-height: 55px;
-            margin-bottom: 2%;
-        }
-        & .pegi-top-txt {
-            font-size: 18px;
-            margin-top: 2%;
-            margin-bottom: 0;
-            line-height: 27px;
-        }
-    }
-    & .sist-clasificacion-videojuegos-bottom{
-        display: flex;
-        gap: 3%;
-        & img{
-            width: 535px;
-            height: 301px;
-        }
-        & .pegi-right-content{
-            display: flex;
-            flex-direction: column;
-            
-            & h4{
-                font-size: 24px;
-                margin-bottom: 0;
-                margin-top: 0;
-            }
-            & .pegi-right-txt{
-                font-size: 18px;
-                line-height: 27px;
-                margin-right: 2%;
-            }
-            & div{
-                height: 20%;
-                width: 50%;
-                display: flex;
-                position: relative;
-                align-items: center;
-                justify-content: center;
-                margin-top: 1%;
-                & button{
-                    position: absolute;
-                    background-color: #990703;
-                    color: white;
-                    width: 100%;
-                    height: 100%;
-                    border: none;
-                    border-radius: 3px;
-                    
-                }
-                & button:hover{
-                    transform: scale(1.04);
-                }
-                & #button-txt{
-                    color: white;
-                    position: relative;
-                    font-size: 18px;
-                }
-            }
-        }
-    }
-}
-
-
-.clasificacion-videojuegos{
-    display: flex;
-    flex-direction: column;
-    margin: 10% 20%;
-    padding-left: 1%;
+    margin-right: 15%;
     & h3 {
-        font-size: 48px;
-        line-height: 55px;
-        margin: 0 27% 5% 0;
+      font-size: 48px;
+      font-weight: bolder;
+      margin-bottom: 0;
     }
-    & .clasificacion-videojuegos-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        & .clasificacion-videojuegos-card{
-            width: 347px;
-            margin-bottom: 20%;
-            & img{
-                width: 347px;
-            }
-            & h4{
-                font-size: 24px;
-                margin: 0 0 1%;
-            }
-            & p{
-                font-size: 18px;
-                line-height: 27px;
-                margin-top: 2%;
-            }
-            & a{
-                font-size: 18px;
-                text-decoration: none;
-                color: black;
-                border-bottom: 2px solid black;
-            }
-            & a:hover{
-                color: #990703;
-            }
-            
+    & p {
+      font-size: 18px;
+      margin-right: 10%;
+      margin-bottom: 8%;
+    }
+  }
+  & .controles-juego-bottom {
+    display: flex;
+    gap: 3%;
+    & img {
+      width: 536px;
+      height: 301px;
+    }
+    & div {
+      display: flex;
+      flex-direction: column;
+      gap: 3%;
+      & a {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 24px;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        & img {
+          width: 40px;
+          height: 40px;
         }
+      }
     }
+  }
 }
 
-/* .div-underline{
-    width: 127px;
-    border-bottom:2px solid #990703;
+.sist-clasificacion-videojuegos {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 20%;
+  padding-left: 1%;
+  & .sist-clasificacion-videojuegos-top {
+    display: flex;
+    flex-direction: column;
+    margin-right: 27%;
+    margin-bottom: 8%;
+    & h3 {
+      font-size: 48px;
+      line-height: 55px;
+      margin-bottom: 2%;
+    }
+    & .pegi-top-txt {
+      font-size: 18px;
+      margin-top: 2%;
+      margin-bottom: 0;
+      line-height: 27px;
+    }
+  }
+  & .sist-clasificacion-videojuegos-bottom {
+    display: flex;
+    gap: 3%;
+    & img {
+      width: 535px;
+      height: 301px;
+    }
+    & .pegi-right-content {
+      display: flex;
+      flex-direction: column;
+
+      & h4 {
+        font-size: 24px;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      & .pegi-right-txt {
+        font-size: 18px;
+        line-height: 27px;
+        margin-right: 2%;
+      }
+      & div {
+        height: 20%;
+        width: 50%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+        & button {
+          position: absolute;
+          background-color: #990703;
+          color: white;
+          width: 100%;
+          height: 100%;
+          border: none;
+          border-radius: 3px;
+        }
+        & button:hover {
+          transform: scale(1.04);
+        }
+        & #button-txt {
+          color: white;
+          position: relative;
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
-.div-underline:hover{
-    width: 135px;
-    border-bottom:2px solid #990703;
-} */
+
+.clasificacion-videojuegos {
+  display: flex;
+  flex-direction: column;
+  margin: 10% 20%;
+  padding-left: 1%;
+  & h3 {
+    font-size: 48px;
+    line-height: 55px;
+    margin: 0 27% 5% 0;
+  }
+  & .clasificacion-videojuegos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    & .clasificacion-videojuegos-card {
+      width: 347px;
+      margin-bottom: 20%;
+      & img {
+        width: 347px;
+      }
+      & h4 {
+        font-size: 24px;
+        margin: 0 0 1%;
+      }
+      & p {
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 2%;
+      }
+      & a {
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        border-bottom: 2px solid black;
+      }
+      & a:hover {
+        color: #990703;
+      }
+    }
+  }
+}
+
+.proteccion-red-divs {
+  width: 1467px;
+  height: 363px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px;
+}
+.bottom-img {
+  width: 525px;
+  height: 301px;
+}
+.h1-title {
+  margin-left: 200px;
+  margin-bottom: 60px;
+  font-size: 48px;
+}
+.h1-title-bottom {
+  width: 819px;
+  margin-left: 200px;
+  margin-bottom: 60px;
+  font-size: 48px;
+}
+.p-size {
+  width: 535px;
+  height: 189px;
+}
+#herramientas-card {
+  width: 363px;
+  height: 569px;
+  border: 1px solid rgb(218, 218, 218);
+}
+.cards-image-top {
+  width: 363px;
+}
+.cards-top-position {
+  display: flex;
+  gap: 20px;
+}
+.cards-content-position {
+  display: block;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.h3-cards {
+  color: rgb(248, 73, 9);
+  margin-left: 30px;
+}
+.h6-cards {
+  font-size: 11px;
+  justify-content: center;
+}
+.h2-cards {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+.bottom-cards-div {
+  display: flex; 
+  justify-content: center;
+  gap: 20px;
+}
+.content-size {
+  font-size: 20px;
+  color: rgb(20, 20, 20)
+}
+.bottom-readmore {
+  background-color: transparent;
+  border: none;
+  border: 2px solid white;
+  width: 192px;
+  height: 58px;
+  border-radius: 5px;
+}
+.bottom-readmore:hover {
+  transform: scale(1.04);
+}
+
+
+footer {
+  width: 100vw;
+}
+.footer-ea-play-promo-bg {
+  background-image: url(/assets/footer/grid-with-background.png);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 58vh;
+  & .footer-ea-play-promo {
+    margin-left: 21%;
+    width: 29%;
+    line-height: 27px;
+    /* padding: 150px; */
+    & p {
+      color: white;
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+}
+.join-now-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 28%;
+  height: 20%;
+  margin-top: 10%;
+}
+.join-now-border {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  height: 6vh;
+  /* transform: translate(-50%, -50%) scale(1) translateZ(0); */
+  /* left: 96px;
+    top: 35px; */
+  z-index: 999;
+}
+#p-join-now {
+  position: absolute;
+}
+.join-now-border:hover {
+  transform: scale(1.04);
+}
+.footer-herramientas-banner {
+  background-color: #6fb0d6;
+  height: 11vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & h2 {
+    width: 28%;
+    margin-left: 21%;
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.footer-moreinfo-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  margin-right: 21%;
+}
+.footer-moreinfo-border {
+  position: relative;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: 18px;
+  border: 2px solid black;
+  font-weight: 400;
+  width: 98%;
+  height: 6vh;
+  z-index: 999;
+  /* transform: translate(-50%, -50%) scale(1) translateZ(0); */
+  /* left: 96px;
+    top: 35px; */
+}
+.footer-p-moreinfo {
+  position: absolute;
+  font-size: 18px;
+}
+
+.footer-moreinfo-border:hover {
+  transform: scale(1.04);
+}
+
+.footer-greyspace {
+  padding: 50px 21% 0;
+
+  background-color: #eaeaea;
+  height: 26vh;
+  & .footer-condition {
+    & p {
+      margin: 0;
+      padding-bottom: 16px;
+      border-bottom: 1px solid black;
+      font-size: 14px;
+    }
+    & a {
+      color: #ff4747;
+      text-decoration: none;
+    }
+  }
+  & .footer-top {
+    display: flex;
+    padding: 40px 0 40px 0;
+    justify-content: space-between;
+    & .footer-top-left-links {
+      & a {
+        padding-right: 40px;
+        text-decoration: none;
+        color: #232529;
+      }
+      & a:hover {
+        color: #ff4747;
+      }
+    }
+    & .footer-top-right-links {
+      & h3 {
+        font-size: 16px;
+        text-align: right;
+        font-stretch: expanded;
+      }
+      & .footer-media-links {
+        font-size: 22px;
+        text-align: right;
+        display: flex;
+        & a {
+          color: #232529;
+          transition: font-size 0.3s;
+          margin-inline-end: 32px;
+          transition: font-size 0.3s, margin-inline-end 0.3s;
+        }
+        & a:hover {
+          font-size: 25px;
+          margin-inline-end: 29px;
+        }
+        & .footer-twitch-icon {
+          margin-inline-end: 0;
+        }
+        & .footer-twitch-icon:hover {
+          margin-inline-end: 0;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  padding: 30px 21%;
+  gap: 25px;
+  & .footer-bottom-nav {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    & img {
+      height: 64px;
+    }
+    & .footer-bottom-nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 550px;
+      gap: 25px;
+      & div {
+        display: flex;
+        gap: 45px;
+      }
+      & a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #232529;
+      }
+    }
+    & .footer-bottom-nav-btns {
+      display: flex;
+      gap: 40px;
+      & button {
+        position: absolute;
+        border-radius: 2px;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: 2px solid #c2c2c2;
+        z-index: 1;
+      }
+      & button:hover {
+        transform: scale(1.04);
+      }
+      & p {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        font-family: "Electronic Arts Text";
+        font-size: 15px;
+        padding: 15px;
+        text-align: left;
+        justify-content: space-between;
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+.footer-menu-btn-container {
+  width: 190px;
+  height: 61px;
+
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.footer-bottom-info {
+  display: flex;
+  justify-content: space-between;
+  & .footer-bottom-copyright {
+    margin-left: 9%;
+    & .footer-bottom-privacy {
+      width: 630px;
+      display: flex;
+      gap: 5px 30px;
+      flex-wrap: wrap;
+      & a {
+        text-decoration: none;
+        color: #232529;
+      }
+    }
+  }
+}
+
+.region-hidden {
+  display: none;
+}
+.region-visible {
+  display: flex;
+  position: absolute;
+  bottom: 20%;
+  border: 3px solid lightgray;
+  width: 645px;
+  height: 452px;
+  background-color: #f3f3f3;
+  padding: 10px;
+  & div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    & a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      height: 47px;
+      width: 130px;
+      border-top: 2px solid #eaeaea;
+      color: #232529;
+    }
+  }
+  & .footer-fourth-column a {
+    width: 105px;
+  }
+}
+
+.language-hidden {
+  display: none;
+}
+
+.language-visible {
+  display: flex;
+  position: absolute;
+  bottom: 20%;
+  border: 3px solid lightgray;
+  width: 540px;
+  height: 453px;
+  background-color: #f3f3f3;
+  & div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    & a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      height: 47px;
+      width: 150px;
+      border-top: 2px solid #eaeaea;
+      color: #232529;
+      & i {
+        padding: 5px;
+      }
+    }
+  }
+  & .footer-third-language {
+    height: 423px;
+    & a {
+      width: 120px;
+    }
+  }
+}
+#language i {
+  padding: 5px;
+}
+#footer-no-border {
+  border: none;
+}
+
+.region-visible div a:hover,
+.language-visible div a:hover {
+  text-indent: 10px;
+}
