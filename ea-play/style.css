@@ -1057,6 +1057,7 @@ nav{
     border: 2px solid white;
     top: 0;
     left: 0;
+    z-index: 999;
   }
 
   & .countries-button:hover {
