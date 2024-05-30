@@ -1468,18 +1468,21 @@ footer {
         }
       }
       & .footer-top-right-links {
-        & h3 {
-          font-size: 14px;
-          text-align: left;
-          font-stretch: expanded;
-        }
+      
         & .footer-media-links {
           font-size: 22px;
           text-align: right;
           display: flex;
+          & h3 {
+            font-size: 14px;
+            text-align: left;
+            font-stretch: expanded;
+          }& div{
+            
           & a {
             color: #232529;
             margin: 2%;
+          }
           }
         }
       }
