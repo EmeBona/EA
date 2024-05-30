@@ -1064,7 +1064,7 @@ footer {
   width: 100vw;
 }
 .footer-ea-play-promo-bg {
-  background-image: url(/assets/footer/grid-with-background.png);
+  background-image: url(assets/footer/ea-play-grid-evergreen-hero-md-7x2-xl.jpg.adapt.crop7x2.1920w.jpg);
   width: 100%;
   display: flex;
   align-items: center;
@@ -1535,7 +1535,7 @@ NAVBAR */
       position: absolute;
       color: white;
       width: fit-content;
-      height: fit-content
+      height: fit-content;
       top: 0;
       right: 0;
       bottom: 0;
@@ -1580,7 +1580,7 @@ NAVBAR */
   
   .footer-ea-play-promo-bg {
     height: 42vh;
-    background-image: url(/assets/mediaqueries/footer/banner.png);
+    background-image: url(assets/mediaqueries/footer/banner.png);
     width: 100vw;
     display: flex;
     align-items: center;
