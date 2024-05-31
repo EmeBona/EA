@@ -81,6 +81,10 @@ nav {
 
 }
 
+.navbar-movil-menu{
+  display: none;
+}
+
 .header-menu {
   display: flex;
   justify-content: flex-start;
@@ -556,6 +560,10 @@ nav {
   display: none;
 }
 
+.header-movil-menu{
+  display: none;
+}
+
 .header-banner {
   & .banner-info {
     padding: 7vw 21vw 3vw;
@@ -663,7 +671,9 @@ nav {
 .banner-tablet-container{
   display: none;
 }
-
+.banner-movil-container{
+  display: none;
+}
 .games-tab-buttons button {
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid rgba(0, 0, 0, 0);
@@ -1406,9 +1416,6 @@ footer {
 NAVBAR */
 
 @media (max-width: 768px){
-  header{
-    position: sticky;
-  }
 
   nav {
     & .navbar-menu {
@@ -1908,6 +1915,212 @@ NAVBAR */
 
 
 @media (max-width: 429px){
+
+  nav {
+    & .navbar-menu {
+      display: none;
+    }
+    
+    & .navbar-tablet-menu{
+      display: none;
+    }
+
+  & .navbar-movil-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: #232529;
+    color: white;
+    width: 100%;
+    height: 2%;
+    margin: 0;
+    padding: 0 32px 0 0;
+    position: sticky;
+    top: 1vw;
+    z-index: 1;
+  }
+
+  &.navbar-login-movil-button {
+    height: 2vw;
+    width: 2vw;
+  }
+
+  & .navbar-login-movil-btn {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-inline-start: 20vw;
+  }
+
+  & .navbar-help-movil-btn {
+    height: 2vw;
+    width: 2vw;
+    margin-inline-start: 30px;
+  }
+
+  & .navbar-help-movil-btn {
+    background-color: transparent;
+    border: none;
+    width: 27px;
+    height: 27px;
+    margin-top: 5px;
+  }
+
+  & .navbar-ea-movil-button {
+    height: 2vw;
+    width: 2vw;
+    margin-inline-start: 30px;
+  }
+
+  & .navbar-ea-movil-btn {
+    background-color: transparent;
+    border: none;
+  }
+
+}
+.header-menu{
+  display: none;
+}
+.header-tablet-menu{
+  display:none;
+}
+
+.header-movil-menu{
+  display: flex;
+  width: 100%;
+  height: 53px;
+  left: 0;
+  position: absolute;
+  background-color: white;
+  gap: 2%;
+  align-items: center;
+  & .hamburguer-movil-btn{
+    margin-inline-start: 2vw;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.header-banner{
+  display: none;
+}
+.banner-bg-tablet-container{
+  display: none;
+}
+.banner-content-tablet{
+  visibility: hidden;
+}
+
+.banner-movil-container{
+  display: flex;
+
+  & .banner-movil-bg{
+    position: absolute;
+    top: 21vw;
+    left: 0vw;
+    
+  }
+  & .banner-movil-tablet{
+    display: flex;
+    flex-direction: column;
+  }
+  & .banner-movil-title{
+    position: relative;
+    width: 312px;
+    height: 112px;
+    top: 72vw;
+    left: -65vw;
+  }
+  & .banner-movil-p{
+    position: relative;
+    color: white;
+    top: 68vw;
+    left: -63.5vw;
+  }
+  & .banner-btns-movil-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 4%;
+    align-items: flex-start;
+  } 
+
+  & .moreinfo-movil-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    min-width: 361x;
+    min-height: 50px;
+  }
+
+  & .banner-movil-moreinfo {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    border: 2px solid white;
+    width: 330px;
+    height: 50px;
+    top: 67vw;
+    left: -70vw;
+    border-radius: 5px;
+  }
+
+  & .banner-movil-moreinfo:hover {
+    transform: scale(1.04);
+  }
+
+  & .p-info-movil {
+
+    position: absolute;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    top: 73vw;
+    right: 0;
+    bottom: 0;
+    left: -60vw;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  & .buynow-movil-container {
+    min-width: 361px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .banner-movil-buynow {
+    position: absolute;
+    background-color: #ff4747;
+    border: none;
+    width: 330px;
+    height: 50px;
+    top: 70vw;
+    left: -70vw;
+    border-radius: 5px;
+  }
+
+  & .banner-movil-buynow:hover {
+    transform: scale(1.04);
+  }
+
+  .p-buy-movil {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    top: 73vw;
+    right: 0;
+    bottom: 0;
+    left: -73vw;
+    margin: auto;
+  }
+}
   
   .footer-ea-play-promo-bg {
     height: 75vh;
