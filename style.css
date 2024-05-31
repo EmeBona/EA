@@ -2031,13 +2031,13 @@ NAVBAR */
     width: 312px;
     height: 112px;
     top: 72vw;
-    left: -65vw;
+    left: -68vw;
   }
   & .banner-movil-p{
     position: relative;
     color: white;
     top: 68vw;
-    left: -63.5vw;
+    left: -64.5vw;
   }
   & .banner-btns-movil-container {
     display: flex;
