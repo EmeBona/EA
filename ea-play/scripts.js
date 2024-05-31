@@ -58,35 +58,23 @@ const chevronRegion = document.getElementById("chevron-region");
 const chevronLanguage = document.getElementById("chevron-language");
 
 //recompensas fnc
-function seeMoreBtn() {
-  function seeMoreTabQuery() {}
-  function seeMoreMblQuery() {}
-  function seeMoreCards() {
-    if (cardsPosition.className == "recompensas-animation rec-first-position") {
-      cardsPosition.classList.replace(
-        "rec-first-position",
-        "rec-second-position"
-      );
-      sliderContainer.style.justifyContent = "center";
-      slideLeftBtn.classList.replace("slide-disabled", "slide-enabled");
-    } else if (
-      cardsPosition.className == "recompensas-animation rec-second-position"
-    ) {
-      cardsPosition.classList.replace(
-        "rec-second-position",
-        "rec-third-position"
-      );
-      sliderContainer.style.justifyContent = "flex-end";
-      slideRightBtn.classList.replace("slide-enabled", "slide-disabled");
-    }
-  }
-
-  if (mobileQuery) {
-    seeMoreTabQuery();
-  } else if (tabletQuery) {
-    seeMoreCards()
-  } else if (otherQuery) {
-    seeMoreCards();
+function seeMoreCards() {
+  if (cardsPosition.className == "recompensas-animation rec-first-position") {
+    cardsPosition.classList.replace(
+      "rec-first-position",
+      "rec-second-position"
+    );
+    sliderContainer.style.justifyContent = "center";
+    slideLeftBtn.classList.replace("slide-disabled", "slide-enabled");
+  } else if (
+    cardsPosition.className == "recompensas-animation rec-second-position"
+  ) {
+    cardsPosition.classList.replace(
+      "rec-second-position",
+      "rec-third-position"
+    );
+    sliderContainer.style.justifyContent = "flex-end";
+    slideRightBtn.classList.replace("slide-enabled", "slide-disabled");
   }
 }
 
@@ -110,7 +98,7 @@ function seeLessCards() {
   }
 }
 
-slideRightBtn.addEventListener("click", seeMoreBtn);
+slideRightBtn.addEventListener("click", seeMoreCards);
 slideLeftBtn.addEventListener("click", seeLessCards);
 
 
