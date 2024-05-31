@@ -1,7 +1,3 @@
-//media-queries
-const tabletQuery = window.matchMedia("(max-width: 768px)");
-const mobileQuery = window.matchMedia("(max-width: 429px)");
-const otherQuery = window.matchMedia("min-width: 769px) ");
 //navbar
 
 document.addEventListener("DOMContentLoaded", function() {
