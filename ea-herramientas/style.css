@@ -909,105 +909,12 @@ nav {
 footer {
   width: 100vw;
 }
-.footer-ea-play-promo-bg {
-  background-image: url(/assets/footer/grid-with-background.png);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  height: 58vh;
-  & .footer-ea-play-promo {
-    margin-left: 21%;
-    width: 29%;
-    line-height: 27px;
-    /* padding: 150px; */
-    & p {
-      color: white;
-      font-size: 18px;
-      font-weight: 400;
-      margin: 0;
-    }
-  }
-}
-.join-now-container {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  width: 28%;
-  height: 20%;
-  margin-top: 10%;
-}
-.join-now-border {
-  position: absolute;
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  border-radius: 3px;
-  font-size: 18px;
-  font-weight: 400;
-  width: 100%;
-  height: 6vh;
-  /* transform: translate(-50%, -50%) scale(1) translateZ(0); */
-  /* left: 96px;
-    top: 35px; */
-  z-index: 999;
-}
-#p-join-now {
-  position: absolute;
-}
-.join-now-border:hover {
-  transform: scale(1.04);
-}
-.footer-herramientas-banner {
-  background-color: #6fb0d6;
-  height: 11vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  & h2 {
-    width: 28%;
-    margin-left: 21%;
-    font-size: 25px;
-    line-height: 35px;
-  }
-}
-
-.footer-moreinfo-container {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  width: 10%;
-  margin-right: 21%;
-}
-.footer-moreinfo-border {
-  position: relative;
-  background-color: transparent;
-  border-radius: 3px;
-  font-size: 18px;
-  border: 2px solid black;
-  font-weight: 400;
-  width: 98%;
-  height: 6vh;
-  z-index: 999;
-  /* transform: translate(-50%, -50%) scale(1) translateZ(0); */
-  /* left: 96px;
-    top: 35px; */
-}
-.footer-p-moreinfo {
-  position: absolute;
-  font-size: 18px;
-}
-
-.footer-moreinfo-border:hover {
-  transform: scale(1.04);
-}
 
 .footer-greyspace {
-  padding: 50px 21% 0;
+  padding: 2% 21% 0;
 
   background-color: #eaeaea;
-  height: 26vh;
+  height: 20vh;
   & .footer-condition {
     & p {
       margin: 0;
@@ -1156,7 +1063,7 @@ footer {
 .region-visible {
   display: flex;
   position: absolute;
-  bottom: 20%;
+  bottom: -807vh;
   border: 3px solid lightgray;
   width: 645px;
   height: 452px;
@@ -1188,7 +1095,7 @@ footer {
 .language-visible {
   display: flex;
   position: absolute;
-  bottom: 20%;
+  bottom: -807vh;
   border: 3px solid lightgray;
   width: 540px;
   height: 453px;
