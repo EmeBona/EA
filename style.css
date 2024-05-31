@@ -667,6 +667,7 @@ nav {
   display: flex;
   justify-content: center;
   border-bottom: gray;
+  margin-bottom: 30px;
 }
 #ea-home-updates-menu {
   display: flex;
@@ -755,6 +756,20 @@ nav {
   margin: 20px;
   border-bottom: 1px 1px 1px black;
 }
+.button-new-games {
+  background-color: transparent;
+  border: 2px solid black;
+  width: 192px;
+  height: 58px;
+  border-radius: 5px;
+}
+.button-new-games:hover {
+  transform: scale(1.04);
+}
+.btn-new-games-txt {
+  position: absolute;
+  
+}
 
 .ea-home-updates-cards-visible {
   height: auto;
@@ -799,25 +814,50 @@ nav {
   height: 569px;
   border: 1px solid rgb(218, 218, 218);
 }
+#battlefield-2042-card:hover {
+  position: relative;
+  bottom: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
 #kate-kellogg-card {
   width: 363px;
   height: 569px;
   border: 1px solid rgb(218, 218, 218);
+}
+#kate-kellogg-card:hover {
+  position: relative;
+  bottom: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 #ea-app-mac-card {
   width: 363px;
   height: 569px;
   border: 1px solid rgb(218, 218, 218);
 }
+#ea-app-mac-card:hover {
+  position: relative;
+  bottom: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
 #maxis-card {
   width: 363px;
   height: 569px;
   border: 1px solid rgb(218, 218, 218);
 }
+#maxis-card:hover {
+  position: relative;
+  bottom: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
 #kate-gorman-card {
   width: 363px;
   height: 569px;
   border: 1px solid rgb(218, 218, 218);
+}
+#kate-gorman-card:hover {
+  position: relative;
+  bottom: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 .ea-sports-fc-menu-visible {
   height: auto;
