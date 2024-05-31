@@ -148,8 +148,8 @@ function newsButtonVisibility() {
     footerPosition.classList.replace("footer-position", "footer-regular");
   }
   if (newsVisibilitySection.className === "ea-home-updates-cards-visible") {
-    regionMenu.style.bottom = "-313vh";
-    languageMenu.style.bottom = "-313vh";
+    regionMenu.style.bottom = "-316vh";
+    languageMenu.style.bottom = "-316vh";
   }
 }
 function sportsButtonVisibility() {
@@ -184,8 +184,8 @@ function sportsButtonVisibility() {
     );
     footerPosition.classList.replace("footer-regular", "footer-position");
     if (eaSportsVisibilitySection.className === "ea-sports-fc-menu-visible") {
-      regionMenu.style.bottom = "-407vh";
-      languageMenu.style.bottom = "-407vh";
+      regionMenu.style.bottom = "-410vh";
+      languageMenu.style.bottom = "-410vh";
     }
   }
 }
@@ -222,8 +222,8 @@ function starWarsButtonVisibility() {
     footerPosition.classList.replace("footer-position", "footer-regular");
   }
   if (starWarsVisibilitySection.className === "star-wars-cards-menu-visible") {
-    regionMenu.style.bottom = "-281vh";
-    languageMenu.style.bottom = "-281vh";
+    regionMenu.style.bottom = "-284vh";
+    languageMenu.style.bottom = "-284vh";
   }
 }
 function apexButtonVisibility() {
@@ -260,8 +260,8 @@ function apexButtonVisibility() {
   }
 
   if (apexVisibilitySection.className === "apex-legends-cards-menu-visible") {
-    regionMenu.style.bottom = "-313vh";
-    languageMenu.style.bottom = "-313vh";
+    regionMenu.style.bottom = "-316vh";
+    languageMenu.style.bottom = "-316vh";
   }
 }
 function simsVisibilityButton() {
@@ -297,8 +297,8 @@ function simsVisibilityButton() {
     footerPosition.classList.replace("footer-position", "footer-regular");
   }
   if (simsVisibilitySection.className === "los-sims-cards-menu-visible") {
-    regionMenu.style.bottom = "-313vh";
-    languageMenu.style.bottom = "-313vh";
+    regionMenu.style.bottom = "-316vh";
+    languageMenu.style.bottom = "-316vh";
   }
 }
 function f1VisibilityButton() {
@@ -335,8 +335,8 @@ function f1VisibilityButton() {
   }
 
   if (f1VisibilitySection.className === "f1-cards-menu-visible") {
-    regionMenu.style.bottom = "-313vh";
-    languageMenu.style.bottom = "-313vh";
+    regionMenu.style.bottom = "-316vh";
+    languageMenu.style.bottom = "-316vh";
   }
 }
 function battlefieldButtonVisibility() {
@@ -375,8 +375,8 @@ function battlefieldButtonVisibility() {
   }
 
   if (battlefieldVisibilitySection.className === "battlefield-cards-menu-visible") {
-    regionMenu.style.bottom = "-313vh";
-    languageMenu.style.bottom = "-313vh";
+    regionMenu.style.bottom = "-316vh";
+    languageMenu.style.bottom = "-316vh";
   }
 }
 newsButton.addEventListener("click", newsButtonVisibility);

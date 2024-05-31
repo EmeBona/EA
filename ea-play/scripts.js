@@ -50,6 +50,7 @@ const sliderContainer = document.getElementById("slider-progress");
 
 // footer def
 const eaLogoBtn = document.getElementById("ea-logo");
+const eaLogoFooterBtn = document.getElementById("ea-logo-footer");
 const regionButton = document.getElementById("region");
 const regionMenu = document.getElementById("region-menu");
 const languageButton = document.getElementById("language");
@@ -153,3 +154,4 @@ regionButton.addEventListener("click", changeRegionChevron);
 languageButton.addEventListener("click", showLanguageClass);
 languageButton.addEventListener("click", changeLanguageChevron);
 eaLogoBtn.addEventListener("click", returnHome);
+eaLogoFooterBtn.addEventListener("click", returnHome);

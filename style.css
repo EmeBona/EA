@@ -150,7 +150,7 @@ nav {
     flex-direction: column;
     background-color: white;
     position: absolute;
-    top: 10.5%;
+    top: 14.5%;
     left: 0px;
     padding-top: 1vw;
     padding-left: 1vw;
@@ -395,7 +395,7 @@ nav {
     opacity: 0.9;
     border-radius: 5px;
     position: absolute;
-    top: 10.5%;
+    top: 14.5%;
     left: 15%;
     gap: 2vw;
     padding-top: 1vw;
@@ -443,7 +443,7 @@ nav {
     opacity: 0.9;
     border-radius: 5px;
     position: absolute;
-    top: 10.5%;
+    top: 14.5%;
     padding-top: 1vw;
     padding-bottom: 1vw;
     padding-left: 2vw;
@@ -478,7 +478,7 @@ nav {
     opacity: 0.9;
     border-radius: 5px;
     position: absolute;
-    top: 10.5%;
+    top: 14.5%;
     padding-top: 1vw;
     padding-bottom: 1vw;
     padding-left: 2vw;
@@ -512,7 +512,7 @@ nav {
     opacity: 0.9;
     border-radius: 5px;
     position: absolute;
-    top: 10.5%;
+    top: 14.5%;
     padding-top: 1vw;
     padding-bottom: 1vw;
     padding-left: 2vw;
@@ -546,7 +546,7 @@ nav {
     opacity: 0.9;
     border-radius: 5px;
     position: absolute;
-    top: 10.5%;
+    top: 14.5%;
     padding-top: 1vw;
     padding-bottom: 1vw;
     padding-left: 2vw;
@@ -1375,7 +1375,7 @@ footer {
 .region-visible {
   display: flex;
   position: absolute;
-  bottom: -313vh;
+  bottom: -316vh;
   border: 3px solid lightgray;
   width: 645px;
   height: 452px;
@@ -1408,7 +1408,7 @@ footer {
 .language-visible {
   display: flex;
   position: absolute;
-  bottom: -313vh;
+  bottom: -316vh;
   border: 3px solid lightgray;
   width: 540px;
   height: 453px;
@@ -1487,7 +1487,7 @@ NAVBAR */
     width: 30px;
     height: 30px;
     margin-top: 5px;
-    margin-inline-start: 40vw;
+    margin-inline-start: 74vw;
   }
 
   & .navbar-help-tablet-btn {
@@ -1888,7 +1888,7 @@ NAVBAR */
   .region-visible {
     display: flex;
     position: absolute;
-    bottom: -278vh;
+    bottom: -336vh;
     border: 3px solid lightgray;
     width: 35%;
     height: 35%;
@@ -1919,7 +1919,7 @@ NAVBAR */
   .language-visible {
     display: flex;
     position: absolute;
-    bottom: -278vh;
+    bottom: -336vh;
     border: 3px solid lightgray;
     width: 35%;
     height: 35%;
@@ -1953,6 +1953,9 @@ NAVBAR */
     }
   }
 
+
+
+}
 
 @media (max-width: 429px){
 
@@ -1991,7 +1994,7 @@ NAVBAR */
     width: 30px;
     height: 30px;
     margin-top: 5px;
-    margin-inline-start: 20vw;
+    margin-inline-start: 45vw;
   }
 
   & .navbar-help-movil-btn {
@@ -2071,13 +2074,13 @@ NAVBAR */
     width: 312px;
     height: 112px;
     top: 72vw;
-    left: -68vw;
+    left: -60vw;
   }
   & .banner-movil-p{
     position: relative;
     color: white;
     top: 68vw;
-    left: -64.5vw;
+    left: -60vw;
   }
   & .banner-btns-movil-container {
     display: flex;
@@ -2104,7 +2107,7 @@ NAVBAR */
     width: 330px;
     height: 50px;
     top: 67vw;
-    left: -70vw;
+    left: -60vw;
     border-radius: 5px;
   }
 
@@ -2121,7 +2124,7 @@ NAVBAR */
     top: 73vw;
     right: 0;
     bottom: 0;
-    left: -60vw;
+    left: -43vw;
     margin: auto;
     font-size: 16px;
     text-align: center;
@@ -2142,7 +2145,7 @@ NAVBAR */
     width: 330px;
     height: 50px;
     top: 70vw;
-    left: -70vw;
+    left: -60vw;
     border-radius: 5px;
   }
 
@@ -2157,7 +2160,7 @@ NAVBAR */
     top: 73vw;
     right: 0;
     bottom: 0;
-    left: -73vw;
+    left: -64vw;
     margin: auto;
   }
 }
@@ -2219,7 +2222,7 @@ NAVBAR */
     width: 100vw;
     & h2 {
       width: 98%;
-      margin: 4% 0 2% 16%;
+      margin: 4% 0 2% 4%;
       font-size: 24px;
     }
   }
@@ -2410,7 +2413,7 @@ NAVBAR */
   .region-visible {
     display: flex;
     position: absolute;
-    bottom: -406vh;
+    bottom: -398vh;
     border: 3px solid lightgray;
     width: 79%;
     height: 35%;
@@ -2441,7 +2444,7 @@ NAVBAR */
   .language-visible {
     display: flex;
     position: absolute;
-    bottom: -416vh;
+    bottom: -408vh;
     border: 3px solid lightgray;
     width: 79%;
     height: 35%;
@@ -2449,7 +2452,7 @@ NAVBAR */
     z-index: 999;
     flex-direction: column;
     overflow: scroll;
-    left: 13%;
+    left: 12%;
     & div {
       display: flex;
       flex-direction: column;
@@ -2475,5 +2478,4 @@ NAVBAR */
     }
   }
 
-}
 }

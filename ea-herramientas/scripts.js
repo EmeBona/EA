@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
   //footer fnc + dec
 
   const eaLogoBtn = document.getElementById("ea-logo");
+  const eaLogoFooterBtn = document.getElementById("ea-logo-footer");
   const regionButton = document.getElementById("region");
 const regionMenu = document.getElementById("region-menu");
 const languageButton = document.getElementById("language");
@@ -92,6 +93,8 @@ const chevronLanguage = document.getElementById("chevron-language");
   }
 
   eaLogoBtn.addEventListener("click", returnHome);
+  eaLogoFooterBtn.addEventListener("click", returnHome);
+
 
 
   function showRegionClass() {
