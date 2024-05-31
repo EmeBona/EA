@@ -1,7 +1,3 @@
-// nav def
-// const hamburguerButton = document.getElementById("hamburguer-button");
-// const hamburguerMenu = document.getElementById("hamburguer-menu");
-
 //footer def
 const regionButton = document.getElementById("region");
 const regionMenu = document.getElementById("region-menu");
@@ -90,19 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
       menuElement.addEventListener('mouseleave', hideMenu);
     });
   });
-// Banner
-function updateImage() {
-  var img = document.getElementById('responsive-image');
-  if (window.innerWidth <= 768) {
-      img.src = 'https://media.contentapi.ea.com/content/dam/ea/tales-of-kenzera/zau/images/2023/12/talesofkenzera-hero-md-franchisehub-tophero-7x2-xl-newest.jpg.adapt.crop16x9.767w.jpg';
-  } else {
-      img.src = 'https://media.contentapi.ea.com/content/dam/ea/tales-of-kenzera/zau/images/2023/12/talesofkenzera-hero-md-franchisehub-tophero-7x2-xl-newest.jpg.adapt.crop7x2.1920w.jpg';
-  }
-}
-
-window.addEventListener('load', updateImage);
-
-window.addEventListener('resize', updateImage);
 
 // Cards
 const newsButton = document.getElementById("ea-news-button")
